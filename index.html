@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do meu currículo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <style>
+        /* Adicione estilos personalizados aqui se necessário */
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/* Cabeçalho */
+header {
+    background-image: url('header10.gif'); /* Substitua 'seu-gif.gif' pelo caminho para a sua imagem GIF */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    height: 1000px; /* Ajuste a altura de acordo com suas preferências */
+    max-width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+/* Menu de navegação */
+.menu-toggle {
+            display: none; /* Esconder o ícone de menu em telas maiores */
+        }
+
+        .menu-icon {
+
+       
+           
+            font-size: 30px; /* Tamanho do ícone */
+            cursor: fixed;
+            display: none; /* Inicialmente, oculta o ícone em telas maiores */
+
+        }
+
+
+
+        /* CSS para o menu de navegação */
+        nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+    padding: 0;
+    max-width: 100%;
+}
+
+        nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s;
+    display: inline-block; /* Adiciona esta linha para centralizar a linha */
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da linha */
+    background-color: #04fad9; /* Cor da linha */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Inicialmente, a linha tem largura zero */
+    transform-origin: center; /* Centraliza a origem da transformação */
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1); /* Aumenta a largura da linha para 100% */
+}
+
+        nav {
+            background-color: #071616;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+
+
+/* Seção de Gráficos */
+.chart-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.chart {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 0 10px;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart2 {
+    display: inline-block;
+    position: relative;
+    width: 1245px;
+    height: 600px;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+
+.chart2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart2-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px; /* Adicione a quantidade de espaço superior desejada, por exemplo, 20px */
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.chart2-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.cta-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #0c0041;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+font-size: 18px;
+transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+background-color: #15025c;
+}
+
+h3 {
+color: #ffffff; /* Substitua pelo código de cor desejado */
+}
+
+/* Imagem abaixo das três imagens */
+.bottom-image {
+
+background-size: cover;
+background-position: center;
+height: 500px;
+margin-top: 50px;
+}
+.image-text {
+background-color: rgba(0, 0, 0, 0.7);
+padding: 10px;
+text-align: center;
+color: #fff;
+font-size: 18px;
+font-weight: bold;
+text-decoration: none; /* Remove sublinhado */
+display: inline-block; /* Para que não ocupe toda a largura */
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart-link:hover .image-zoom img{
+transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+transition: transform 0.3s ease; /* Adiciona uma transição suave */
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart2-link:hover .image-zoom img {
+transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+transition: transform 0.3s ease; /* Adiciona uma transição suave */
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart-link .image-zoom img {
+width: 400px;
+height: 600px;
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+
+.chart2-link .image-zoom img {
+width: 1245px;
+height: 600px;
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+
+.chart-link:hover .image-zoom::before {
+opacity: 1; /* A camada fica completamente visível */
+}
+/* Rodapé */
+footer {
+    background-color: #071616;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.image-zoom {
+position: relative;
+overflow: hidden;
+}
+.image-zoom {
+position: relative;
+overflow: hidden;
+border: 2px solid #fff; /* Adiciona uma borda branca de 2 pixels */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
+}
+
+.image-zoom::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Cor e transparência da camada de sobreposição */
+opacity: 0; /* Inicialmente, a camada está totalmente transparente */
+transition: opacity 0.3s ease-in-out;
+}
+.chart-link:hover .image-zoom::before {
+opacity: 1; /* A camada fica completamente visível */
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000000; /* Cor inicial do ícone */
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+/* Estilos para dispositivos móveis aqui */
+
+    /* Estilos para dispositivos móveis aqui */
+
+    audio {
+    position: absolute;
+    top: -9999px;
+}
+@media screen and (max-width: 767px) {
+    header {
+                background-size: 100% 100%;
+                background-position: column;
+                height: 200px;
+                max-width: 100%;
+                margin: 0; /* Remova margens */
+                padding: 0; /* Remova preenchimentos */
+            }
+
+ 
+            audio {
+    position: absolute;
+    top: -9999px;
+}
+
+    .menu-icon {
+     
+    position: absolute;
+    top: 10px; /* Ajuste a distância a partir do topo conforme desejado */
+    left: 30px; /* Ajuste a distância a partir da direita conforme desejado */
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999; /* Ajuste o índice de camada conforme necessário */
+}
+
+nav{
+    padding: 0px 0;
+}
+
+            nav ul {
+                display: none; /* Oculta o menu normal em telas médias */
+            }
+
+            nav ul.active {
+                display: flex; /* Mostra o menu quando o ícone do menu hamburguer é clicado */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Posição do menu dropdown */
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            footer {
+                width: 100%;
+                max-width: 100vw;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                text-align: left;
+                max-width: 100%; /* Define uma largura máxima para as imagens */
+                height: auto; /* Mantém a proporção da imagem */
+            }
+
+            .chart,
+            .chart2 {
+                display: block; /* Altere para exibir em uma coluna */
+                position: relative;
+                margin: 0 auto; /* Centralize as imagens horizontalmente */
+                width: 90%; /* Ajuste a largura desejada */
+                max-width: 90%; /* Adicione um máximo de largura para garantir responsividade */
+            }
+
+            .chart2-link {
+                margin-top: 20px;
+            }
+
+            .chart-text,
+            .chart2-text {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .chart2-link .image-zoom img {
+                width: 1245px;
+                height: 600px;
+                max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+            } 
+            nav ul li a::before {
+
+                background-color: #04fad9; /* Cor da linha */;
+
+
+            } 
+            nav ul li a:hover::before {
+    transform: scaleX(1); /* Aumenta a largura da linha para 100% */
+}
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <audio controls autoplay loop>
+        <source src="cant-get-no-satisfaction-mono-youtubemp3free.org.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+    
+    <header>
+
+       
+     
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
+        
+    </div>
+
+    </header>
+    <script src="sexo.js"></script>
+    <nav id="menu">
+        <ul>
+            <li><a href="Sobremim.html">Sobre mim</a></li>
+            <li><a href="Programação.html">Programação capacidades</a></li>
+            <li><a href="Assistenteadministrativo.html">Assistente administrativo capacidades</a></li>
+            <li><a href="MarketingDigital.html">Marketing cursando...</a></li>
+        </ul>
+    </nav>
+    
+    <div class="chart-section">
+        <h3>MEU CURRÍCULO</h3>
+        <div class="chart">
+            <a href="Assistenteadministrativo.html" class="chart-link">
+                <div class="image-zoom">
+                    <img src="assistente administrativo.jpg" alt="Gráfico 1" width="400" height="600">
+                </div>
+                <div class="chart-text">Assistente administrativo</div>
+            </a>
+        </div>
+        <div class="chart">
+            <a href="MarketingDigital.html" class="chart-link">
+                <div class="image-zoom">
+                    <img src="MARKETING DIGITAL.jpg" alt="Gráfico 2" width="400" height="600">
+                </div>
+                <div class="chart-text">Marketing Digital</div>
+            </a>
+        </div>
+        <div class="chart">
+            <a href="Sobremim.html" class="chart-link">
+                <div class="image-zoom">
+                    <img src="Vitão.jpg" alt="Gráfico 3" width="400" height="600">
+                </div>
+                <div class="chart-text">Sobre mim...</div>
+            </a>
+        </div>
+        <div class="chart2">
+            <a href="Programação.html" class="chart2-link">
+                <div class="image-zoom">
+                    <img src="html-vs-css-vs-python.jpg" alt="Imagem de Destaque" width="1600" height="500">
+                </div>
+                <div class="chart-text">Programação Python, HTML-CSS, "JavaScript cursando"</div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Curriculo Vitor Santos</p>
+    </footer>
+
+    <!-- JavaScript para lidar com o clique no ícone do menu hamburguer -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+
+
+    </script>
+    
+</body>
+</html>

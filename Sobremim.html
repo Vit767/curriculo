@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags e links para o seu CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+    background-image: url('header10.gif'); /* Substitua 'seu-gif.gif' pelo caminho para a sua imagem GIF */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    height: 1000px; /* Ajuste a altura de acordo com suas preferências */
+    max-width: 100%;
+}
+
+        header h1 {
+            margin: 0;
+        }
+
+
+        /* Toggle Menu  */
+
+        .menu-toggle {
+            display: none; /* Esconder o ícone de menu em telas maiores */
+        }
+
+        .menu-icon {
+
+       
+           
+            font-size: 30px; /* Tamanho do ícone */
+            cursor: fixed;
+            display: none; /* Inicialmente, oculta o ícone em telas maiores */
+
+        }
+
+
+
+        /* CSS para o menu de navegação */
+        nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+    padding: 0;
+    max-width: 100%;
+}
+
+        nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s;
+    display: inline-block; /* Adiciona esta linha para centralizar a linha */
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da linha */
+    background-color: #04fad9; /* Cor da linha */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Inicialmente, a linha tem largura zero */
+    transform-origin: center; /* Centraliza a origem da transformação */
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1); /* Aumenta a largura da linha para 100% */
+}
+
+        nav {
+            background-color: #071616;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+
+
+
+
+
+
+        /* Seção de Vídeos */
+        .video-section {
+            text-align: center;
+            padding: 50px 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        .video {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .video iframe {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .video-text {
+            background-color: rgba(10, 41, 133, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: bottom;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .video-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0c0041;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .video-link:hover {
+            background-color: #15025c;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+        h4 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+
+        /* Rodapé */
+        footer {
+            background-color: #071616;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .image-section {
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-text {
+    background-color: rgba(10, 41, 133, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+audio {
+    position: absolute;
+    top: -9999px;
+}
+
+        @media screen and (max-width: 767px) {
+            header {
+                background-size: 100% 100%;
+                background-position: column;
+                height: 200px;
+            }
+
+            .menu-icon {
+     
+     position: absolute;
+     top: 10px; /* Ajuste a distância a partir do topo conforme desejado */
+     left: 30px; /* Ajuste a distância a partir da direita conforme desejado */
+     display: block;
+     font-size: 30px;
+     cursor: pointer;
+     z-index: 999; /* Ajuste o índice de camada conforme necessário */
+ }
+     
+ nav{
+    padding: 0px 0;
+}
+ 
+             nav ul {
+                 display: none; /* Oculta o menu normal em telas médias */
+             }
+ 
+             nav ul.active {
+                 display: flex; /* Mostra o menu quando o ícone do menu hamburguer é clicado */
+                 flex-direction: column;
+                 position: absolute;
+                 top: 60px; /* Posição do menu dropdown */
+                 left: 0;
+                 background-color: #071616;
+                 width: 100%;
+                 z-index: 1;
+             }
+
+           .video-text {
+                max-width: 80%;
+                height: auto;
+                margin: 0 auto; /* Centralizar horizontalmente */
+                text-align: center; /* Centralizar o conteúdo dentro do div .video */
+           
+        }
+
+        audio {
+    position: absolute;
+    top: -9999px;
+}
+         
+            
+
+
+            .video-section {
+                padding: 0px 0;
+                width: 100%;
+                max-width: 100%;
+               
+            }
+
+            .video {
+                max-width: 100%;
+                height: auto;
+            }
+            .image-text{
+                align-items: center;
+                width: 95%;
+                max-width: 80;
+            }
+
+            .image {
+                display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    position: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+            .image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto; /* Para centralizar horizontalmente em relação ao contêiner pai */
+}
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <audio controls autoplay loop>
+        <source src="ytmp3free.cc_chris-brown-wall-to-wall-traduao-clipe-legendado-legenda-pop-br-do-terror-youtubemp3free.org (1).mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+  <!-- Cabeçalho e navegação, como no seu exemplo -->
+    <header>
+        <h1></h1>
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
+    </header>
+  
+    <script src="sexo.js"></script>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        <li><a href="Sobremim.html">Sobre mim</a></li>
+        <li><a href="Programação.html">Programação capacidades</a></li>
+        <li><a href="Assistenteadministrativo.html">Assistente administrativo capacidades</a></li>
+        <li><a href="MarketingDigital.html">Marketing cursando...</a></li>
+        
+        
+        </ul>
+    </nav>
+
+
+
+    <!-- Seção de Imagens -->
+    <div class="image-section">
+        <div class="image">
+            <img src="Vitão.jpg" alt="Imagem 1">
+            <div class="image-text">
+                <h4>Quem sou eu ?  Contato Whatssap1 +5521968738745, Contato Whatssap2 +5521977080240   </h4>
+                <p>Prazer, sou Vitor Santos...Bom dia !O que dizer sobre mim... Sou uma pessoa dedicada , responsável e esforçada, sempre apto a trabalhar e me dedicar pela empresa ao máximo, pessoa que sempre procura evoluir a todo custo seja em qualquer área da vida ou profissão . Lembrando que não sou o sujeito perfeito , porém irei me dedicar ao máximo caso for contratado. Tenha um bom dia !</p>
+            </div>
+        </div>
+        <!-- Repita o bloco de código acima para adicionar mais imagens -->
+    </div>
+    <footer>
+        <p>&copy; Curriculo Vitor Santos</p>
+    </footer>
+
+  <!-- JavaScript para lidar com o clique no ícone do menu hamburguer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('active');
+        });
+    });
+</script>
+    <!-- Rodapé, como no seu exemplo -->
+</body>
+</html>
