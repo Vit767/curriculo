@@ -48,6 +48,11 @@ header h1 {
 
         }
 
+        nav {
+            background-color: #071616;
+            text-align: center;
+            padding: 40px 0;
+        }
 
 
         /* CSS para o menu de navegação */
@@ -164,6 +169,7 @@ nav ul li a:hover::before {
     text-decoration: none;
     color: #fff;
     max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+    object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
 }
 .chart2-link {
     position: absolute;
@@ -179,6 +185,7 @@ nav ul li a:hover::before {
     color: #fff;
     margin-top: 20px; /* Adicione a quantidade de espaço superior desejada, por exemplo, 20px */
     max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+    object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
 }
 .chart-text {
     background-color: rgba(0, 0, 0, 0.7);
@@ -347,6 +354,16 @@ nav{
             }
 
             nav ul.active {
+                 display: flex; /* Mostra o menu quando o ícone do menu hamburguer é clicado */
+                 flex-direction: column;
+                 position: absolute;
+                 top: 60px; /* Posição do menu dropdown */
+                 left: 0;
+                 background-color: #071616;
+                 width: 100%;
+                 z-index: 1;
+             }
+nav ul.active {
                 display: flex; /* Mostra o menu quando o ícone do menu hamburguer é clicado */
                 flex-direction: column;
                 position: absolute;
@@ -366,36 +383,76 @@ nav{
                 margin: 0 auto;
                 text-align: left;
                 max-width: 100%; /* Define uma largura máxima para as imagens */
-                height: auto; /* Mantém a proporção da imagem */
+                height: 170px; /* Mantém a proporção da imagem */
+                
             }
 
-            .chart,
+            .chart{
+
+                width: 30%; /* Ajuste a largura das imagens desejada */
+                max-width: 100%; /* Garante que as imagens se ajustem à largura da tela */
+                height: 170px;
+                object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+                margin: 0px; /* Adicione margem para separar as imagens */
+             
+
+
+            }
             .chart2 {
-                display: block; /* Altere para exibir em uma coluna */
-                position: relative;
-                margin: 0 auto; /* Centralize as imagens horizontalmente */
-                width: 90%; /* Ajuste a largura desejada */
-                max-width: 90%; /* Adicione um máximo de largura para garantir responsividade */
+                width: 90%; /* Ajuste a largura das imagens desejada */
+                max-width: 90%; /* Garante que as imagens se ajustem à largura da tela */
+                height: 170px;
+                max-height: auto;
+                object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+                margin: 5px; /* Adicione margem para separar as imagens */
+             
             }
 
-            .chart2-link {
-                margin-top: 20px;
-            }
+            .chart-link .image-zoom img {
+              
+              max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+              object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+              max-height: 100%;
+              height:90px ;
+              }
+              
+            .chart2-link .image-zoom img {
 
-            .chart-text,
-            .chart2-text {
-                text-align: center;
+              max-height: 90%;  
+            
+              max-width: 90%; /* Adicione um máximo de largura para garantir responsividade */
+              object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+              }
+            .chart-text{
+
+                background-color: rgba(0, 0, 0, 0.964);
+                padding: 0px;
+                text-align: bottom;
+                position: absolute;
+                bottom:-1px;
+                left: 10;
+                width: 100%;
+                font-size: 12px; /* Define o tamanho da letra em pixels */
+
+
+            }
+            .chart2-text{
+
+                background-color: rgba(0, 0, 0, 0.964);
+                padding: 10px;
+                text-align: bottom;
+                position: absolute;
+                bottom: -35px;
+                left: 0;
+                width: 100%;
+                font-size: 12px; /* Define o tamanho da letra em pixels */
+
             }
 
             h3 {
                 font-size: 16px;
             }
 
-            .chart2-link .image-zoom img {
-                width: 1245px;
-                height: 600px;
-                max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-            } 
             nav ul li a::before {
 
                 background-color: #04fad9; /* Cor da linha */;
@@ -405,8 +462,8 @@ nav{
             nav ul li a:hover::before {
     transform: scaleX(1); /* Aumenta a largura da linha para 100% */
 }
-}
 
+}
 
 
 
@@ -472,7 +529,7 @@ nav{
                 <div class="image-zoom">
                     <img src="html-vs-css-vs-python.jpg" alt="Imagem de Destaque" width="1600" height="500">
                 </div>
-                <div class="chart-text">Programação Python, HTML-CSS, "JavaScript cursando"</div>
+                <div class="chart2-text">Programação Python, HTML-CSS, "JavaScript cursando"</div>
             </a>
         </div>
     </div>
