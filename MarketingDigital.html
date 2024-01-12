@@ -1,441 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Digital...</title>
-</head>
-<style>
-
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #000000;
-        overflow-x: hidden;
-    }
-    /* Cabeçalho */
-    header {
-        background-image: url('OIP (4).jpg');
-        background-size: cover;
-        background-position: center;
-        color: #ffffff;
-        padding: 20px;
-        text-align: center;
-        height:700px;
-        width: 100%;
-        max-width: 100%;
-    }
-    header h1 {
-        margin: 0;
-    }
-    
-        /* Toggle Menu  */
-
-        .menu-toggle {
-            display: none; /* Esconder o ícone de menu em telas maiores */
-        }
-
-        .menu-icon {
-
-       
-           
-            font-size: 30px; /* Tamanho do ícone */
-            cursor: fixed;
-            display: none; /* Inicialmente, oculta o ícone em telas maiores */
-
-        }
-
-
-
-    /* Menu de navegação */
-    
-    nav {
-    background-color: #071616;
-    text-align: center;
-    padding: 40px 0;
-    width:100%;
-    max-width: 100%;
-    
-    top: 0;
-    left: 0;
-    }
-            nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center; /* Centraliza os itens horizontalmente */
-        max-width: 100%;
-    }
-    
-    nav ul li {
-        margin-right: 20px;
-        position: relative;
-        padding: 0;
-        max-width: 100%;
-    }
-    
-            nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        font-size: 18px;
-        padding: 10px 20px;
-        position: relative;
-        transition: color 0.3s;
-        display: inline-block; /* Adiciona esta linha para centralizar a linha */
-    }
-    
-    nav ul li a::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px; /* Altura da linha */
-        background-color: #04fad9; /* Cor da linha */
-        bottom: 0;
-        left: 0;
-        transform: scaleX(0); /* Inicialmente, a linha tem largura zero */
-        transform-origin: center; /* Centraliza a origem da transformação */
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    nav ul li a:hover::before {
-        transform: scaleX(1); /* Aumenta a largura da linha para 100% */
-    }
-    
-    
-  
-    /* Seção de Gráficos */
-    .chart-section {
-        text-align: center;
-        padding: 50px 0;
-    }
-    .chart {
-        display: inline-block;
-        position: relative;
-        width: 400px;
-        height: 600px;
-        margin: 0 10px;
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    .chart2 {
-        display: inline-block;
-        position: relative;
-        width: 1245px;
-        height: 600px;
-        margin: 0 10px;
-        width: 100%;
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    .chart img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    
-    .chart2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    .chart-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #fff;
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    .chart2-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #fff;
-        margin-top: 20px; /* Adicione a quantidade de espaço superior desejada, por exemplo, 20px */
-        max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    .chart-text {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-    .chart2-text {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-    .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0c0041;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s;
-    }
-    
-    .cta-button:hover {
-    background-color: #15025c;
-    }
-    
-    h3 {
-    color: #ffffff; /* Substitua pelo código de cor desejado */
-    }
-    
-    /* Imagem abaixo das três imagens */
-    .bottom-image {
-    
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    margin-top: 50px;
-    }
-    .image-text {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none; /* Remove sublinhado */
-    display: inline-block; /* Para que não ocupe toda a largura */
-    }
-    .chart-link:hover .image-zoom img{
-    transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-    }
-    .chart2-link:hover .image-zoom img {
-    transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-    }
-    .chart-link .image-zoom img {
-    width: 400px;
-    height: 600px;
-    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    
-    .chart2-link .image-zoom img {
-    width: 1245px;
-    height: 600px;
-    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-    }
-    
-    .chart-link:hover .image-zoom::before {
-    opacity: 1; /* A camada fica completamente visível */
-    }
-    /* Rodapé */
-    footer {
-        background-color: #071616;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
-    .image-zoom {
-    position: relative;
-    overflow: hidden;
-    }
-    .image-zoom {
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #fff; /* Adiciona uma borda branca de 2 pixels */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
-    }
-    
-    .image-zoom::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor e transparência da camada de sobreposição */
-    opacity: 0; /* Inicialmente, a camada está totalmente transparente */
-    transition: opacity 0.3s ease-in-out;
-    }
-    .chart-link:hover .image-zoom::before {
-    opacity: 1; /* A camada fica completamente visível */
-    }
-    
-    /* Estilos para dispositivos móveis aqui */
-    
-        /* Estilos para dispositivos móveis aqui */
-        audio {
-    position: absolute;
-    top: -9999px;
-}   
-    
-    @media screen and (max-width: 767px) {
-        
+    <style>
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
             overflow-x: hidden;
+            color:white;
         }
-    
+
         header {
             background-image: url('OIP (4).jpg');
-            background-size: 100% 100%;
-            background-position: column;
+            background-size: cover;
+            background-position: center;
             color: #ffffff;
             padding: 20px;
             text-align: center;
-            height: 300px;
+            height: 700px;
             width: 100%;
-            max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+            max-width: 100%;
         }
-        
+
+        header h1 {
+            margin: 0;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
         .menu-icon {
-     
-     position: absolute;
-     top: 10px; /* Ajuste a distância a partir do topo conforme desejado */
-     left: 30px; /* Ajuste a distância a partir da direita conforme desejado */
-     display: block;
-     font-size: 30px;
-     cursor: pointer;
-     z-index: 999; /* Ajuste o índice de camada conforme necessário */
- }
-     
- 
- 
-             nav ul {
-                 display: none; /* Oculta o menu normal em telas médias */
-             }
- 
-             nav ul.active {
-                 display: flex; /* Mostra o menu quando o ícone do menu hamburguer é clicado */
-                 flex-direction: column;
-                 position: absolute;
-                 top: 60px; /* Posição do menu dropdown */
-                 left: 0;
-                 background-color: #071616;
-                 width: 100%;
-                 z-index: 1;
-             }
- 
-    
-        footer {
-            width: 100%;
-            max-width: 100vw;
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
         }
-        
-        img {
-            display: block;
-            margin: 0 auto;
-            text-align: left;
-            max-width: 100%; /* Define uma largura máxima para as imagens */
-            height: auto; /* Mantém a proporção da imagem */
-        }
-        
-        .chart,
-        .chart2 {
-            display: block; /* Altere para exibir em uma coluna */
-            position: relative;
-            margin: 0 auto; /* Centralize as imagens horizontalmente */
-            width: 100%; /* Ajuste a largura desejada */
-            max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
-        }
-        
-        .chart2-link {
-            margin-top: 20px;
-        }
-        
-        .chart-text,
-        .chart2-text {
+
+        nav {
+            background-color: #071616;
             text-align: center;
+            padding: 40px 0;
+            width: 100%;
+            max-width: 100%;
+            top: 0;
+            left: 0;
         }
-        
-        h3 {
-            font-size: 16px;
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
         }
-        .chart2-link .image-zoom img {
-            width: 1245px;
-            height: 600px;
-            max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+            padding: 0;
+            max-width: 100%;
         }
-    }
-    /* Ajuste o tamanho do texto nos gráficos */
-    
-    
-    
-    
-    
-        </style>
-<header>
-    <input type="checkbox" class="menu-toggle" id="menu-toggle">
-    <label class="menu-icon" for="menu-toggle">&#9776;</label>
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Sobremim.html">Sobre mim</a></li>
-        <li><a href="Programação.html">Programação capacidades</a></li>
-        <li><a href="Assistenteadministrativo.html">Assistente administrativo capacidades</a></li>
-        <li><a href="MarketingDigital.html">Marketing cursando...</a></li>
-        
-        
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            position: relative;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+
+        nav ul li a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #04fad9;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skills-section {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        .skills-section h2 {
+            border-bottom: 2px solid #f7f5f5;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .skills-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            margin-bottom: 20px;
+            color: #f7f5f5;
+            max-width: 100%;
+        }
+
+        .skills-section img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        audio {
+    position: absolute;
+    top: -9999px;
+}
+
+        @media screen and (max-width: 767px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            header {
+                background-image: url('OIP (4).jpg');
+                background-size: 100% 100%;
+                background-position: column;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+                height: 300px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .skills-section img {
+            width: 90%;
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
 
 
-    </ul>
-</nav>
+            .menu-icon {
+                position: absolute;
+                top: 10px;
+                left: 30px;
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 999;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #071616;
+                width: 100%;
+                z-index: 1;
+            }
+
+            footer {
+                width: 100%;
+                max-width: 100vw;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                text-align: left;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .chart,
+            .chart2 {
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .chart2-link {
+                margin-top: 20px;
+            }
+
+            .chart-text,
+            .chart2-text {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .chart2-link .image-zoom img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
 <body>
-    <div class="image-container">
-        <div class="image-box">
-            <img src="imagem1.jpg" alt="Imagem 1">
-            <div class="image-caption">Texto da Imagem 1</div>
-        </div>
-        <div class="image-box">
-            <img src="imagem2.jpg" alt="Imagem 2">
-            <div class="image-caption">Texto da Imagem 2</div>
-        </div>
-        <div class="image-box">
-            <img src="imagem3.jpg" alt="Imagem 3">
-            <div class="image-caption">Texto da Imagem 3</div>
-        </div>
-        <div class="image-box">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <div class="image-caption">Texto da Imagem 4</div>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; Curriculo Vitor Santos</p>
-    </footer>
-
-  <!-- JavaScript para lidar com o clique no ícone do menu hamburguer -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', function () {
-            nav.classList.toggle('active');
-        });
-    });
-</script>
-
+    <audio controls autoplay loop>
+        <source src="Bon Jovi - Livin_ On A Prayer (Official Music Video)(MP3_128K).mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+    <header>
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Sobremim.html">Sobre mim</a></li>
+            <li><a href="Programação.html">Programação capacidades</a></li>
+            <li><a href="Assistenteadministrativo.html">Assistente administrativo capacidades</a></li>
+            <li><a href="MarketingDigital.html">Marketing cursando...</a></li>
+        </ul>
+    </nav>
+    <section class="skills-section">
+        <h2>Habilidades de Marketing Digital de conteudos físico ou digital :</h2>
+        <ul>
+            <li>
+                <img src="MARKETING DIGITAL.jpg" alt="Marketing de Conteúdo">
+                Marketing de Conteúdo digital ou físico para sites e etc... Com noção total de marketing inbound e outbound.
+            </li>
+            <li>
+                <img src="seo.jpg" alt="SEO">
+                SEO - Search Engine Optimization - Em Pt Otimização para motores de busca
+            </li>
+            <li>
+                <img src="google analitycs.jpg" alt="Google Analytics">
+                Google Analytics - Analise de Tráfego de sites, Compreensão do publico alvo, Monitoramento de metas, Análise do comportamento do Usuário, Acompanhamento das campanhas de marketing, Desempenho de dispositivos e navegadores, Análise em tempo real.
+            </li>
+            <!-- Adicione outras habilidades -->
+        </ul>
+    </section>
 </body>
 </html>
