@@ -17,16 +17,16 @@
 
         /* Cabeçalho */
         header {
-    background-image: url('header10.gif'); /* Substitua 'seu-gif.gif' pelo caminho para a sua imagem GIF */
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    height: 1000px; /* Ajuste a altura de acordo com suas preferências */
-    max-width: 100%;
-   
-}
+            background-image: url('header10.gif');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            height: 1000px;
+            max-width: 100%;
+        }
+
 
         header h1 {
             margin: 0;
@@ -237,7 +237,9 @@ nav ul li a:hover::before {
                 background-size: 100% 100%;
                 background-position: column;
                 height: 200px;
-                margin-bottom: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
             }
 
             .menu-icon {
@@ -257,7 +259,7 @@ nav ul li a:hover::before {
 }
 nav{
     padding: 0px 0;
-
+ 
 }
              nav ul {
                  display: none; /* Oculta o menu normal em telas médias */
@@ -297,9 +299,15 @@ nav{
                 width: 100%;
                 max-width: 100%;
                 height: auto;
+                margin-top: 60px; /* Ajuste conforme necessário para o espaçamento desejado */
+            }
+            .video-section2 {
+                padding: 0px 0;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
                
             }
-
             .video {
                 max-width: 100%;
                 height: auto;
