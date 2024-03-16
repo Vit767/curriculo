@@ -143,6 +143,15 @@ nav ul li a:hover::before {
     width: 100%;
     max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
 }
+.chart3 {
+    display: inline-block;
+    position: relative;
+    width: 1245px;
+    height: 600px;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
 .chart img {
     width: 100%;
     height: 100%;
@@ -151,6 +160,12 @@ nav ul li a:hover::before {
 }
 
 .chart2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+.chart3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -187,6 +202,22 @@ nav ul li a:hover::before {
     max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
     object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
 }
+.chart3-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px; /* Adicione a quantidade de espaço superior desejada, por exemplo, 20px */
+    max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+    object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+}
 .chart-text {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
@@ -197,6 +228,15 @@ nav ul li a:hover::before {
     width: 100%;
 }
 .chart2-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.chart3-text {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     text-align: center;
@@ -254,6 +294,11 @@ transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
 transition: transform 0.3s ease; /* Adiciona uma transição suave */
 max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
 }
+.chart3-link:hover .image-zoom img {
+transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+transition: transform 0.3s ease; /* Adiciona uma transição suave */
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
 .chart-link .image-zoom img {
 width: 400px;
 height: 600px;
@@ -261,6 +306,12 @@ max-width: 100%; /* Adicione um máximo de largura para garantir responsividade 
 }
 
 .chart2-link .image-zoom img {
+width: 1245px;
+height: 600px;
+max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
+}
+
+.chart3-link .image-zoom img {
 width: 1245px;
 height: 600px;
 max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
@@ -275,6 +326,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    margin-top:60px ;
 }
 .image-zoom {
 position: relative;
@@ -408,6 +460,17 @@ nav ul.active {
              
             }
 
+            .chart3 {
+                width: 90%; /* Ajuste a largura das imagens desejada */
+                max-width: 90%; /* Garante que as imagens se ajustem à largura da tela */
+                height: 170px;
+                max-height: auto;
+                object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+                margin: 5px; /* Adicione margem para separar as imagens */
+                margin-left: 19px;
+             
+            }
+
             .chart-link .image-zoom img {
               
               max-width: 100%; /* Adicione um máximo de largura para garantir responsividade */
@@ -417,6 +480,14 @@ nav ul.active {
               }
               
             .chart2-link .image-zoom img {
+
+              max-height: 90%;  
+            
+              max-width: 90%; /* Adicione um máximo de largura para garantir responsividade */
+              object-fit: contain; /* A imagem se ajustará ao espaço, mantendo sua proporção */
+              }
+
+              .chart3-link .image-zoom img {
 
               max-height: 90%;  
             
@@ -448,6 +519,19 @@ nav ul.active {
                 font-size: 12px; /* Define o tamanho da letra em pixels */
 
             }
+
+            .chart3-text{
+
+background-color: rgba(0, 0, 0, 0.964);
+padding: 10px;
+text-align: bottom;
+position: absolute;
+bottom: -35px;
+left: 0;
+width: 100%;
+font-size: 12px; /* Define o tamanho da letra em pixels */
+
+}
 
             h3 {
                 font-size: 16px;
@@ -535,10 +619,10 @@ nav ul.active {
         </div>
     </div>
 
-    <div class="chart2">
+    <div class="chart3">
         <a href="farmaciahospitalar.html" class="chart2-link">
             <div class="image-zoom">
-                <img src="farmacia hospitalar 11.jpg" alt="Imagem de Destaque" width="1600" height="500">
+                <img src="farmacia hospitalar 11.jpg" alt="Imagem de Destaque2" width="1600" height="500">
             </div>
             <div class="chart2-text">Auxiliar de Farmácia Hospitalar</div>
         </a>
