@@ -166,9 +166,109 @@
             margin-top: 50px;
         }
 
-        /* Estilos para dispositivos móveis */
         @media screen and (max-width: 767px) {
-            /* Estilos de dispositivos móveis aqui */
+            body {
+                overflow-x: hidden;
+            }
+
+            header {
+                background-size: 100% 100%;
+                background-position: column;
+                height: 200px;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .skills-section img {
+            width:90%;
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+
+        }
+
+            .menu-icon {
+                position: absolute;
+                top: 10px;
+                left: 30px;
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 999;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #071616;
+                width: 100%;
+                z-index: 1;
+            }
+
+            footer {
+                width: 100%;
+                max-width: 100vw;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                text-align: left;
+                max-width: 90%;
+                height: auto;
+            }
+
+            .chart,
+            .chart2 {
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .chart2-link {
+                margin-top: 20px;
+            }
+
+            .chart-text,
+            .chart2-text {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: relative;
+               
+            }
+
+            .image-box {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                background-color: rgb(88, 84, 84);
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            .image-container {
+                position: relative;
+            }
         }
     </style>
 </head>
