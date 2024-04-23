@@ -50,6 +50,8 @@
             top: 0;
             left: 0;
             margin-bottom: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+            border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
         }
 
         nav ul {
@@ -97,59 +99,74 @@
         }
 
         .skills-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-    width: 90%;
-    max-width: 90%;
-    height: auto;
-    
-    margin-bottom: 80px;
-    background-color: #071616ca;
-    margin: 0 auto;
-}
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 0;
+            width: 90%;
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 80px;
+            background-color: #071616ca;
+            margin: 0 auto;
+            border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
+            
+        }
 
-.skills-section h2 {
-    border-bottom: 2px solid #f7f5f5;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    max-width: 90%;
-    text-align: center; /* Para centralizar o texto horizontalmente */
-    align-items: center; /* Para centralizar verticalmente os itens */
-    justify-content: center; /* Para centralizar horizontalmente os itens */
-}
+        .skills-section h2 {
+            border-bottom: 2px solid #f7f5f5;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            max-width: 90%;
+            text-align: center; /* Para centralizar o texto horizontalmente */
+            align-items: center; /* Para centralizar verticalmente os itens */
+            justify-content: center; /* Para centralizar horizontalmente os itens */
+        }
 
-.skills-section ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens sejam quebrados para a próxima linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-}
+        .skills-section .skill-container {
+            width: 90%; /* Largura do container de habilidades */
+            max-width: 600px; /* Largura máxima do container */
+            margin-bottom: 30px; /* Espaçamento entre os containers */
+            display: flex; /* Alinha os elementos em linha */
+            align-items: center; /* Alinha os elementos verticalmente */
+            border: 2px solid #04fad9;
+            background-color: white;
+            color:black ;
+            font-weight: bold; /* Texto em negrito */
+        }
 
+        .skills-section .text-container {
+            width: 50%; /* Largura do container de texto */
+            height: 300px; /* Altura do container de texto */
+            padding: 20px; /* Adiciona espaçamento interno */
+            box-sizing: border-box; /* Inclui padding na largura */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
 
-.skills-section li {
-    margin: 0 20px 20px; /* Adiciona margem entre os itens */
-    max-width: 300px; /* Defina a largura máxima para os itens */
-}
-.skills-section img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 200px; /* Ajuste a altura conforme necessário */
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
-}
+        .skills-section .image-container {
+            width: 50%; /* Largura da imagem container */
+            height: 300px; /* Altura do container de imagem */
+            padding: 20px; /* Adiciona espaçamento interno */
+            box-sizing: border-box; /* Inclui padding na largura */
+
+           
+        }
+
+        .skills-section img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* Mantém a proporção da imagem */
+        }
+
         audio {
-    position: absolute;
-    top: -9999px;
-}
+            position: absolute;
+            top: -9999px;
+        }
 
-footer {
+        footer {
             background-color: #071616;
             color: #fff;
             padding: 20px 0;
@@ -173,12 +190,19 @@ footer {
             }
 
             .skills-section img {
-            width: 90%;
-            max-width: 90%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
+                width: 90%;
+                max-width: 90%;
+                height: auto;
+                object-fit: cover;
+                margin-bottom: 10px;
+                font-size: small;
+            }
+
+            .skills-section{
+              font-size: 12px;
+            }
+
+            
 
 
             .menu-icon {
@@ -265,24 +289,34 @@ footer {
             <li><a href="MarketingDigital.html">Marketing Digital</a></li>
         </ul>
     </nav>
-    <section class="skills-section">
+    <div class="skills-section">
         <h2>Habilidades de Marketing Digital de conteudos físico ou digital :</h2>
-        <ul>
-            <li>
+        <div class="skill-container">
+            <div class="image-container">
                 <img src="MARKETING DIGITAL.jpg" alt="Marketing de Conteúdo">
+            </div>
+            <div class="text-container">
                 Marketing de Conteúdo digital ou físico para sites e etc... Com noção total de marketing inbound e outbound.
-            </li>
-            <li>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="image-container">
                 <img src="seo.jpg" alt="SEO">
+            </div>
+            <div class="text-container">
                 SEO - Search Engine Optimization - Em Pt Otimização para motores de busca
-            </li>
-            <li>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="image-container">
                 <img src="google analitycs.jpg" alt="Google Analytics">
+            </div>
+            <div class="text-container">
                 Google Analytics - Analise de Tráfego de sites, Compreensão do publico alvo, Monitoramento de metas, Análise do comportamento do Usuário, Acompanhamento das campanhas de marketing, Desempenho de dispositivos e navegadores, Análise em tempo real.
-            </li>
-            <!-- Adicione outras habilidades -->
-        </ul>
-    </section>
+            </div>
+        </div>
+        <!-- Adicione outras habilidades -->
+    </div>
 
     <footer>
         <p>&copy; Curriculo Vitor Santos</p>

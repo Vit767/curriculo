@@ -1,137 +1,266 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistente Administrativo</title>
+    <title>Assistente administrativo </title>
     <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        color:white;
+        align-items: center;
+    }
+
+    header {
+        background-image: url('header10.gif');
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        height: 1000px;
+        max-width: 100%;
+    }
+
+
+    header h1 {
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav {
+        background-color: #071616;
+        text-align: center;
+        padding: 40px 0;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+        border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        position: relative;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 20px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
+    }
+
+    nav ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #04fad9;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 80px;
+        background-color: #071616ca;
+        margin: 0 auto;
+        border-radius: 15px; /* Adiciona uma borda redonda */
+        overflow: hidden; /* Para garantir que a borda redonda seja aplicada corretamente */
+        border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
+    }
+
+    .skills-section h2 {
+        border-bottom: 2px solid #f7f5f5;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        max-width: 90%;
+        text-align: center; /* Para centralizar o texto horizontalmente */
+        align-items: center; /* Para centralizar verticalmente os itens */
+        justify-content: center; /* Para centralizar horizontalmente os itens */
+    }
+
+    .skills-section .skill-container {
+        width: 90%; /* Largura do container de habilidades */
+        max-width: 600px; /* Largura máxima do container */
+        margin-bottom: 30px; /* Espaçamento entre os containers */
+        display: flex; /* Alinha os elementos em linha */
+        align-items: center; /* Alinha os elementos verticalmente */
+        border: 2px solid #04fad9;
+        background-color: white;
+        color:black ;
+        font-weight: bold; /* Texto em negrito */
+    }
+
+    .skills-section .text-container {
+        width: 50%; /* Largura do container de texto */
+        height: 300px; /* Altura do container de texto */
+        padding: 20px; /* Adiciona espaçamento interno */
+        box-sizing: border-box; /* Inclui padding na largura */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .skills-section .image-container {
+        width: 50%; /* Largura da imagem container */
+        height: 300px; /* Altura do container de imagem */
+        padding: 20px; /* Adiciona espaçamento interno */
+        box-sizing: border-box; /* Inclui padding na largura */
+    }
+
+    .skills-section img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Mantém a proporção da imagem */
+    }
+
+    audio {
+        position: absolute;
+        top: -9999px;
+    }
+
+    footer {
+        background-color: #071616;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+    }
+
+   .textbox{
+
+    text-align: center;
+    margin: 0 auto; /* Margens automáticas para centralizar horizontalmente */
+    align-items: center;
+
+    background-color: white;
+    border: #04fad9;
+    color: #000000;
+    width: 80%;
+    font-weight: bold; /* Texto em negrito */
+   }
+
+    @media screen and (max-width: 767px) {
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
             overflow-x: hidden;
             align-items: center;
         }
 
-        /* Cabeçalho */
         header {
-            background-image: url('header10.gif');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            height: 1000px;
+            background-size: 100% 100%;
+            background-position: column;
+            height: 200px;
             max-width: 100%;
-        }
-
-        header h1 {
             margin: 0;
+            padding: 0;
         }
 
-        /* Toggle Menu  */
-        .menu-toggle {
-            display: none;
+        .skills-section img {
+            width: 90%;
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+            font-size: small;
         }
+
+        .skills-section{
+          font-size: 12px;
+        }
+
+        
+
 
         .menu-icon {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            display: block;
             font-size: 30px;
-            cursor: fixed;
-            display: none;
-        }
-
-        /* Menu de navegação */
-        nav {
-            background-color: #071616;
-            text-align: center;
-            padding: 40px 0;
-            width: 100%;
-            max-width: 100%;
-            top: 0;
-            left: 0;
+            cursor: pointer;
+            z-index: 999;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            display: none;
+        }
+
+        nav ul.active {
             display: flex;
-            justify-content: center;
-            max-width: 100%;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-            padding: 0;
-            max-width: 100%;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 10px 20px;
-            position: relative;
-            transition: color 0.3s;
-            display: inline-block;
-        }
-
-        nav ul li a::before {
-            content: "";
+            flex-direction: column;
             position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #04fad9;
-            bottom: 0;
+            top: 60px;
             left: 0;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.3s ease-in-out;
+            background-color: #071616;
+            width: 100%;
+            z-index: 1;
         }
 
-        nav ul li a:hover::before {
-            transform: scaleX(1);
+        footer {
+            width: 100%;
+            max-width: 100vw;
         }
 
-        /* Seção de Gráficos */
-        .chart-section {
-            text-align: center;
-            padding: 50px 0;
+        img {
+            display: block;
+            margin: 0 auto;
+            text-align: left;
+            max-width: 100%;
+            height: auto;
         }
 
         .chart,
         .chart2 {
-            display: inline-block;
+            display: block;
             position: relative;
-            margin: 0 10px;
-            max-width: 100%;
-        }
-
-        .chart img,
-        .chart2 img {
+            margin: 0 auto;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            max-width: 100%;
-        }
-
-        .chart-link,
-        .chart2-link {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: #fff;
             max-width: 100%;
         }
 
@@ -141,370 +270,77 @@
 
         .chart-text,
         .chart2-text {
-            background-color: #071616ca;
-            padding: 10px;
             text-align: center;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0c0041;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #15025c;
         }
 
         h3 {
-            color: #ffffff;
+            font-size: 16px;
         }
 
-        .bottom-image {
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            margin-top: 50px;
-        }
-
-        .image-text {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            text-align: center;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .chart-link:hover .image-zoom img {
-            transform: scale(1.1);
-            transition: transform 0.3s ease;
-        }
-
-        .chart2-link:hover .image-zoom img {
-            transform: scale(1.1);
-            transition: transform 0.3s ease;
-        }
-
-        .chart-link .image-zoom img,
         .chart2-link .image-zoom img {
             width: 100%;
             height: auto;
             max-width: 100%;
         }
-
-        .chart-link:hover .image-zoom::before {
-            opacity: 1;
-        }
-
-        footer {
-            background-color: #071616;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .image-zoom {
-            position: relative;
-            overflow: hidden;
-            border: 2px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .image-zoom::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .chart-link:hover .image-zoom::before {
-            opacity: 1;
-        }
-
-        .skills-section {
-            display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-    width: 90%;
-    max-width: 90%;
-    height: auto;
-   
-    margin: 0 auto; /* Centralizar horizontalmente */
-    margin-top: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
-    background-color: #071616ca;
-    color: aliceblue;
-}
-
-.skills-section h2 {
-    border-bottom: 2px solid #f7f5f5;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    max-width: 90%;
-    text-align: center; /* Para centralizar o texto horizontalmente */
-    align-items: center; /* Para centralizar verticalmente os itens */
-    justify-content: center; /* Para centralizar horizontalmente os itens */
-}
-        .skills-section ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens sejam quebrados para a próxima linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-
-.skills-section li {
-    margin: 0 20px 20px; /* Adiciona margem entre os itens */
-    max-width: 300px; /* Defina a largura máxima para os itens */
-}
-.skills-section img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 200px; /* Ajuste a altura conforme necessário */
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
-}
-        h2{
-            color: #f7f5f5;
-        }
-
-        audio {
-    position: absolute;
-    top: -9999px;
-}
-
-        @media screen and (max-width: 767px) {
-            body {
-                overflow-x: hidden;
-            }
-
-            header {
-                background-size: 100% 100%;
-                background-position: column;
-                height: 200px;
-                max-width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            .skills-section img {
-            width:90%;
-            max-width: 90%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px;
-
-        }
-
-            .menu-icon {
-                position: absolute;
-                top: 10px;
-                left: 30px;
-                display: block;
-                font-size: 30px;
-                cursor: pointer;
-                z-index: 999;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            nav ul.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #071616;
-                width: 100%;
-                z-index: 1;
-            }
-
-            footer {
-                width: 100%;
-                max-width: 100vw;
-            }
-
-            img {
-                display: block;
-                margin: 0 auto;
-                text-align: left;
-                max-width: 90%;
-                height: auto;
-            }
-
-            .chart,
-            .chart2 {
-                display: block;
-                position: relative;
-                margin: 0 auto;
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .chart2-link {
-                margin-top: 20px;
-            }
-
-            .chart-text,
-            .chart2-text {
-                text-align: center;
-            }
-
-            h3 {
-                font-size: 16px;
-            }
-
-            .image-container {
-                display: flex;
-                justify-content: relative;
-               
-            }
-
-            .image-box {
-                width: 100%;
-                max-width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                background-color: rgb(88, 84, 84);
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 20px;
-            }
-
-            .image-container {
-                position: relative;
-            }
-        }
-
-        .image-box {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-            text-align: center;
-           
-        }
-
-
-        .image-container {
-            position: relative;
-            max-width: 100%;
-        }
-
-        .stacked-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .stacked-image:nth-child(2) {
-            top: 50px;
-            z-index: 2;
-        }
-
-        .stacked-image:nth-child(3) {
-            top: 100px;
-            z-index: 3;
-        }
-
-        .stacked-image:nth-child(4) {
-            top: 150px;
-            z-index: 4;
-        }
-
-        .image-caption {
-            text-align: center;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        p {
-            text-align: center;
-            font-weight: bold;
-            color: #f9f5f5;
-        }
-
-        .textbox {
-            background-color:#071616ca;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px auto;
-            max-width: 80%;
-            color: black;
-            
-        }
-    </style>
+    }
+   </style>
 </head>
 
 <body>
-  
     <header>
         <input type="checkbox" class="menu-toggle" id="menu-toggle">
         <label class="menu-icon" for="menu-toggle">&#9776;</label>
     </header>
-    <script src="sexo.js"></script>
+
     <nav id="menu">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="Sobremim.html">Sobre mim</a></li>
-            <li><a href="Programação.html">Programação capacidades</a></li>
+            <li><a href="Programação.html"> Programação capacidades</a></li>
             <li><a href="Assistenteadministrativo.html">Assistente administrativo capacidades</a></li>
             <li><a href="farmaciahospitalar.html">Farmácia Hospitalar</a></li>
             <li><a href="MarketingDigital.html">Marketing Digital</a></li>
+            
         </ul>
     </nav>
 
     <section class="skills-section">
-        <h2>Habilidades de escritório que posso ser útil :</h2>
+        <h2>Habilidades como Assistente Administrativo:</h2>
         <ul>
-            <li>
-                <img src="Excel.jpg" alt="Marketing de Conteúdo">
-               Tenho Excel nivel intermediário.
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="Excel.jpg" alt="Gestão de Medicamentos">
+                </div>
+                <div class="text-container">
+                    <p>Tenho Excel nivel intermediário.</p>
+                </div>
             </li>
-            <li>
-                <img src="Matplotlib.PNG" alt="SEO">
-                Matplotlib Nível avançado . 
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="Matplotlib.PNG" alt="Farmacologia">
+                </div>
+                <div class="text-container">
+                    <p> Matplotlib Nível Avançado</p>
+                </div>
             </li>
-            <li>
-                <img src="Powerpoint.png" alt="Google Analytics">
-             Power point Nivel intermediário.
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="Powerpoint.png" alt="Farmácia Clínica">
+                </div>
+                <div class="text-container">
+                    <p>Power point Nivel intermediário.</p>
+                </div>
             </li>
-
-            <li>
-                <img src="Word.jpg" alt="Google Analytics">
-
-                Word Nivel intermediário.
-            
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="Word.jpg" alt="Farmácia Clínica">
+                </div>
+                <div class="text-container">
+                    <p>Word Nivel intermediário.</p>
+                </div>
             </li>
-            <!-- Adicione outras habilidades -->
         </ul>
     </section>
-
 
     <div class="textbox">
         <p>
@@ -534,25 +370,19 @@
         </p>
     </div>
   
-    </div>
-
     <footer>
-        <p>&copy; Curriculo Vitor Santos</p>
+        <p>&copy; Currículo Vitor Santos</p>
     </footer>
 
-    <!-- JavaScript para lidar com o clique no ícone do menu hamburguer -->
-  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
 
-  <!-- JavaScript para lidar com o clique no ícone do menu hamburguer -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', function () {
-            nav.classList.toggle('active');
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>

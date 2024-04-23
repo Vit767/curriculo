@@ -5,272 +5,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuxiliarFarmácia Hospitalar</title>
     <style>
-        /* Estilos aqui */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        color:white;
+        align-items: center;
+    }
+
+    header {
+        background-image: url('header10.gif');
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        height: 1000px;
+        max-width: 100%;
+    }
+
+
+    header h1 {
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav {
+        background-color: #071616;
+        text-align: center;
+        padding: 40px 0;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+        border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        position: relative;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 20px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
+    }
+
+    nav ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #04fad9;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 80px;
+        background-color: #071616ca;
+        margin: 0 auto;
+        border-radius: 15px; /* Adiciona uma borda redonda */
+        overflow: hidden; /* Para garantir que a borda redonda seja aplicada corretamente */
+        border: 2px solid #04fad9;
+        box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
+    }
+
+    .skills-section h2 {
+        border-bottom: 2px solid #f7f5f5;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        max-width: 90%;
+        text-align: center; /* Para centralizar o texto horizontalmente */
+        align-items: center; /* Para centralizar verticalmente os itens */
+        justify-content: center; /* Para centralizar horizontalmente os itens */
+       
+    }
+
+    .skills-section .skill-container {
+        width: 90%; /* Largura do container de habilidades */
+        max-width: 600px; /* Largura máxima do container */
+        margin-bottom: 30px; /* Espaçamento entre os containers */
+        display: flex; /* Alinha os elementos em linha */
+        align-items: center; /* Alinha os elementos verticalmente */
+        border: 2px solid #04fad9;
+        background-color: white;
+        color:black ;
+        font-weight: bold; /* Texto em negrito */
+    }
+
+    .skills-section .text-container {
+        width: 50%; /* Largura do container de texto */
+        height: 300px; /* Altura do container de texto */
+        padding: 20px; /* Adiciona espaçamento interno */
+        box-sizing: border-box; /* Inclui padding na largura */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .skills-section .image-container {
+        width: 50%; /* Largura da imagem container */
+        height: 300px; /* Altura do container de imagem */
+        padding: 20px; /* Adiciona espaçamento interno */
+        box-sizing: border-box; /* Inclui padding na largura */
+    }
+
+    .skills-section img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Mantém a proporção da imagem */
+    }
+
+    audio {
+        position: absolute;
+        top: -9999px;
+    }
+
+    footer {
+        background-color: #071616;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 30px; /* Ajuste conforme necessário para o espaçamento desejado */
+    }
+
+   .textbox{
+
+    text-align: center;
+    margin: 0 auto; /* Margens automáticas para centralizar horizontalmente */
+    align-items: center;
+
+    background-color: white;
+    border: #04fad9;
+    color: #000000; 
+    font-weight: bold; /* Texto em negrito */
+    width: 80%;
+
+
+   }
+
+    @media screen and (max-width: 767px) {
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
             overflow-x: hidden;
             align-items: center;
         }
 
-        /* Cabeçalho */
         header {
-            background-image: url('header10.gif');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            height: 1000px;
+            background-size: 100% 100%;
+            background-position: column;
+            height: 200px;
             max-width: 100%;
-        }
-
-        header h1 {
             margin: 0;
-        }
-
-        /* Toggle Menu  */
-        .menu-toggle {
-            display: none;
-        }
-
-        .menu-icon {
-            font-size: 30px;
-            cursor: fixed;
-            display: none;
-        }
-
-        /* Menu de navegação */
-        nav {
-            background-color: #071616;
-            text-align: center;
-            padding: 40px 0;
-            width: 100%;
-            max-width: 100%;
-            top: 0;
-            left: 0;
-        }
-
-        nav ul {
-            list-style-type: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            max-width: 100%;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-            padding: 0;
-            max-width: 100%;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 10px 20px;
-            position: relative;
-            transition: color 0.3s;
-            display: inline-block;
-        }
-
-        nav ul li a::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #04fad9;
-            bottom: 0;
-            left: 0;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        nav ul li a:hover::before {
-            transform: scaleX(1);
-        }
-
-        /* Seção de Habilidades */
-        .skills-section {
-            text-align: center;
-            padding: 50px 0;
-            color: #fff;
-        }
-
-        .skills-section h2 {
-            border-bottom: 2px solid #f7f5f5;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            max-width: 90%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto; 
-            margin-bottom: 30px; 
-        }
-
-        .skills-section ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skills-section li {
-            margin: 0 20px 20px; 
-            max-width: 300px; 
-            text-align: center;
         }
 
         .skills-section img {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            height: 200px; 
-            object-fit: cover; 
-            margin-bottom: 10px;
-            border-radius: 5px;
-             box-shadow: 0 0 10px rgba(252, 251, 251, 0.913);
-        }
-
-        p {
-            text-align: center;
-            font-weight: bold;
-            color: #f9f5f5;
-            margin-bottom: 20px;
-        }
-
-        .textbox {
-            background-color:rgb(23, 11, 1);
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px auto;
-            max-width: 80%;
-            color: black;
-            
-        }
-
-        footer {
-            background-color: #071616;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        @media screen and (max-width: 767px) {
-            body {
-                overflow-x: hidden;
-            }
-
-            header {
-                background-size: 100% 100%;
-                background-position: column;
-                height: 200px;
-                max-width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            .skills-section img {
-            width:90%;
+            width: 90%;
             max-width: 90%;
             height: auto;
             object-fit: cover;
             margin-bottom: 10px;
-
+            font-size: small;
         }
 
-            .menu-icon {
-                position: absolute;
-                top: 10px;
-                left: 30px;
-                display: block;
-                font-size: 30px;
-                cursor: pointer;
-                z-index: 999;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            nav ul.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #071616;
-                width: 100%;
-                z-index: 1;
-            }
-
-            footer {
-                width: 100%;
-                max-width: 100vw;
-            }
-
-            img {
-                display: block;
-                margin: 0 auto;
-                text-align: left;
-                max-width: 90%;
-                height: auto;
-            }
-
-            .chart,
-            .chart2 {
-                display: block;
-                position: relative;
-                margin: 0 auto;
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .chart2-link {
-                margin-top: 20px;
-            }
-
-            .chart-text,
-            .chart2-text {
-                text-align: center;
-            }
-
-            h3 {
-                font-size: 16px;
-            }
-
-            .image-container {
-                display: flex;
-                justify-content: relative;
-               
-            }
-
-            .image-box {
-                width: 100%;
-                max-width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                background-color: rgb(88, 84, 84);
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 20px;
-            }
-
-            .image-container {
-                position: relative;
-            }
+        .skills-section{
+          font-size: 12px;
         }
-    </style>
+
+        
+
+
+        .menu-icon {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        nav ul {
+            display: none;
+        }
+
+        nav ul.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #071616;
+            width: 100%;
+            z-index: 1;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            text-align: left;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .chart,
+        .chart2 {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .chart2-link {
+            margin-top: 20px;
+        }
+
+        .chart-text,
+        .chart2-text {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .chart2-link .image-zoom img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+   </style>
 </head>
 
 <body>
@@ -294,18 +310,34 @@
     <section class="skills-section">
         <h2>Habilidades em Farmácia Hospitalar:</h2>
         <ul>
-            <li>
-                <img src="famarcia 4.jpg" alt="Gestão de Medicamentos">
-               Excelente gestão de medicamentos e controle de estoque.
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="famarcia 4.jpg" alt="Gestão de Medicamentos">
+                </div>
+                <div class="text-container">
+                    <p>Excelente gestão de medicamentos e controle de estoque.</p>
+                </div>
             </li>
-            <li>
-                <img src="famarcia hospitalar1.jpg" alt="Farmacologia">
-                Conhecimento avançado em farmacologia e interações medicamentosas. 
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="famarcia hospitalar1.jpg" alt="Farmacologia">
+                </div>
+                <div class="text-container">
+                    <p>Conhecimento avançado em farmacologia e interações medicamentosas.</p>
+                </div>
             </li>
-            <li>
-                <img src="farmacia hospitalar5.jpg" alt="Farmácia Clínica">
-                Experiência em farmácia clínica e atendimento ao paciente.
+            <li class="skill-container">
+                <div class="image-container">
+                    <img src="farmacia hospitalar5.jpg" alt="Farmácia Clínica">
+                </div>
+                <div class="text-container">
+                    <p>Experiência em farmácia clínica e atendimento ao paciente.</p>
+                </div>
             </li>
+
+            
+
+
         </ul>
     </section>
 
