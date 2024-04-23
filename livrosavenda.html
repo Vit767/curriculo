@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="livrosavenda.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTA Cursos - Seja sempre o seu melhor! "</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7GB1NRK25"></script>
+    <link rel="shortcut icon" href="ico/VTA 12.ico" type="image/x-icon">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N7GB1NRK25');
+    </script>
+    
+  
+</head>
+
+<body>
+    <style>
+
+        
+        .sidebar img{
+    
+            max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            
+    
+    
+    
+        }
+        .main-content img {
+            max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 253, 253, 0.7);
+        
+        }
+        
+    
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+      
+        .main-content p {
+            margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
+        }
+        .main-content h2 {
+            margin-top: 20px; /* Espaço acima do título */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        
+        }
+        .footer a {
+            color: #f2f2f2; /* Cor dos links no rodapé */
+            text-decoration: none; /* Remover sublinhado */
+            margin: 0 10px; /* Espaçamento entre os links */
+        
+        }
+        .footer a:hover {
+            text-decoration: underline; /* Sublinhar ao passar o mouse */
+        }
+    
+        .sidebar a {
+    /* ... outros estilos ... */
+    transition: none; /* Remover todas as transições */
+    }
+    
+        .sidebar a:hover span {
+            color: black; /* Cor do texto quando passa o mouse */
+        }
+    
+    
+        .sidebar a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 251, 251);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        transition: background-color 0.3s, color 0.3s, width 0.3s, padding 0.3s; /* Adiciona uma transição suave para todas as propriedades */
+    }
+        
+        #cookie-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: hsl(0, 100%, 99%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            color: #000000;
+        }
+    
+        #cookie-message {
+            margin-bottom: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 1px 1px 3px rgb(255, 251, 251); /* Adiciona uma sombra ao texto */  
+        }
+       
+    
+        #cookie-buttons {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #cookie-button-accept, #cookie-button-decline {
+            background-color: #000000;
+            color: #11fbdc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    /* Reset de estilos padrão para garantir consistência em diferentes navegadores */
+    
+    .highlight {
+    background-color:#060336;
+    color: rgb(226, 209, 54);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    }
+    
+    /* Estilos para a div container */
+    .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));
+    box-shadow:
+    0px 0px 5px rgba(255, 255, 255, 0.7),
+    0px 0px 3px rgba(255, 255, 255, 0.7),
+    0px 0px 2px rgba(255, 255, 255, 0.7);
+    
+    
+    }
+    
+    /* Estilos para a coluna de menu */
+    .sidebar {
+    flex: 1;
+    background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));/* Substitua pela cor desejada */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 255, 255, 0.7);
+    }
+    
+    .sidebar h2 {
+    margin-bottom: 10px;
+    }
+    
+    .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    }
+    
+    .sidebar li {
+    margin-bottom: 10px;
+    
+    
+    }
+    
+    
+    .sidebar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block; /* Para que o background se ajuste ao tamanho do texto */
+    padding: 5px 10px; /* Espaçamento interno para o fundo do hover */
+    transition: background-color 0.0s; /* Adiciona uma transição suave da cor do fundo */
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */
+    
+    }
+    
+    
+    /* Estilos para a coluna de conteúdo principal */
+    .main-content {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #ffffff;
+    
+    
+    }
+    
+    h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    /*  text-shadow: 1px 1px 3px rgb(255, 255, 255); /* Adiciona uma sombra ao texto */
+    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    }
+    h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    /* text-shadow: 1px 1px 3px rgb(252, 252, 252);  Adiciona uma sombra ao texto */
+    font-weight: bold;
+    text-shadow: 
+    0px 0px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 3px rgba(0, 0, 0, 0.7),
+    0px 0px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+    p {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    font-size: 14px;
+    }
+    
+    #nextPageButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    #nextPageButton:hover {
+    background-color: #0056b3;
+    }
+    
+    
+    @media (max-width: 768px) {
+    .responsive-menu {
+        flex-direction: column; /* Coloca os itens do menu em uma coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+    
+    .responsive-menu li {
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+    }
+    
+    .container {
+        display: block; /* Altera o display para empilhar as colunas */
+    }
+    
+    .column {
+        width: 100%; /* Define a largura das colunas para 100% */
+    }
+    
+    .sidebar {
+        width: 80%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+    }
+    
+    .main-content {
+        width: 92%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        height:auto;
+    }
+    .main-content img {
+            max-width: 90%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 253, 253, 0.7);
+        
+        }
+
+    }
+    
+    </style>
+    <title>Curso Tkinter 2</title>
+    </head>
+    <body>
+    <div class="container">
+        <div class="column">
+            <div class="sidebar">
+            
+                <img src="VTA 12.png" alt="Imagem do Menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="páginacursogratuito.html">Cursos gratuitos</a></li>
+                    <li><a href="Códigos a venda.html">Códigos a venda</a></li>
+                    <li><a href="sitelivrosgratuitos.html">Livros PDF's gratuitos</a></li>
+                    <li><a href="livrosavenda.html">Livros PDF's pagos</a></li>
+    
+    
+    
+    
+    
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="main-content">
+                <h1> Livros a Venda </h1>
+                <p>Seja bem-vindo a nossa página de livros a venda aqui te venderemos livros úteis , para aprendizado pessoal, leitura ,dúvidas profissionais, dieta, condicionamento físico e etc... </p>
+               
+            
+                <img src="livros pagos.png" alt="Imagem do Conteúdo">
+                <div class="h2-container">
+    
+       <div class="divider"></div>
+        <div class="divider"></div>
+        <section id="home">
+            <h2>Obrigado por ter interesse em nossos livros pagos !</h2>
+        </section>
+        <div class="divider"></div>
+    </header>
+           
+   
+
+    <div class="product-container">
+        
+    
+        </div>
+       
+        <div class="product">
+            <img src="ONZE 2 . ORIGINAL CAPA.png" width="1000" height="500" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /> </a> <!-- FIM DO BOTAO PAGSEGURO -->
+            <h3>ONZE 2 : A Falsa liberdade</h3>
+             <ul>
+                <li><span style="
+                    background-color: rgb(255, 255, 255);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    text-shadow: 0 2px 4px rgb(250, 246, 4);
+                    display: inline-block;
+                "> Classificação "18+"</span></li>
+            <li>Esse livro contém sexo e violência explicita</li>
+            <li>Continuação do livro ONZE.</li>
+        </ul> 
+        <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+        </ul>
+            <p4>Preço: R$ 11.00</p4>
+            <a href="https://buy.stripe.com/5kAbJseL9f5Qc3CcMM"title="Pagar com cartão de crédito" class="custom-button"></a>
+               
+
+        </div>
+    </article>
+    
+    <div class="divider"></div>
+    
+</div>
+<div class="footer">
+<footer>
+    <p>&copy;  VTA Cursos. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Desativar menu de contexto
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Desativar clique direito
+        document.addEventListener('mousedown', function (e) {
+            if (e.button === 2) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+
+<audio id="audioGreeting" autoplay></audio>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        // Função para determinar o horário do dia
+        function getGreetingTime() {
+            const currentHour = new Date().getHours();
+            if (currentHour < 12) {
+                return "manha";
+            } else if (currentHour < 18) {
+                return "tarde";
+            } else {
+                return "noite";
+            }
+        }
+
+        // Função para reproduzir a saudação de áudio
+        function playAudioGreeting(timeOfDay) {
+            const audioElement = document.getElementById('audioGreeting');
+            // Define a origem do áudio com base no horário do dia
+            switch (timeOfDay) {
+                case "manha":
+                    audioElement.src = "livros pagos bom dia.mp3";
+                    break;
+                case "tarde":
+                    audioElement.src = "livros pagos boa tarde.mp3";
+                    break;
+                case "noite":
+                    audioElement.src = "livros pagos boa noite.mp3";
+                    break;
+                default:
+                    console.error('Horário do dia inválido:', timeOfDay);
+                    return;
+            }
+            // Reproduz o áudio automaticamente
+            audioElement.play();
+        }
+
+        // Reproduz a saudação de áudio de acordo com o horário do dia
+        const greetingTime = getGreetingTime();
+        playAudioGreeting(greetingTime);
+    });
+</script>
+
+
+</div>
+</div>
+</body>
+</div>
+
+</html>

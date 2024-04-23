@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/VTA 12.ico" type="image/x-icon">
+    <title>VTA Cursos - Seja sempre o seu melhor!</title>
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.horizontal-menu');
+
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<body>
+    <style>
+
+        
+        .sidebar img{
+    
+            max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            
+    
+    
+    
+        }
+        .main-content img {
+            max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 253, 253, 0.7);
+        
+        }
+        
+    
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+      
+        .main-content p {
+            margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
+        }
+        .main-content h2 {
+            margin-top: 20px; /* Espaço acima do título */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        
+        }
+        .footer a {
+            color: #f2f2f2; /* Cor dos links no rodapé */
+            text-decoration: none; /* Remover sublinhado */
+            margin: 0 10px; /* Espaçamento entre os links */
+        
+        }
+        .footer a:hover {
+            text-decoration: underline; /* Sublinhar ao passar o mouse */
+        }
+    
+        .sidebar a {
+    /* ... outros estilos ... */
+    transition: none; /* Remover todas as transições */
+    }
+    
+        .sidebar a:hover span {
+            color: black; /* Cor do texto quando passa o mouse */
+        }
+    
+    
+        .sidebar a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 251, 251);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        transition: background-color 0.3s, color 0.3s, width 0.3s, padding 0.3s; /* Adiciona uma transição suave para todas as propriedades */
+    }
+        
+        #cookie-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: hsl(0, 100%, 99%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            color: #000000;
+        }
+    
+        #cookie-message {
+            margin-bottom: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 1px 1px 3px rgb(255, 251, 251); /* Adiciona uma sombra ao texto */  
+        }
+       
+    
+        #cookie-buttons {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #cookie-button-accept, #cookie-button-decline {
+            background-color: #000000;
+            color: #11fbdc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    /* Reset de estilos padrão para garantir consistência em diferentes navegadores */
+    
+    .highlight {
+    background-color:#060336;
+    color: rgb(226, 209, 54);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    }
+    
+    /* Estilos para a div container */
+    .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));
+    box-shadow:
+    0px 0px 5px rgba(255, 255, 255, 0.7),
+    0px 0px 3px rgba(255, 255, 255, 0.7),
+    0px 0px 2px rgba(255, 255, 255, 0.7);
+    
+    
+    }
+    
+    /* Estilos para a coluna de menu */
+    .sidebar {
+    flex: 1;
+    background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));/* Substitua pela cor desejada */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 255, 255, 0.7);
+    }
+    
+    .sidebar h2 {
+    margin-bottom: 10px;
+    }
+    
+    .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    }
+    
+    .sidebar li {
+    margin-bottom: 10px;
+    
+    
+    }
+    
+    
+    .sidebar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block; /* Para que o background se ajuste ao tamanho do texto */
+    padding: 5px 10px; /* Espaçamento interno para o fundo do hover */
+    transition: background-color 0.0s; /* Adiciona uma transição suave da cor do fundo */
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */
+    
+    }
+    
+    
+    /* Estilos para a coluna de conteúdo principal */
+    .main-content {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #ffffff;
+    
+    
+    }
+    
+    h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    /*  text-shadow: 1px 1px 3px rgb(255, 255, 255); /* Adiciona uma sombra ao texto */
+    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    }
+    h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    /* text-shadow: 1px 1px 3px rgb(252, 252, 252);  Adiciona uma sombra ao texto */
+    font-weight: bold;
+    text-shadow: 
+    0px 0px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 3px rgba(0, 0, 0, 0.7),
+    0px 0px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+    p {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */
+    font-size: 14px;
+    }
+    
+    #nextPageButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    #nextPageButton:hover {
+    background-color: #0056b3;
+    }
+    
+    
+    @media (max-width: 768px) {
+    .responsive-menu {
+        flex-direction: column; /* Coloca os itens do menu em uma coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+    
+    .responsive-menu li {
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+    }
+    .main-content {
+        width: 92%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        height:auto;
+    }
+    .main-content img {
+            max-width: 90%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            box-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.7),
+            0px 0px 3px rgba(255, 255, 255, 0.7),
+            0px 0px 2px rgba(255, 253, 253, 0.7);
+        
+        }
+    .container {
+        display: block; /* Altera o display para empilhar as colunas */
+    }
+    
+    .column {
+        width: 100%; /* Define a largura das colunas para 100% */
+    }
+    
+    .sidebar {
+        width: 80%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+    }
+    }
+    
+    </style>
+    <title>Curso Tkinter 2</title>
+    </head>
+    <body>
+    <div class="container">
+        <div class="column">
+            <div class="sidebar">
+            
+                <img src="VTA 12.png" alt="Imagem do Menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="páginacursogratuito.html">Cursos gratuitos</a></li>
+                    <li><a href="Códigos a venda.html">Códigos a venda</a></li>
+                    <li><a href="sitelivrosgratuitos.html">Livros PDF's gratuitos</a></li>
+                    <li><a href="livrosavenda.html">Livros PDF's pagos</a></li>
+    
+    
+    
+    
+    
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="main-content">
+                <h1> CÓDIGOS A VENDA  </h1>
+                <p>Seja bem-vindo a nossa página de códigos detalhados a venda em PDF e video . </p>
+               
+            
+                <img src="cursos pagos.png" alt="Imagem do Conteúdo">
+                <div class="h2-container">
+    
+                    <div class="divider"></div>
+            <div class="divider"></div>
+            <section id="home">
+                <h2>Compre aqui códigos detalhados por dentro , em PDF's e video , para que você aprenda programação de maneira mais simples !</h2>
+                <!-- Aqui você pode adicionar uma galeria de cursos em destaque -->
+              
+
+            </section>
+        <div class="divider"></div>
+        </nav>
+    </header>
+
+    
+
+    <div class="center-container"></div>
+        <article class="curso">
+            <h3 id="curso1">CÓDIGO: Matplotlib avançado</h3>
+            <img src="matplotlib3.gif" alt="GIF Esticado" width="1000" height="500">
+            
+            <ul>
+            <li>Vídeo e PDF ensinando a como fazer um programa avançado com matplotlib. </li>
+            <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+           
+            <p4 class="preco">Preço: R$ 50.00</p4>
+                <a href="https://buy.stripe.com/4gw00K9qPg9U4Ba8wz"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+          
+        </article>
+
+
+
+
+
+        <div class="divider"></div>
+        
+        <!-- Repita o bloco acima para outros cursos -->
+        
+        <article class="curso">
+            <h3 id="curso2">CÓDIGO: Planilha de despesas no Python</h3>
+            <img src="planilhas.gif" alt="GIF Esticado" width="1000" height="500">
+        
+            <ul>
+            <li>Vídeo e PDF ensinando como fazer uma planilha de despesas mensais.</li>
+            <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 50.00</p4>
+            <a href="https://buy.stripe.com/bIYeVEbyXg9U5Fe9AE"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+
+        
+        </article>
+        <div class="divider"></div>
+        
+
+
+
+        <!-- Repita o bloco acima para outros cursos -->
+        
+        <article class="curso">
+            <h3 id="curso5">CÓDIGO: Aprenda a fazer um aplicativo de texto no python</h3>
+            <img src="aplicativo de texto.gif" alt="GIF Esticado" width="1000" height="500">
+         
+            <ul>
+                <li>Vídeo e PDF ensinando como criar um programa personalizado semelhante ao wordpad </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 35.00</p4>
+                <a href="https://buy.stripe.com/8wMaFo46v2j4d7G149"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+        </article>
+        <div class="divider"></div>
+
+
+
+
+        <article class="curso">
+            <h3 id="curso3">CÓDIGO: Como criar um Relógio digital com Python</h3>
+            <img src="Como criar um relógio no Python.gif" alt="GIF Esticado" width="1000" height="500">
+           
+            <ul>
+                <li>Vídeo e PDF, ensinando a como fazer um relógio digital com python</li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+               
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 10.00</p4>
+                <a href="https://buy.stripe.com/9AQfZIfPde1M3x64gm"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+               
+        </article>
+        <div class="divider"></div>
+
+
+        <article class="curso">
+            <h3 id="curso4">CÓDIGO: MYSQL simples </h3>
+            <img src="Agenda e formulário python.gif" alt="GIF Esticado" width="1000" height="500">
+      
+            <ul>
+                <li>Vídeo e PDF ensinando a como fazer uma agenda e um formulário, com banco de dados e um audio lembrete</li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 50.00</p4>
+                <a href="https://buy.stripe.com/8wM5l4cD16zkgjSfZ0" title="Pagar com cartão de crédito"class="custom-button">Ler ou Ouvir</a>
+             
+        </article>
+        <div class="divider"></div>
+
+
+
+        <article class="curso">
+            <h3 id="curso5">CÓDIGO: Aprenda como fazer um cronômetro reverso </h3>
+            <img src="cronometro reverso.gif" alt="GIF Esticado" width="1000" height="500">
+      
+            <ul>
+                <li>Vídeo e PDF ensinando a como fazer um crônometro reverso . </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 10.00</p4>
+                <a href="https://buy.stripe.com/aEU4h0fPdbTEffO5ks"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+               
+        </article>
+        <div class="divider"></div>
+
+
+        <article class="curso">
+            <h3 id="curso6">CÓDIGO: como fazer um cronômetro reverso com botão</h3>
+            <img src="Como fazer um cronometro reverso com botão.gif" alt="GIF Esticado" width="1000" height="500">
+          
+            <ul>
+                <li>Vídeo e PDF como fazer um crônometro reverso com um botão  </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 60.00</p4>
+                <a href="https://buy.stripe.com/28obJs32r5vgd7G14d"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir</a>
+               
+        </article>
+        <div class="divider"></div>
+
+
+
+        <article class="curso">
+            <h3 id="curso6">CÒDIGO: Aprenda como fazer uma agenda telefônica</h3>
+            <img src="Agenda telefônica Python.gif" alt="GIF Esticado" width="1000" height="500">
+           
+            <ul>
+                <li>Vídeo e PDF ensinando a como criar uma agenda telefônica com banco de dados. </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 15.00</p4>
+                <a href="https://buy.stripe.com/cN26p8eL9e1MgjS9AK"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir   </a>
+               
+        </article>
+        <div class="divider"></div>
+        
+        <article class="curso">
+            <h3 id="curso7">CÒDIGO: Aprenda a criar Aplicativos para PC com Python</h3>
+            <img src="Como criar um executavel.gif" alt="GIF Esticado" width="1000" height="500">
+           
+            <ul>
+                <li>Vídeo e PDF ensinando a  criar aplicativos para PC, Sem precisar do VSCODE pra compilar. </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 15.00</p4>
+                <a href="https://buy.stripe.com/fZe3cW8mL9LwffO5kv"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir   </a>
+               
+        </article>
+        <div class="divider"></div>
+
+
+ <article class="curso">
+            <h3 id="curso8">CÒDIGO: Aprenda a criar um aplicativo de pesquisa wikipédia</h3>
+            <img src="wikipédia.gif" alt="GIF Esticado" width="1000" height="500">
+           
+            <ul>
+                <li>Vídeo e PDF ensinando a  criar um aplicativo wikipédia,pesquisa por audio e texto. </li>
+                <li>Observação , você precisa saber como instalar o Python e o VSCODE no seu computador . no youtube existem diversos videos ensinando, no nosso curso gratuito Tkinter, também ensinamos como instalar-los na sua máquina.</li>
+                
+                <!-- Adicione mais tópicos -->
+            </ul>
+            <p3>Detalhe: Após a compra você será redirecionado a página de Download do conteúdo.</p3>
+            <p4>Preço: R$ 15.00</p4>
+                <a href="https://buy.stripe.com/bIY8xgfPd8HsebK5kw"title="Pagar com cartão de crédito" class="custom-button">Ler ou Ouvir   </a>
+               
+        </article>
+        <div class="divider"></div>
+        <!-- Repita o bloco acima para outros cursos -->
+    </section>
+    <div class="pagination">
+        <div class="page-indicators">
+            <a href="Códigos a venda.html">Pág 1</a>
+            
+            <!-- Adicione mais links conforme necessário -->
+        </div>
+    </div>
+</article>
+</section>
+<div class="divider"></div>
+
+<!-- Repita o bloco acima para outros cursos -->
+<div class="footer">
+    <footer>
+        <p>&copy;  VTA Cursos. Todos os direitos reservados.</p>
+    </footer>
+    
+   <!-- JavaScript não copiar as imagens do site-->
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Desativar menu de contexto
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Desativar clique direito
+        document.addEventListener('mousedown', function (e) {
+            if (e.button === 2) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+  
+<audio id="audioGreeting" autoplay></audio>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        // Função para determinar o horário do dia
+        function getGreetingTime() {
+            const currentHour = new Date().getHours();
+            if (currentHour < 12) {
+                return "manha";
+            } else if (currentHour < 18) {
+                return "tarde";
+            } else {
+                return "noite";
+            }
+        }
+
+        // Função para reproduzir a saudação de áudio
+        function playAudioGreeting(timeOfDay) {
+            const audioElement = document.getElementById('audioGreeting');
+            // Define a origem do áudio com base no horário do dia
+            switch (timeOfDay) {
+                case "manha":
+                    audioElement.src = "Codigos a venda bom dia.mp3";
+                    break;
+                case "tarde":
+                    audioElement.src = "Codigos pagos boa tarde.mp3";
+                    break;
+                case "noite":
+                    audioElement.src = "Codigos pagos boa noite.mp3";
+                    break;
+                default:
+                    console.error('Horário do dia inválido:', timeOfDay);
+                    return;
+            }
+            // Reproduz o áudio automaticamente
+            audioElement.play();
+        }
+
+        // Reproduz a saudação de áudio de acordo com o horário do dia
+        const greetingTime = getGreetingTime();
+        playAudioGreeting(greetingTime);
+    });
+</script>
+
+
+</body>
+</html>
