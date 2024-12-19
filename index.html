@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo Responsivo</title>
+  <title>Currículo - Vitor santos</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -236,10 +236,20 @@ h3 {
     border-radius: 10px;
     background-color: #f4f4f4;
 }
+.mini-container2 {
+    text-align: center;
+    width: 100%; /* Largura fixa para as imagens */
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
 .mini-container2 img {
     text-align: center;
-    width:600px; /* Largura fixa para as imagens */
-    height:600px;
+    width: 60%; /* Largura fixa para as imagens */
+    height:auto;
     margin: 15px auto;
     padding: 10px;
     border: 2px solid #ccc;
@@ -269,7 +279,61 @@ body {
     margin-top: 10px;
     color: #333;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ajustado para alinhar os itens à esquerda */
+}
 
+label {
+    margin-bottom: 5px; /* Adiciona um espaço entre os rótulos e os campos */
+    color: #fff; /* Cor do texto branco */
+}
+
+input,
+textarea {
+    width: 90%; /* Ocupa 100% da largura disponível */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Adiciona um espaço entre os campos */
+    border: 1px solid #ddd; /* Borda com cor mais clara para contraste */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+button {
+    background-color: #000300; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 10px; /* Adiciona um espaço entre os botões */
+}
+
+button:hover {
+    background-color: #3d483e; /* Cor de fundo verde mais escura no hover */
+}
+
+.email-button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove a sublinhado padrão de links */
+    display: inline-block; /* Permite adicionar o margin */
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.email-button:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura no hover */
+}
+
+#whatsapp-button img {
+    width: 145px; /* Largura desejada */
+    height: 40px; /* Altura desejada */
+}
 
 /* Layout Responsivo para Imagens Lado a Lado */
 
@@ -344,10 +408,12 @@ body {
           <li><a href="#sobre-mim">Sobre mim</a></li>
           <li><a href="#programacao">Programação</a></li>
           <li><a href="#assistente-administrativo">Assistente Administrativo</a></li>
+        
           <li><a href="#marketing-digital">Marketing Digital</a></li>
           <li><a href="#Analista de dados">Analista de dados</a></li>
           <li><a href="#Experiência">Experiências</a></li>
           <li><a href="#Capacidades">Capacidades</a></li>
+          <li><a href="#Contato">Entre em contato comigo!</a></li>
 
         </ul>
       </nav>
@@ -356,32 +422,20 @@ body {
 
   <!-- Conteúdo Principal -->
   <!-- Conteúdo Principal -->
-<main>
+  <main>
     <section id="sobre-mim" class="content-section2">
-        <h3>Sobre Mim</h3>
-        <div class="mini-container">
-            <img src="Vitão.jpg" alt="Sobre mim">
-            <p>Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número : +5521977080240</p>
-        </div>
-    </section>
+      <h3>Sobre Mim</h3>
+      <div class="mini-container2">
+          <img src="Vitão.jpg" alt="Sobre mim">
+          <p>Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços.</p>
+          <P>me mande um e-mail por contatos. Número : +5521977080240</P> 
+      </div>
+  </section>
+
+  </main>
+<main>
     
-    <h3>Programação</h3>
-    <section id="programacao" class="content-section3">
-        <div class="video-container2">
-            <video>
-                <source src="videohtmlcss.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-            <p>HTML-CSS, JAVASCRIPT E FLASK</p>
-        </div>
-        <div class="video-container2">
-            <video>
-                <source src="pythonapps.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-            <p>PYTHON</p>
-        </div>
-    </section>
+    
     
     <h3>Assistente Administrativo</h3>
     <section id="assistente-administrativo" class="content-section">
@@ -404,6 +458,21 @@ body {
         <div class="mini-container">
             <img src="Word.jpg" alt="Word">
             <p>Word Nível Intermediário</p>
+        </div>
+    </section>
+    <h3>Programação</h3>
+    <section id="marketing-digital" class="content-section">
+        <div class="mini-container">
+            <img src="python.jpg" alt="Marketing Digital">
+            <p>Sou capaz de desenvolver aplicações web e de escritórios úteis usando Python.</p>
+        </div>
+        <div class="mini-container">
+            <img src="JAVASCRIPT.jpg" alt="SEO">
+            <p>Sou capaz de desenvolver scripts úteis para website voltados para frond-end e node para usar como servidor local.</p>
+        </div>
+        <div class="mini-container">
+            <img src="HTML-CSS.jpg" alt="Google Analytics">
+            <p>Sou capaz de desenvolver sites úteis para web, sites estáticos e de exibição.</p>
         </div>
     </section>
   
@@ -533,6 +602,36 @@ body {
 
         </div>
     </section>
+    <section id="Contato">
+      <h2>Contato</h2>
+      <p>Entre em contato para agendar uma consulta.</p>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+          <!-- Adicione os campos do formulário conforme necessário -->
+          <label for="nome">Nome:</label>
+          <input type="text" name="name" placeholder="Digite seu nome">
+
+          <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="Digite seu email" />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="message" placeholder="Digite seu mensagem"></textarea>
+
+          <button type="submit">Enviar mensagem</button>
+
+          <input type="hidden" name="accessKey" value="a7efdbdd-0a4f-451e-85c0-3b2f8c439615">
+
+          <input type="hidden" name="redirectTo" value="https://obrigado-byvitorsantos.netlify.app/">
+      </form>
+<div></div>
+      <p>Ou marque consulta através do WhatsApp.</p>
+      <section id="whatsapp-button">
+          <a href="https://wa.me/5521977080240?text=Olá Vitão, gostaria de me consultar !" target="_blank">
+              <img src="whatssap.png" alt="WhatsApp Icon">
+          
+          </a>
+      </section>
+
+
   </main>
 </body>
 </html>
