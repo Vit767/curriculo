@@ -3,6 +3,18 @@ p {
     font-size: 20px;
 }
 
+ul {
+    margin-bottom: 195px;
+    margin-left:30px;
+}
+
+.curso ul {
+    margin-bottom: 195px;
+    margin-left:30px;
+}
+
+
+
 .highlight {
     background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));
     color: rgb(255, 254, 254);
@@ -12,8 +24,114 @@ p {
 }
 
 /* Abaixo o botão de mudar a cor */
+.product h3{
+    color: #1d1717b0;
+   /* text-shadow: 2px 2px 3px #09ebff;*/
+    display: flex;
+    flex-direction: row; /* Altera a direção do flex para linha */
+    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
+    position: absolute;
+    margin-left:537px;
+    margin-bottom:400px;
+  
 
-/*.custom-button {
+}
+p3{
+    color: #1d1717b0;
+    display: flex;
+    flex-direction:column;/* Altera a direção do flex para linha */
+    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
+    position: absolute;
+    margin-left:550px;
+    margin-bottom:0px;
+  
+
+}
+
+p4{
+    color: #1d1717b0;
+    display: flex;
+    flex-direction:column;/* Altera a direção do flex para linha */
+    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
+    position: absolute;
+    margin-left:700px;
+    margin-top:100px;
+    font-size: 20px;
+    text-shadow:7px 7px 7px rgba(66, 62, 62, 0.745);
+  
+
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+  }
+  body {
+    font-family: 'BebasNeue', sans-serif; /* Utilize o nome definido em @font-face */
+  }
+
+
+@keyframes animateButton {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.dark-mode .container p {
+    color: #ffffffb0;
+}
+.dark-mode .sidebar {
+    box-shadow:
+0px 0px 5px rgba(253, 253, 253, 0.7),
+0px 0px 3px rgba(253, 253, 253, 0.7),
+0px 0px 2px rgba(253, 253, 253, 0.7);
+}
+.dark-mode .container h2 {
+    color: #ffffffb0;
+}
+
+.dark-mode .container h1 {
+    color: #ffffffb0;
+}
+
+.dark-mode .product h3 {
+    color: #ffffffb0;
+}
+
+.dark-mode .product p{
+    color: #ffffffb0;
+}
+.dark-mode li{
+    color: #ffffffb0;
+}
+
+.dark-mode p3{
+    color: #ffffffb0;
+}
+
+.dark-mode p4{
+    color: #ffffffb0;
+    text-shadow:7px 7px 7px rgb(66, 62, 62);
+}
+/* Abaixo mudar a cor da página */
+
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Define margem automática à esquerda e à direita para centralizar horizontalmente */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.custom-button {
     display: inline-block; /* Para que o padding funcione */
     padding: 10px 60px; /* Espaçamento interno */
     background-color: #000000;
@@ -26,7 +144,7 @@ p {
     font-size: 16px; /* Tamanho da fonte */
     transition: background-color 0.3s; /* Transição suave na cor de fundo */
     position: absolute;
-    margin-left: 717px;
+    margin-left: 670px;
     margin-bottom: -202px;
     text-shadow: 1px 1px 3px rgba(255, 253, 253, 0.527); /* Adiciona uma sombra ao texto */
 
@@ -59,26 +177,26 @@ p {
     /* Defina o posicionamento e a repetição da imagem conforme necessário */
 
    
-} */
-.custom-button:hover {
-    background-color: #13fafa;
-        color: rgb(255, 255, 255);
-        background-color: #1317fa;
-        
-        transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
-        box-shadow: 0px 0px 15px rgba(19, 23, 250, 0.7); /* Adiciona uma sombra */
-}
+} 
+.dark-mode .custom-button {
+   
+    background-color: #000000;
+  
+    
+    border-radius: 4px; /* Bordas arredondadas */
+ 
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+   
+    text-shadow: 1px 1px 3px rgba(255, 253, 253, 0.527); /* Adiciona uma sombra ao texto */
 
-
-.custom-button {
+    /* .custom-button {
     background-color: #000000;
     color: rgb(4, 222, 250);
     display: block;
-    width: 190px;
-    height: 30px;
+    padding: 20px 90px;
     border: none;
     border-radius: 8px;
-   
+    border: 1px solid #ffffff;
     cursor: pointer;
     text-indent: -9999px;
     align-items: center;
@@ -90,47 +208,34 @@ p {
     margin: 0 auto;
     transition: background 0.3s ease, transform 0.2s ease;
     position: absolute;
-    margin-left: 717px;
+    margin-left: 670px;
     margin-bottom: -202px;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  
 
+    
     /* Adicione a imagem como plano de fundo */
-    background-image: url('visaoumastercard.jpg');
+
     /* Defina o posicionamento e a repetição da imagem conforme necessário */
-    background-position: center;
+
    
 }
-
-
-@keyframes animateButton {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
+    /* Defina o posicionamento e a repetição da imagem conforme necessário */
+  .custom-button:hover {
+    background-color: #13fafa;
+        color: rgb(255, 255, 255);
+        background-color: #1317fa;
+        
+        transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+        box-shadow: 0px 0px 15px rgba(19, 23, 250, 0.7); /* Adiciona uma sombra */
 }
-
-
-
-
-/* Abaixo mudar a cor da página */
-
-
-body {
-
-    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
-    overflow-x: hidden; 
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto; /* Define margem automática à esquerda e à direita para centralizar horizontalmente */
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.dark-mode .custom-button:hover {
+    background-color: #13fafa;
+        color: rgb(255, 255, 255);
+       background: linear-gradient(135deg, #6a0dad, #000000);
+        
+        transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0px 0px 15px rgba(255, 20, 147, 0.7); /* Adiciona uma sombra */
 }
-
-
-
 /* Mudar cor da letra para branca */
 
 
@@ -175,6 +280,8 @@ header h2 {
     text-align: center; /* Centralizar o texto horizontalmente */
 }
 
+
+
 header p {
     font-size: 18px;
 }
@@ -199,67 +306,12 @@ header p {
 .curso img {
     display: block; /* Garante que a margem automática funcione corretamente */
     margin: 0 auto; /* Define margens automáticas na horizontal */
-    max-width: 90%; /* Ocupará 100% da largura */
-    background-color: #000000;
-    height: auto;
-    border-radius: 4px;
-    
-    border: 3px outset #000000; /* Adicionando uma borda sólida azul */
-    margin-left: 0px;
-    width: 600px;
-    height: 600px;
-   
+    max-width: 100%; /* Ocupará 100% da largura */
 }
 .curso .gif {
-    max-height: 80%;
-    max-width: 90%; /* Ocupará 100% da largura */
-    border: #edeeee;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb
-
-}
-
-.curso  {
-    display: flex;
-    flex-direction: row; /* Altera a direção do flex para linha */
-    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
-    align-items: center; /* Centraliza verticalmente */
-    direction: column;
-    text-align: left; /* Alinha o texto à esquerda */
-    max-width: 90%; /* Ocupará 100% da largura */
-    border-radius: 2px;
-    border: 1px outset #ffffff; /* Adicionando uma borda sólida azul */
     
-    margin: 20px auto;
-    padding: 20px;
-    background:linear-gradient(to right, rgba(21, 156, 174, 0.493), rgb(255, 255, 255));
-
-  
-    position: relative; /* Posicionamento relativo */
+    max-width: 100%; /* Ocupará 100% da largura */
 }
-.curso1{
-    display: flex;
-    flex-direction: column; /* Altera a direção do flex para linha */
-    justify-content: center; /* Coloca o texto à esquerda e o botão à direita */
-    align-items: center; /* Centraliza verticalmente */
-    direction: column;
-    text-align: center; /* Alinha o texto à esquerda */
-    max-width: 90%; /* Ocupará 100% da largura */
-    border-radius: 2px; /* Adicionando uma vírgula para separar propriedades */
-    border-bottom: 1px outset #ffffffb0;
-    border-left: 1px outset #000000b0;
-    border-right: 1px outset #ffffffb0;
-    margin: 0px auto;
-    padding: 20px;
-   
-    color: #1d1717b0; 
-    position: relative; /* Posicionamento relativo */
-}
-.curso ul{
-    font-size: 15px;
-    margin-left: 0px;
-}
-    
 
 /* mensagem */
 
@@ -267,35 +319,9 @@ header p {
     display: none;
 }
 
-p3{
-    color: #1d1717b0;
-    display: flex;
-    flex-direction:column;/* Altera a direção do flex para linha */
-    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
-    position: absolute;
-    margin-left:637px;
-    margin-bottom:0px;
-    
-}
 
-p4{
-    color: #1d1717b0;
-    display: flex;
-    flex-direction:column;/* Altera a direção do flex para linha */
-    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
-    position: absolute;
-    margin-left:744px;
-    margin-top:100px;
-    font-size: 20px;
-    /*text-shadow: 
-    0px 0px 5px rgba(0, 0, 0, 0.7),
-    0px 0px 3px rgba(0, 0, 0, 0.7),
-    0px 0px 2px rgba(0, 0, 0, 0.7);*/
-    text-shadow:7px 7px 7px rgba(66, 62, 62, 0.745);
-  
-  
 
-}
+
 
 
 .pergunta {
@@ -313,7 +339,6 @@ p4{
 /* Estilos para o menu horizontal */
 /* Estilos para o menu horizontal */
 
-
 /* Estilos para o dropdown */
 .dropdown {
     position: relative;
@@ -327,6 +352,7 @@ p4{
     min-width: 160px;
     z-index: 1;
 }
+
 .dropdown-content a {
     color: white;
     padding: 12px 16px;
@@ -334,14 +360,6 @@ p4{
     display: block;
     text-align: left;
 }
-@font-face {
-    font-family: 'BebasNeue';
-    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
-  }
-  body {
-    font-family: 'BebasNeue', sans-serif; /* Utilize o nome definido em @font-face */
-  }
-
 
 .dropdown-content a:hover {
     background-color: #444; /* Cor de fundo ao passar o mouse */
@@ -353,7 +371,9 @@ p4{
 
 /* Mudar a cor do texto para elementos com a classe "red-text" */
 /* Cor para o texto em parágrafos (<p>) */
-
+p {
+    color: rgb(251, 250, 250); /* Vermelho */
+}
 
 /* Cor para o texto em cabeçalhos de nível 1 (<h1>) */
 h1 {
@@ -361,27 +381,11 @@ h1 {
 }
 
 /* Cor para o texto em cabeçalhos de nível 2 (<h2>) */
-h2 {
-    color: #1d1717b0; /* Definir a cor do texto quando o mouse estiver sobre ele */
-    /*text-shadow: #000000;*/
-    text-align: center;
-}
+
 
 /* Cor para o texto em cabeçalhos de nível 3 (<h3>) */
-.curso h3{
-    color: #1d1717b0;
-   /* text-shadow: 
-    0px 0px 5px rgba(0, 0, 0, 0.7),
-    0px 0px 3px rgba(0, 0, 0, 0.7),
-    0px 0px 2px rgba(0, 0, 0, 0.7);*/
-    display: flex;
-    flex-direction: row; /* Altera a direção do flex para linha */
-    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
-    position: absolute;
-    margin-left:617px;
-    margin-bottom:420px;
-  
-
+h3 {
+    color: rgb(255, 255, 252); /* Amarelo */
 }
 
 /* Cor para o texto em links (<a>) */
@@ -389,9 +393,8 @@ a {
     color: rgb(255, 0, 255); /* Magenta */
 }
 li {
-    color: #1d1717b0; /* Laranja */
-    /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.718); */ 
-    padding-bottom: 5px; /* Adiciona espaço interno abaixo do conteúdo de cada <li> */
+    color: #1d1717b0;
+   /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.718); /* Adiciona uma sombra ao texto */
 }
 
 
@@ -443,7 +446,10 @@ li {
     margin: 10 15px; /* Espaçamento entre os links */
     transition: color 0.3s, background-color 0.3s; /* Adicionar transições suaves */
 }
-
+.dark-mode .page-indicators a{
+    background-color:linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: #ffffffb0;
+}
 .page-indicators a:hover {
     background-color: rgb(27, 240, 255); /* Cor de fundo ao passar o mouse (hover) */
     color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse (hover) */
@@ -489,42 +495,144 @@ li {
     width: 100%;
   }
 
-
-ul {
-    margin-bottom: 195px;
-    margin-left:37px;
+.responsive-image {
+    max-width: 100%;
+    height: auto;
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
-    gap: 20px; /* Espaçamento entre as colunas */
-    max-width: 800px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner na tela */
+
+.product img {
+    display: block; /* Garante que a margem automática funcione corretamente */
+    margin: 0 auto; /* Define margens automáticas na horizontal */
+    max-width: 90%; /* Ocupará 100% da largura */
+    background-color: #000000;
+    height: auto;
+    border-radius: 4px;
+    background-color: #022dea;
+    width: 500px;
+    height: 500px;
+    box-shadow:
+    0px 0px 10px rgb(0, 0, 0),
+    
+    0px 0px 10px rgb(0, 0, 0);
+   margin-left:0px;
+}
+.product{
+    display: flex;
+    flex-direction: row; /* Altera a direção do flex para linha */
+    justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
+    align-items: center; /* Centraliza verticalmente */
+    direction: column;
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 90%; /* Ocupará 100% da largura */
+    border-radius: 2px; /* Adicionando uma vírgula para separar propriedades */
+    border: 1px outset #ffffff; /* Adicionando uma borda sólida azul */
+   
+    margin: 20px auto;
+    padding: 20px;
+   
+    background: linear-gradient(to right, rgba(21, 156, 174, 0.493), rgb(255, 255, 255));
+    position: relative; /* Posicionamento relativo */
+}
+.dark-mode .product{
+  
+    border-radius: 2px; /* Adicionando uma vírgula para separar propriedades */
+    border: 1px outset #ffffff; /* Adicionando uma borda sólida azul */
+ 
+    background:black;
+  
+}
+.product1{
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex para linha */
+    justify-content: center; /* Coloca o texto à esquerda e o botão à direita */
+    align-items: center; /* Centraliza verticalmente */
+    direction: column;
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 90%; /* Ocupará 100% da largura */
+    border-radius: 2px; /* Adicionando uma vírgula para separar propriedades */
+    border-bottom: 1px outset #ffffffb0;
+    border-left: 1px outset #000000b0;
+    border-right: 1px outset #ffffffb0;
+    margin: 0px auto;
+    padding: 20px;
+   
+   
+    position: relative; /* Posicionamento relativo */
+}
+
+
+
+
+iframe {
+    max-width: 100%; /* Define a largura máxima para 100% */
+    height: auto; /* Ajusta automaticamente a altura proporcionalmente à largura */
+    display: block; /* Remove espaçamento extra abaixo dos vídeos */
+    margin: 0 auto; /* Centraliza o vídeo na tela horizontalmente */
+}
+.product h3{
+    color: #1d1717b0;
+    /*text-shadow: 3px 3px 3px rgb(0, 0, 0);*/
+   
+  
+
+}
+h4{
+
+    color: #f7f7f7;
+    text-shadow: 1px 1px #09ebff;
+
+
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-toggle {
+    display: none; /* Esconder o ícone de menu em telas maiores */
+}
+
+.menu-icon {
+    font-size: 30px; /* Tamanho do ícone */
+    cursor: pointer;
+    display: none; /* Inicialmente, oculta o ícone em telas maiores */
+}
+
+
+
+
+.title-background {
+    background-color: #333; /* Cor de fundo desejada */
+    padding: 10px; /* Espaçamento interno para o título */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    display: inline-block; /* Torna o contêiner inline-block */
+}
+
+.title-background h3 {
+    margin: 0; /* Remove margem padrão do h3 */
 }
 .footer {
     text-align: center;
     padding: 20px;
     background-color: #000000;
     color: white;
-}
 
+}
 .footer a {
     color: #f2f2f2; /* Cor dos links no rodapé */
     text-decoration: none; /* Remover sublinhado */
     margin: 0 10px; /* Espaçamento entre os links */
-    text-align: center; /* Adiciona centralização ao texto do link */
-}
 
-.footer a:hover {
-    text-decoration: underline; /* Sublinhar ao passar o mouse */
 }
 .footer p {
     color: #f2f2f2; /* Cor dos links no rodapé */
    
 
 }
-p {
-    text-align: center;
+.footer a:hover {
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
 }
 .language-selector {
    
@@ -540,7 +648,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    border: 1px outset #ffffff;
+    border:1px outset #ffffff; /* Adicionando uma borda sólida azul */ ;
  }
  
  .language-selector label {
@@ -552,23 +660,7 @@ p {
     background-color: black;
     color:rgb(255, 255, 255) ;
  }
- .dark-mode .donatebutton {
-
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 50px;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
-
-}
-.dark-mode .donatebutton:hover{
+ .dark-mode .donatebutton:hover{
     background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%) ;
 }
 #darkModeToggle {
@@ -613,7 +705,6 @@ body.dark-mode #darkModeToggle {
 body.dark-mode .container {
     display: flex;
     max-width: 1200px;
-    
     margin: 0 auto;
     padding: 20px;
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
@@ -635,6 +726,7 @@ body.dark-mode .container {
     background: #000000;
     color: white;
     border: 1px solid #ffffff;
+    
 }
 
 .dark-mode .footer a {
@@ -688,38 +780,7 @@ body.dark-mode .container {
             box-sizing: border-box; /* Evita que o padding aumente a largura total */
             padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
         }
-
-.donatebutton:hover{
-    background: #000000;
-    color:#ffffff;
-}
-
-.theme-toggle {
-    display: flex;
-
-}
-
-#toggle-theme {
-    background-color: #00070e;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-#toggle-theme:hover {
-    background-color: #0056b3;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-#toggle-theme:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
-}
+/* media android */
 .ad-container {
     display: flex;
     flex-wrap: wrap;
@@ -744,7 +805,6 @@ body.dark-mode .container {
     height: auto;
     max-width: 100%;
   }
-
   body, html {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
@@ -753,107 +813,6 @@ body.dark-mode .container {
     margin: 0;
     padding: 0;
 
-}
-/* media android */
-
-
-iframe {
-    max-width: 100%; /* Define a largura máxima para 100% */
-    height: auto; /* Ajusta automaticamente a altura proporcionalmente à largura */
-    display: block; /* Remove espaçamento extra abaixo dos vídeos */
-    margin: 0 auto; /* Centraliza o vídeo na tela horizontalmente */
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Garante que a margem automática funcione corretamente */
-    margin: 0 auto; /* Define margem automática à esquerda e à direita para centralizar horizontalmente */
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-.menu-toggle {
-    display: none; /* Esconder o ícone de menu em telas maiores */
-}
-
-.menu-icon {
-    font-size: 30px; /* Tamanho do ícone */
-    cursor: pointer;
-    display: none; /* Inicialmente, oculta o ícone em telas maiores */
-}
-
-
-
-
-
-
-
-
-#paypal-button-container {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-272px;
-}
-
-#paypal-button-container2 {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-272px;
-}
-
-#paypal-button-container3 {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-470px;
-}
-
-#paypal-button-container4 {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-272px;
-}
-
-#paypal-button-container5 {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-272px;
-}
-
-#paypal-button-container6 {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
-    position: absolute;
-    margin-left:837px;
-    margin-bottom:-272px;
-}
-
-
-
-
-#paypal-button2-container {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0 auto; /* Centraliza o contêiner na tela horizontalmente */
-    align-items: center;
 }
 .sidebar img{
     
@@ -865,15 +824,20 @@ video {
 
 }
 .main-content img {
-    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+    width:500px;
     height: auto; /* Ajusta a altura proporcionalmente */
     box-shadow:
     0px 0px 5px rgba(255, 255, 255, 0.7),
     0px 0px 3px rgba(255, 255, 255, 0.7),
     0px 0px 2px rgba(255, 253, 253, 0.7);
 
-}
+  
 
+}
+p {
+text-align: center;
+
+}
 
 .column {
     display: inline-block;
@@ -883,7 +847,8 @@ video {
 
 .main-content p {
     margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
-    /*text-shadow: 3px 3px 3px rgb(0, 0, 0);*/  
+    font-size: 15px;
+   /* text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
 }
 .main-content h2 {
     margin-top: 20px; /* Espaço acima do título */
@@ -908,6 +873,7 @@ video {
 .sidebar a {
 /* ... outros estilos ... */
 transition: none; /* Remover todas as transições */
+
 }
 
 .sidebar a:hover span {
@@ -963,7 +929,7 @@ transition: background-color 0.3s, color 0.3s, width 0.3s, padding 0.3s; /* Adic
 .highlight {
 background-color:#060336;
 color: rgb(226, 209, 54);
-/*text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
 }
 
 /* Estilos para a div container */
@@ -973,19 +939,20 @@ flex-direction: column;
 max-width: 1200px;
 margin: 0 auto;
 padding: 20px;
+/*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174) 50%, rgb(255, 255, 255) 100%);
+box-shadow:
+0px 0px 5px rgba(48, 42, 42, 0.7),
+0px 0px 3px rgba(41, 35, 35, 0.7),
+0px 0px 2px rgba(41, 35, 35, 0.7);
 
-   /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
-   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174) 50%, rgb(255, 255, 255) 100%);
-   box-shadow:
-        0px 0px 5px rgba(48, 42, 42, 0.7),
-        0px 0px 3px rgba(41, 35, 35, 0.7),
-        0px 0px 2px rgba(41, 35, 35, 0.7)
+
+
 
 }
 
 /* Estilos para a coluna de menu */
 .sidebar {
-
 flex: 1px;
 /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
 background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
@@ -996,7 +963,6 @@ box-shadow:
 0px 0px 3px rgba(41, 35, 35, 0.7),
 0px 0px 2px rgba(41, 35, 35, 0.7);
 }
-
 
 .sidebar h2 {
 margin-bottom: 10px;
@@ -1054,9 +1020,10 @@ font-weight: bold;
 }
 
 p {
-color: #1d1717ef;
+color: #1d1717;
+
 margin-bottom: 10px;
-/*text-shadow: 1px 1px 3px rgb(0, 0, 0); */
+/* text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
 font-size: 14px;
 }
 
@@ -1073,16 +1040,17 @@ transition: background-color 0.3s;
 #nextPageButton:hover {
 background-color: #0056b3;
 }
-
 .horizontal-menu {
 display: flex;
 flex-direction: column;
 align-items: center; /* Centraliza horizontalmente os itens */
+
 }
 
 .horizontal-menu ul {
 list-style: none;
 padding: 0;
+
 }
 
 .horizontal-menu ul li {
@@ -1094,274 +1062,13 @@ margin-right: 10px;
 margin-right: 0; /* Remove a margem direita do último item */
 }
 
-.dark-mode .container p {
-    color: #ffffffb0;
-}
-.dark-mode .container h2 {
-    color: #ffffffb0;
-}
-
-.dark-mode .container h1 {
-    color: #ffffffb0;
-}
-
-.dark-mode .h3 {
-    color: #ffffffb0;
-}
-
-.dark-mode .sidebar {
-    box-shadow:
-0px 0px 5px rgba(253, 253, 253, 0.7),
-0px 0px 3px rgba(253, 253, 253, 0.7),
-0px 0px 2px rgba(253, 253, 253, 0.7);
-}
-.dark-mode .curso h3 {
-    color: #ffffffb0;
-}
-
-.dark-mode .curso p{
-    color: #ffffffb0;
-}
-.dark-mode li{
-    color: #ffffffb0;
-}
-
-.dark-mode p3{
-    color: #ffffffb0;
-}
-
-.dark-mode p4{
-    color: #ffffffb0;
-    text-shadow:7px 7px 7px rgb(66, 62, 62);
-}
-/* Abaixo mudar a cor da página */
-
-@media (max-width: 768px) {
-   
-    body{
-        overflow-x: hidden; 
-        flex-direction: column;
-       
-    }
-    .ad-banner {
-        width: 100%;
-        height: auto;
-        font-size: 14px; /* Ajuste o tamanho do texto, se necessário */
-      }
-      .ad-banner img,
-.ad-banner video {
-  width: 90%;
-  height: auto;
-  max-width: 90%;
-}
-    .language-selector {
-        top: 5px;
-        right: 5px;
-        padding: 5px;
-        font-size: 0.8em;
-    }
-
-    .language-selector label, .language-selector select {
-        font-size: 0.9em;
-    }
-
-    .container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-   
-    .curso {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-        height:600px;
-        margin-bottom: 0px;
-      
-    }
-
-    .curso-content {
-        text-align: center;
-        margin-top: 20px; /* Ajuste a margem superior para melhor responsividade */
-    }
-
-
- 
-    .curso img {
-            max-width: 80%;
-          
-  
-            height: auto;
-            margin-top: 75px; /* Adicione uma margem superior para empurrar a imagem para baixo */
-            margin-bottom: 0px; /* Ajuste conforme necessário */
-    }
-
-  
-    h2 {
-  text-align: center;
-        margin-left: 0;
-        margin-bottom: 10px;
-        font-size:14px ;
-}
-.main-content p {
-       
-       
-    font-size:11px ;
-}
-    .curso h3 {
-  
-            margin-left: 0;
-            margin-top: 0px;
-            font-size:10px ;
-            
-    }
-    h1 {
-      
-        font-size:20px ;
-      }
-  
-      h2 {
-       
-         font-size:15px ;
-      }
-
-    .custom-button {
-        text-align: center;
-        margin-left: 0;
-        margin-top:580px; /* Adicione um espaço entre o texto e o botão */
-    }
-
-    
-     .curso ul {
-      margin-right: 30px;
-        margin-left: 0;
-        margin-bottom: 150px;
-        font-size: 12px;
-        text-align: left;
-       
-    }
-    
-       .curso li {
-            margin-top: 5px; /* Ajuste conforme necessário */
-            text-align: center;
-            padding-bottom: 0px; /* Adiciona espaço interno abaixo do conteúdo de cada <li> */
-     
-        }
-        .toggle-menu {
-            display: inline-block; /* Mostra o botão de toggle como um bloco em linha */
-            cursor: pointer;
-            padding: 10px;
-            text-align: center;
-            position: relative; /* Permite posicionar elementos filhos relativamente a este */
-        }
-        
-        .menu-content {
-            display: flex; /* Utiliza flexbox para posicionamento dos itens internos */
-            align-items: center; /* Alinha itens verticalmente ao centro */
-        }
-        .toggle-menu {
-            display: inline-block; /* Mostra o botão de toggle como um bloco em linha */
-            cursor: pointer;
-            padding: 10px;
-            text-align: center;
-            position: relative; /* Permite posicionar elementos filhos relativamente a este */
-        }
-        
-        .menu-content {
-            display: flex; /* Utiliza flexbox para posicionamento dos itens internos */
-            align-items: center; /* Alinha itens verticalmente ao centro */
-        }
-        
-        .menu-text {
-            color: white; /* Cor do texto */
-            margin-left: 10px; /* Espaçamento entre o ícone e o texto */
-        }
-        
-        .hamburger-icon {
-            display: inline-block; /* Exibe o ícone do hamburger */
-        }
-        
-        .hamburger-icon div {
-            width: 35px;
-            height: 5px;
-            background-color: white; /* Cor das barras */
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        .menu-text {
-            color: white; /* Cor do texto */
-            margin-left: 10px; /* Espaçamento entre o ícone e o texto */
-        }
-        
-        .hamburger-icon {
-            display: inline-block; /* Exibe o ícone do hamburger */
-        }
-        
-        .hamburger-icon div {
-            width: 35px;
-            height: 5px;
-            background-color: white; /* Cor das barras */
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        .main-content p {
-       
-       
-            font-size:11px ;
-        }
-    .curso p3{
-        text-align: center;
-        margin-left:0;
-        margin-top: 500px; /* Adicione um espaço entre o texto e o botão */
-        font-size: 12px;
-    
-    }
-    
-    .curso p4{
-        text-align: center;
-        margin-left:0;
-        margin-top: 550px; /* Adicione um espaço entre o texto e o botão */
-        font-size:16px ;
-    
-    }
-
-    .highlight {
-        background-color:  #079b9b;
-        
-        font-size: 9px; /* Tamanho padrão */
-        
-    }
-
-    .horizontal menu li {
-        display: block; /* Altera para exibição de bloco em telas médias */
-        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
-    }
-
-}
-
-    /* Ajuste outros estilos conforme necessário */
-    
-    
-
-    @media (max-width: 480px) {
-        .curso img {
-            max-width: 80%; /* ou outro valor apropriado */
-            margin-top: 30px; /* Ajuste conforme necessário */
-            margin-bottom: 5px; /* Ajuste conforme necessário */
-        }
-    }
-
-    @media screen and (max-width: 720px) {
-        .curso img {
-            max-width: 80%;
-         
-        }
-    }
-
-
 @media (max-width: 768px) {
 .horizontal-menu ul {
 padding: 10px;
 }
-
+.main-content p {
+font-size:11px;
+}
 .horizontal-menu ul li {
 display: flex;
 }
@@ -1405,21 +1112,25 @@ display: block; /* Altera o display para empilhar as colunas */
 .column {
 width: 100%; /* Define a largura das colunas para 100% */
 }
-.curso img {
-   margin:0px;
-   
+.product-content {
+text-align: center;
+margin-left: none;
+margin-bottom: 20px; /* Adicione uma margem inferior para espaçamento */
+
 }
-.curso .gif {
-    margin:0px;
+.product img {
     
- }
- 
+    margin: 0px;
+    }
+    
+
 .main-content {
 width: 100%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
 height: auto;
 overflow-x: hidden;
 box-sizing: border-box; /* Inclui padding e bordas na largura total */
 }
+
 .main-content img {
 max-width: 90%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
 height: auto; /* Ajusta a altura proporcionalmente */
@@ -1468,6 +1179,7 @@ display: block; /* Mostra o menu quando a classe 'show' é adicionada */
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
 .main-content img {
 max-width: 40%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
 height:auto; /* Ajusta a altura proporcionalmente */
@@ -1477,200 +1189,417 @@ box-shadow:
 0px 0px 2px rgba(255, 253, 253, 0.7);
 
 }
-.sidebar{
-width: 95%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+
 }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    body{
+
+@media (max-width: 768px) {
+    /* Estilos específicos para telas de médio porte aqui */
+    .main-content {
+      
         overflow-x: hidden; 
+    }
+    .container {
+        display: block; /* Altera o display para empilhar as colunas */
         flex-direction: column;
-    
-        align-items: center; /* Centraliza os itens na coluna */
     }
-    h2 {
-        text-align: center;
-              margin-left: 0;
-              margin-bottom: 10px;
-              font-size:14px ;
-      }
-      .main-content p {
-             
-             
-          font-size:11px ;
-      }
-          .curso h3 {
-        
-                  margin-left: 0;
-                  margin-bottom: 300px;
-                  font-size:10px ;
-                  
-          }
-          h1 {
-            
-              font-size:20px ;
-            }
-        
-            h2 {
-             
-               font-size:15px ;
-            }
-      
-          .custom-button {
-              text-align: center;
-              margin-left: 0;
-              margin-top:660px; /* Adicione um espaço entre o texto e o botão */
-          }
-      
-          
-           .curso ul {
-            margin-right: 30px;
-              margin-left: 0;
-            margin-top: 20px;
-              font-size: 12px;
-              text-align: left;
-             
-          }
-    .curso p3{
-        text-align: center;
-        margin-left:0;
-        margin-top: 600px; /* Adicione um espaço entre o texto e o botão */
-        font-size: 12px;
-    
-    }
-    
-    .curso p4{
-        text-align: center;
-        margin-left:0;
-        margin-top: 630px; /* Adicione um espaço entre o texto e o botão */
-        font-size:16px ;
-    
-    }
-    .horizontal-menu ul {
-        padding: 10px;
-    }
-    .horizontal-menu img {
-        width:400px;
-        height:auto;
-        margin-bottom: 20px;
-    }
+      .page-indicators a {
+       
  
-    .horizontal-menu ul li {
-        display: flex;
-    }
+        font-size:9px;
 
-    .horizontal-menu a:hover span {
-        color: black; /* Cor do texto quando passa o mouse */
     }
-
-    .horizontal-menu a:hover {
-        background-color: rgb(0, 0, 0); /* Fundo preto quando passa o mouse */
-        color: rgb(255, 251, 251); /* Cor dos links quando passa o mouse */
-        width: 100%; /* Fundo preto se estende até a largura máxima do link */
-        box-sizing: border-box; /* Evita que o padding aumente a largura total */
-        padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
+    .product img {
+      align-items: center;
+      justify-items: center;
+        
     }
-    .container2 {
-       width:100%; /* Altera o display para empilhar as colunas */
-    }
-
-    .responsive-menu {
-        flex-direction: column; /* Coloca os itens do menu em uma coluna */
-        align-items: center; /* Centraliza os itens na coluna */
-    }
-
     
+    body{
+
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .product {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        height: 660px; /* Alterado para altura automática */
+        margin-bottom: 50px;
+        max-width: 90%;
+
+       
+    }
+    .ad-banner img,
+.ad-banner video {
+  width: 90%;
+  height: auto;
+  max-width: 90%;
+}
     .language-selector {
         top: 5px;
         right: 5px;
         padding: 5px;
         font-size: 0.8em;
-        width: 100%;
     }
-   
+
     .language-selector label, .language-selector select {
         font-size: 0.9em;
     }
-
- 
-
-    .responsive-menu li {
-        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
-    }
-
-    .container {
-        width:700px;
-    }
-
-    .column {
-        width: 600px; /* Define a largura das colunas para 100% */
-    }
-
-    .main-content {
-        width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
-        max-width: 100%;
+    .product img {
+        max-width: 80%;
+        width:300px;
+        margin-bottom: 10px;
         height: auto;
-        overflow-x: hidden;
-        box-sizing: border-box; /* Inclui padding e bordas na largura total */
-    }
-
-    .main-content img {
-        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
-        height: auto; /* Ajusta a altura proporcionalmente */
-        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7), 0px 0px 3px rgba(255, 255, 255, 0.7), 0px 0px 2px rgba(255, 253, 253, 0.7);
-        width: 300px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
-    }
-
-    .sidebar {
-        width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
-    }
-    .curso img {
-        margin:0px;
+        margin-top: 75px; /* Adicione uma margem superior para empurrar a imagem para baixo */
         
-     }
-.curso1{
-   
-    /* Tamanho fixo */
-    width: 880px; /* Defina a largura fixa */
-   
-    position: relative; /* Posicionamento relativo */
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-       /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
-       background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
-    box-shadow:
-    0px 0px 5px rgba(255, 255, 255, 0.7),
-    0px 0px 3px rgba(255, 255, 255, 0.7),
-    0px 0px 2px rgba(255, 255, 255, 0.7);
-    
-    
     }
-    .column {
-        display: inline-block;
-        vertical-align: top;
-        width: 100%;
-    }
-    .curso {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-        width:600px;
-        height:700px;
-        margin-bottom: 0px;
+    .product gif{
+        max-width: 80%;
       
+        margin-bottom: 10px;
+        height: auto;
+        margin-top: 75px; /* Adicione uma margem superior para empurrar a imagem para baixo */
     }
 
-    .curso img{
+    .product-content {
+        text-align: center;
+        margin-top: 170px; /* Adicione uma margem inferior para espaçamento */
+        
+    }
+ 
+    .custom-button {
+        text-align: center;
+        margin-left: 0;
+        margin-top:600px; /* Adicione um espaço entre o texto e o botão */
+    }
+    
+    h1 {
+      
+        font-size:20px ;
+      }
+  
+      h2 {
+       
+         font-size:15px ;
+      }
+      body{
+        overflow-x: hidden; 
+        flex-direction: column;
+       
+    }
+    .ad-banner {
+        width: 100%;
+        height: auto;
+        font-size: 14px; /* Ajuste o tamanho do texto, se necessário */
+      }
+   
+    
+    .product h3 {
+            text-align: center;
+            margin: 0px;
+            margin-top: 25px;
+            font-size:10px ;
+    }
+    .product ul {
+        
+          margin-right:50px;
+          margin-bottom: 190px;
+          font-size: 12px;
+          text-align:center;
+         
+      }
 
+      .product p3{
+        text-align: center;
+        margin-left:0;
+        margin-top: 500px; /* Adicione um espaço entre o texto e o botão */
+        font-size:12px ;
+        
+    
+    }
+        li {
+            margin-top: 3px; /* Ajuste conforme necessário */
+            text-align: center;
+    
+        }
+
+        .highlight {
+            background-color:  #079b9b;
+            
+            font-size: 9px; /* Tamanho padrão */
+            
+        }
+    #botaoPagSeguro {
+        text-align: center;
+        margin-left: 0;
+        margin-top:540px; /* Adicione um espaço entre o texto e o botão */
+    }
+
+    #botaoPagSeguro2 {
+        text-align: center;
+        margin-left: 0;
+        margin-top:540px; /* Adicione um espaço entre o texto e o botão */
+    }
+
+    #botaoPagSeguro3 {
+        text-align: center;
+        margin-left: 0;
+        margin-top:540px; /* Adicione um espaço entre o texto e o botão */
+    }
+
+    #botaoPagSeguro4 {
+        text-align: center;
+        margin-left: 0;
+        margin-top:540px; /* Adicione um espaço entre o texto e o botão */
+    }
+
+    #botaoPagSeguro5 {
+        text-align: center;
+        margin-left: 0;
+        margin-top:540px; /* Adicione um espaço entre o texto e o botão */
+    }
+
+    p2{ 
+        text-align: center;
+        margin-left:0;
+        margin-top: 480px; /* Adicione um espaço entre o texto e o botão */
+      
+      }
+     
+
+    p3{
+        text-align: center;
+        margin-left:0;
+        margin-top:500px; /* Adicione um espaço entre o texto e o botão */
+        font-size: 12px;
+      
+    
+    }
+    
+    p4{
+        text-align: center;
+        margin-left:0;
+        margin-top: 560px; /* Adicione um espaço entre o texto e o botão */
+      
+    
+    }
+}
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        body{
+            overflow-x: hidden; 
+            flex-direction: column;
+        
+            align-items: center; /* Centraliza os itens na coluna */
+        }
+       
+        h2 {
+            text-align: center;
+                  margin-left: 0;
+                  margin-bottom: 10px;
+                  font-size:14px ;
+          }
+          .main-content p {
+                 
+                 
+              font-size:11px ;
+          }
+              .product h3 {
+            
+                      margin-left: 0;
+                      margin-bottom: 300px;
+                      font-size:10px ;
+                      
+              }
+              h1 {
+                
+                  font-size:20px ;
+                }
+            
+                h2 {
+                 
+                   font-size:15px ;
+                }
+          
+              .custom-button {
+                  text-align: center;
+                  margin-left: 0;
+                  margin-top:660px; /* Adicione um espaço entre o texto e o botão */
+              }
+          
+              .product img {
+    
+                margin: 0px;
+                }
+                
+               .product ul {
+                margin-right: 30px;
+                  margin-left: 0;
+                margin-top:- 20px;
+                  font-size: 12px;
+                  text-align: left;
+                 
+              }
+            .product p3{
+            text-align: center;
+            margin-left:0;
+            margin-top: 580px; /* Adicione um espaço entre o texto e o botão */
+            font-size: 12px;
+        
+        }
+        
+        .product p4{
+            text-align: center;
+            margin-left:0;
+            margin-top: 620px; /* Adicione um espaço entre o texto e o botão */
+            font-size:16px ;
+        
+        }
+        .horizontal-menu ul {
+            padding: 10px;
+        }
+        .horizontal-menu img {
+            width:400px;
+            height:auto;
+            margin-bottom: 20px;
+        }
+     
+        .horizontal-menu ul li {
+            display: flex;
+        }
+    
+        .horizontal-menu a:hover span {
+            color: black; /* Cor do texto quando passa o mouse */
+        }
+    
+        .horizontal-menu a:hover {
+            background-color: rgb(0, 0, 0); /* Fundo preto quando passa o mouse */
+            color: rgb(255, 251, 251); /* Cor dos links quando passa o mouse */
+            width: 100%; /* Fundo preto se estende até a largura máxima do link */
+            box-sizing: border-box; /* Evita que o padding aumente a largura total */
+            padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
+        }
+        .container2 {
+           width:100%; /* Altera o display para empilhar as colunas */
+        }
+    
+        .responsive-menu {
+            flex-direction: column; /* Coloca os itens do menu em uma coluna */
+            align-items: center; /* Centraliza os itens na coluna */
+        }
+    
+        
+        .language-selector {
+            top: 5px;
+            right: 5px;
+            padding: 5px;
+            font-size: 0.8em;
+            width: 100%;
+        }
+       
+        .language-selector label, .language-selector select {
+            font-size: 0.9em;
+        }
+    
+     
+    
+        .responsive-menu li {
+            margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+        }
+    
+       
+        .column {
+            width: 600px; /* Define a largura das colunas para 100% */
+        }
+    
+        .main-content {
+            width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+            max-width: 100%;
+            height: auto;
+            overflow-x: hidden;
+            box-sizing: border-box; /* Inclui padding e bordas na largura total */
+        }
+    
+        .main-content img {
+            max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+            height: auto; /* Ajusta a altura proporcionalmente */
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7), 0px 0px 3px rgba(255, 255, 255, 0.7), 0px 0px 2px rgba(255, 253, 253, 0.7);
+            width: 300px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        }
+    
+        .custom-button {
+            text-align: center;
+            margin-left: 0;
+            margin-top:650px;
+            font-size:14px ;
+            max-width: 80%;
+            box-shadow:none;
+    
+    
+          
+        }
+        .sidebar {
+            width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        }
+    .product1{
+       
         /* Tamanho fixo */
-        width: 400px; /* Defina a largura fixa */
-       height:auto;
+        width: 880px; /* Defina a largura fixa */
+       
         position: relative; /* Posicionamento relativo */
-        margin-top:50px;
     }
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+           /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+           background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
+        box-shadow:
+        0px 0px 5px rgba(255, 255, 255, 0.7),
+        0px 0px 3px rgba(255, 255, 255, 0.7),
+        0px 0px 2px rgba(255, 255, 255, 0.7);
+        
+        
+        }
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+        .product {
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+            width:600px;
+            height:700px;
+            margin-bottom: 0px;
+          
+        }
+    
+        .product img {
+            max-width: 100%;
+            width: 400px;
+            margin-bottom: 10px;
+            height:auto;
+            margin-top: 75px; /* Adicione uma margem superior para empurrar a imagem para baixo */
+            
+        }
+       
+        .product h3 {
+      
+            margin-left: 0;
+            margin-bottom: 10px;
+            font-size:14px ;
+    }
+    .product ul{
+        margin-bottom: 165px;
+        font-size:12px ;
+        text-align: left;
+        margin-right: 30px;
+    
+    }
+       
+
 }

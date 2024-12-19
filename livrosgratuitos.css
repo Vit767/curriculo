@@ -47,8 +47,9 @@ p {
 */
 .custom-button {
    
-    background-color: #000000;
-    color: rgb(4, 222, 250);
+    
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
+    color: #1d1717b0;
     border: none;
     padding: 10px 50px;
     text-align: center;
@@ -60,8 +61,25 @@ p {
     transition: background-color 0.3s;
     margin-left:607px;
     margin-bottom:-210px;
-    border: 1px outset #00ffea; /* Adicionando uma borda sólida azul */
+    border: 1px outset #000; /* Adicionando uma borda sólida azul */
 } 
+.custom-button:hover{
+    background-color: #000000;
+    
+    color:#ffffff;
+}
+.dark-mode .custom-button{
+    background: black;
+    border: 1px outset #eeeeee; /* Adicionando uma borda sólida azul */
+    color: #ffffffb0;
+}
+
+.dark-mode .custom-button:hover{
+    background: black;
+    border: 1px outset #02ffccb0; /* Adicionando uma borda sólida azul */
+    color: #02ffccb0;
+}
+
 .curso2 img {
 
 margin-left: 0px;
@@ -252,13 +270,9 @@ body.dark-mode .container {
 
 #toggle-theme:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 4px rgb(3, 254, 250);
 }
 
-.custom-button:hover{
-    background-color: #000000;
-    color:#ffffff;
-}
 
 /* Abaixo mudar a cor da página */
 
@@ -303,8 +317,8 @@ header {
 
 header h2 {
     font-size: 18px;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */
-    color:rgba(255, 254, 254, 0.792);
+    /*text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */
+    color: #1d1717b0;
     text-align: center; /* Centralizar o texto horizontalmente */
 }
 
@@ -332,7 +346,7 @@ header p {
 
 body {
 
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
     overflow-x: hidden; 
     display: flex;
     flex-direction: column;
@@ -341,10 +355,16 @@ body {
     text-align: center;
     align-items: center;
 }
-
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+  }
+  body {
+    font-family: 'BebasNeue', sans-serif; /* Utilize o nome definido em @font-face */
+  }
 .curso h3{
-    color: #f7f7f7;
-    text-shadow: 1px 1px #000000;
+    color: #1d1717b0;
+    /*text-shadow: 1px 1px #000000;*/
     display: flex;
     flex-direction: row; /* Altera a direção do flex para linha */
     justify-content: space-between; /* Coloca o texto à esquerda e o botão à direita */
@@ -353,6 +373,36 @@ body {
     margin-bottom:200px;
   
 
+}
+.curso p{
+color: #1d1717b0;
+}
+
+.dark-mode .container p {
+    color: #ffffffb0;
+}
+.dark-mode .container h2 {
+    color: #ffffffb0;
+}
+
+.dark-mode .container h1 {
+    color: #ffffffb0;
+}
+.dark-mode .sidebar {
+    box-shadow:
+0px 0px 5px rgba(253, 253, 253, 0.7),
+0px 0px 3px rgba(253, 253, 253, 0.7),
+0px 0px 2px rgba(253, 253, 253, 0.7);
+}
+.dark-mode .curso h3 {
+    color: #ffffffb0;
+}
+
+.dark-mode .curso p{
+    color: #ffffffb0;
+}
+.dark-mode li{
+    color: #ffffffb0;
 }
 
 /* Estilos para centralizar as imagens horizontalmente */
@@ -366,6 +416,7 @@ body {
     box-shadow: 0 0 10px rgb(255, 235, 53);
     width: 500px;
     height: 500px;
+    margin-left: 0px;
 }
 .dark-mode .curso img {
     max-width: 80%;
@@ -388,14 +439,16 @@ body {
     text-align: left; /* Alinha o texto à esquerda */
     width: 1200px;
     max-width:80%; /* Ocupará 100% da largura */
-    
+    color: #1d1717b0;
     border-radius: 8px;
-    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.705);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.705);
     margin: 20px auto;
     padding: 20px;
-    background:linear-gradient(to right, rgba(21, 156, 174, 0.493), rgb(0, 0, 0));
+    background:linear-gradient(to right, rgba(21, 156, 174, 0.493), rgb(255, 255, 255));
     position: relative; /* Posicionamento relativo */
+
 }
+
 
 
 .curso1{
@@ -406,10 +459,10 @@ body {
     direction: column;
     text-align: center; /* Alinha o texto à esquerda */
     max-width: 90%; /* Ocupará 100% da largura */
-    border-radius: 2px; /* Adicionando uma vírgula para separar propriedades */
-    border-bottom: 3px outset #ffffff; /* Adicionando uma borda sólida azul */
-    border-left: 3px outset #ffffff;
-    border-right: 3px outset #ffffff;
+    border-radius: 4px; /* Adicionando uma vírgula para separar propriedades */
+    border-bottom: 1px outset #ffffffb0;
+    border-left: 1px outset #000000b0;
+    border-right: 1px outset #ffffffb0;
     margin: 0px auto;
     padding: 20px;
    
@@ -486,7 +539,7 @@ body {
 /* Mudar a cor do texto para elementos com a classe "red-text" */
 /* Cor para o texto em parágrafos (<p>) */
 p {
-    color: rgb(251, 250, 250); /* Vermelho */
+    color: #1d1717b0;
 }
 
 /* Cor para o texto em cabeçalhos de nível 1 (<h1>) */
@@ -496,11 +549,11 @@ h1 {
 
 /* Cor para o texto em cabeçalhos de nível 2 (<h2>) */
 h2 {
-    color: white; /* Definir a cor do texto quando o mouse estiver sobre ele */
-    text-shadow: 
+    color: #1d1717b0;
+    /*text-shadow: 
     0px 0px 5px rgba(0, 0, 0, 0.7),
     0px 0px 3px rgba(0, 0, 0, 0.7),
-    0px 0px 2px rgba(0, 0, 0, 0.7);
+    0px 0px 2px rgba(0, 0, 0, 0.7);*/
 }
 
 /* Cor para o texto em cabeçalhos de nível 3 (<h3>) */
@@ -514,8 +567,8 @@ a {
     
 }
 li {
-    color: rgb(255, 255, 255); /* Laranja */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.718); /* Adiciona uma sombra ao texto */
+    color: #1d1717b0;
+    /*text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.718); /* Adiciona uma sombra ao texto */
 }
 
 
@@ -558,12 +611,18 @@ li {
 /* Estilo para os números das páginas */
 .page-indicators a {
     text-decoration: none; /* Remover sublinhado dos links */
-    background-color: #000105; /* Cor de fundo padrão */
-    color: rgb(255, 255, 255); /* Cor do texto padrão (azul) */
+    background-color:linear-gradient(to right, rgb(21, 156, 174), rgb(255, 255, 255));
+    color: #1d1717b0;
+    border: 1px outset #000; /* Adicionando uma borda sólida azul */
     padding: 5px 5px; /* Espaçamento interno */
     border-radius: 5px; /* Borda arredondada */
     margin: 10 15px; /* Espaçamento entre os links */
     transition: color 0.3s, background-color 0.3s; /* Adicionar transições suaves */
+}
+
+.dark-mode .page-indicators a{
+    background-color:linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: #ffffffb0;
 }
 
 .page-indicators a:hover {
@@ -631,6 +690,11 @@ li {
     margin: 0 10px; /* Espaçamento entre os links */
 
 }
+.footer p {
+    color: #f2f2f2; /* Cor dos links no rodapé */
+   
+
+}
 .footer a:hover {
     text-decoration: underline; /* Sublinhar ao passar o mouse */
 }
@@ -640,7 +704,7 @@ li {
     top: 10px; /* Distância do topo da página */
     
     right: 400px; /* Distância da direita da página */
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
     padding: 10px;
     text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
     color:white;
@@ -773,7 +837,7 @@ li {
     margin: 0 auto;
     margin-top:20px;
        /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
-       background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
+       background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 253, 253) 0, 0) 100%);
     
     
     
@@ -783,7 +847,10 @@ li {
         flex-direction: column; /* Coloca os itens do menu em uma coluna */
         align-items: center; /* Centraliza os itens na coluna */
     }
-
+    .curso img {
+        margin:0px;
+        
+     }
     .responsive-menu li {
         margin-bottom: 10px; /* Espaçamento entre os itens do menu */
     }
@@ -829,7 +896,7 @@ li {
         height: auto;
         font-size: 14px; /* Ajuste o tamanho do texto, se necessário */
       }
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
         .ad-banner {
           width: 100%;
           height: auto;
@@ -1014,4 +1081,745 @@ li {
      
        font-size:15px ;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body{
+        overflow-x: hidden; 
+        flex-direction: column;
+    
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+    .main-content img {
+        max-width: 40%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        height:auto; /* Ajusta a altura proporcionalmente */
+        box-shadow:
+        0px 0px 5px rgba(255, 255, 255, 0.7),
+        0px 0px 3px rgba(255, 255, 255, 0.7),
+        0px 0px 2px rgba(255, 253, 253, 0.7);
+    
+    }
+    .sidebar{
+    width: 95%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+}
+    h2 {
+        text-align: center;
+              margin-left: 0;
+              margin-bottom: 10px;
+              font-size:14px ;
+      }
+      .main-content p {
+             
+             
+          font-size:11px ;
+      }
+          .curso h3 {
+        
+                  margin-left: 0;
+                  margin-bottom: 300px;
+                  font-size:10px ;
+                  
+          }
+          h1 {
+            
+              font-size:20px ;
+            }
+        
+            h2 {
+             
+               font-size:15px ;
+            }
+      
+          .custom-button {
+              text-align: center;
+              margin-left: 0;
+              margin-top:660px; /* Adicione um espaço entre o texto e o botão */
+          }
+      
+          
+           .curso ul {
+            margin-right: 30px;
+              margin-left: 0;
+            margin-top: 20px;
+              font-size: 12px;
+              text-align: left;
+             
+          }
+    .curso p3{
+        text-align: center;
+        margin-left:0;
+        margin-top: 600px; /* Adicione um espaço entre o texto e o botão */
+        font-size: 12px;
+    
+    }
+    
+    .curso p4{
+        text-align: center;
+        margin-left:0;
+        margin-top: 630px; /* Adicione um espaço entre o texto e o botão */
+        font-size:16px ;
+    
+    }
+    .horizontal-menu ul {
+        padding: 10px;
+    }
+    .horizontal-menu img {
+        width:400px;
+        height:auto;
+        margin-bottom: 20px;
+    }
+ 
+    .horizontal-menu ul li {
+        display: flex;
+    }
+
+    .horizontal-menu a:hover span {
+        color: black; /* Cor do texto quando passa o mouse */
+    }
+
+    .horizontal-menu a:hover {
+        background-color: rgb(0, 0, 0); /* Fundo preto quando passa o mouse */
+        color: rgb(255, 251, 251); /* Cor dos links quando passa o mouse */
+        width: 100%; /* Fundo preto se estende até a largura máxima do link */
+        box-sizing: border-box; /* Evita que o padding aumente a largura total */
+        padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
+    }
+    .container2 {
+       width:100%; /* Altera o display para empilhar as colunas */
+    }
+
+    .responsive-menu {
+        flex-direction: column; /* Coloca os itens do menu em uma coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    
+    .language-selector {
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        font-size: 0.8em;
+        width: 100%;
+    }
+   
+    .language-selector label, .language-selector select {
+        font-size: 0.9em;
+    }
+
+ 
+
+    .responsive-menu li {
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+    }
+
+    .container {
+        width:700px;
+    }
+
+    .column {
+        width: 600px; /* Define a largura das colunas para 100% */
+    }
+
+    .main-content {
+        width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        max-width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    }
+
+    .main-content img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7), 0px 0px 3px rgba(255, 255, 255, 0.7), 0px 0px 2px rgba(255, 253, 253, 0.7);
+        width: 300px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+    }
+
+    .custom-button {
+        text-align: center;
+        margin-left: 0;
+        margin-top:630px;
+        font-size:14px ;
+        max-width: 80%;
+        box-shadow:none;
+
+
+      
+    }
+    .sidebar {
+        width: 700px; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+    }
+.curso1{
+   
+    /* Tamanho fixo */
+    width: 880px; /* Defina a largura fixa */
+   
+    position: relative; /* Posicionamento relativo */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+       /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+       background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174) 50%, rgb(0, 0, 0) 100%);
+    box-shadow:
+    0px 0px 5px rgba(255, 255, 255, 0.7),
+    0px 0px 3px rgba(255, 255, 255, 0.7),
+    0px 0px 2px rgba(255, 255, 255, 0.7);
+    
+    
+    }
+    .column {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+    }
+    .curso {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        width:600px;
+        height:700px;
+        margin-bottom: 0px;
+      
+    }
+
+    .curso img{
+
+        /* Tamanho fixo */
+        width: 400px; /* Defina a largura fixa */
+       height:auto;
+        position: relative; /* Posicionamento relativo */
+        margin-top:50px;
+    }
+    .curso h3 {
+  
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size:14px ;
+}
+.curso ul{
+    margin-bottom: 165px;
+    font-size:12px ;
+    text-align: left;
+    margin-right: 30px;
+
+}
+}
+
+
+
+        
+    .sidebar img{
+
+        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        
+
+
+
+    }
+    .main-content img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        position: relative;
+        height:500px; /* Ajusta a altura proporcionalmente */
+        width: 500px;
+        box-shadow:
+        0px 0px 5px rgba(48, 42, 42, 0.7),
+        0px 0px 3px rgba(41, 35, 35, 0.7),
+        0px 0px 2px rgba(41, 35, 35, 0.7);
+    
+    }
+    
+   
+    .column {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+    }
+  
+    .main-content p {
+        margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
+        /*   text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    }
+    .main-content h2 {
+        margin-top: 20px; /* Espaço acima do título */
+             text-shadow: none; /* Adiciona uma sombra ao texto */  
+    }
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #000000;
+        color: white;
+    
+    }
+    .footer a {
+        color: #f2f2f2; /* Cor dos links no rodapé */
+        text-decoration: none; /* Remover sublinhado */
+        margin: 0 10px; /* Espaçamento entre os links */
+    
+    }
+    .footer a:hover {
+        text-decoration: underline; /* Sublinhar ao passar o mouse */
+    }
+
+    .sidebar a {
+/* ... outros estilos ... */
+transition: none; /* Remover todas as transições */
+}
+
+    .sidebar a:hover span {
+        color: black; /* Cor do texto quando passa o mouse */
+    }
+
+
+    .sidebar a:hover {
+        background-color: rgb(0, 0, 0); /* Fundo preto quando passa o mouse */
+        color: rgb(255, 251, 251); /* Cor dos links quando passa o mouse */
+       
+        
+        
+        width: 100%; /* Fundo preto se estende até a largura máxima do link */
+        box-sizing: border-box; /* Evita que o padding aumente a largura total */
+        padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
+    }
+
+    
+    #cookie-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: hsl(0, 100%, 99%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        color: #000000;
+    }
+
+    #cookie-message {
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 3px rgb(255, 251, 251); /* Adiciona uma sombra ao texto */  
+    }
+   
+
+    #cookie-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #cookie-button-accept, #cookie-button-decline {
+        background-color: #000000;
+        color: #11fbdc;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+/* Reset de estilos padrão para garantir consistência em diferentes navegadores */
+
+/* Estilos para a div container */
+.container {
+display: flex;
+flex-direction: column;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+/*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174) 50%, rgb(255, 255, 255) 100%);
+box-shadow:
+     0px 0px 5px rgba(48, 42, 42, 0.7),
+     0px 0px 3px rgba(41, 35, 35, 0.7),
+     0px 0px 2px rgba(41, 35, 35, 0.7);
+
+
+}
+
+.container2 {
+display: flex;
+flex-direction: column;
+max-width: 90%;
+margin: 0 auto;
+margin-top:20px;
+   /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174) 50%, rgb(255, 255, 255) 100%);
+
+
+
+}
+
+/* Estilos para a coluna de menu */
+.sidebar {
+
+flex: 1px;
+   /*background: linear-gradient(to right, rgb(21, 156, 174), rgb(0, 0, 0));*/
+   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
+color: rgb(255, 255, 255);
+padding: 20px;
+box-shadow:
+        0px 0px 5px rgba(48, 42, 42, 0.7),
+        0px 0px 3px rgba(41, 35, 35, 0.7),
+        0px 0px 2px rgba(41, 35, 35, 0.7);
+}
+
+.sidebar h2 {
+margin-bottom: 10px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+
+}
+
+.sidebar li {
+margin-bottom: 10px;
+
+
+}
+
+
+.sidebar a {
+    color: #000000;
+text-decoration: none;
+display: inline-block; /* Para que o background se ajuste ao tamanho do texto */
+padding: 5px 10px; /* Espaçamento interno para o fundo do hover */
+transition: background-color 0.0s; /* Adiciona uma transição suave da cor do fundo */
+text-shadow: linear-gradient(to right, rgb(21, 156, 174), rgb(255, 255, 255));
+
+}
+
+/* Estilos para a coluna de conteúdo principal */
+.main-content {
+flex: 2;
+padding: 20px;
+border-left: 1px solid #ffffff;
+
+
+}
+
+h1 {
+    color: #1d1717b0;
+margin-bottom: 10px;
+/*  text-shadow: 1px 1px 3px rgb(255, 255, 255); /* Adiciona uma sombra ao texto */
+/*text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+}
+h2 {
+    color: #1d1717b0;
+margin-bottom: 10px;
+/* text-shadow: 1px 1px 3px rgb(252, 252, 252);  Adiciona uma sombra ao texto */
+font-weight: bold;
+/*text-shadow: 
+0px 0px 5px rgba(0, 0, 0, 0.7),
+0px 0px 3px rgba(0, 0, 0, 0.7),
+0px 0px 2px rgba(0, 0, 0, 0.7);*/
+}
+
+p {
+
+    color: #1d1717;
+
+margin-bottom: 10px;
+/* text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+font-size: 14px;
+}
+
+#nextPageButton {
+background-color: #007bff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#nextPageButton:hover {
+background-color: #0056b3;
+}
+.horizontal-menu {
+display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza horizontalmente os itens */
+}
+
+.horizontal-menu ul {
+list-style: none;
+padding: 0;
+}
+
+.horizontal-menu ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.horizontal-menu ul li:last-child {
+margin-right: 0; /* Remove a margem direita do último item */
+}
+.language-selector {
+   
+    top: 10px; /* Distância do topo da página */
+    
+    right: 400px; /* Distância da direita da página */
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(21, 156, 174)rgb(255, 255, 255) 0, 0) 100%);
+    padding: 10px;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adiciona uma sombra ao texto */  
+    color:white;
+    height: 16px;
+    font: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.language-selector label {
+    margin-right: 10px;
+}
+
+.language-selector select {
+    padding: 0px;
+    background-color: black;
+    color:rgb(255, 255, 255) ;
+}
+.carousel-container {
+            position: relative;
+            width: 100%;
+          margin-top:10px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            
+        }
+        #carousel {
+    display: flex;
+    transition: transform 0.4s ease; /* Suaviza a transição durante o movimento */
+}
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+            scroll-snap-type: x mandatory; /* Suaviza a rolagem */
+    -webkit-overflow-scrolling: touch; /* Melhora no mobile */
+
+    
+         
+        }
+
+        .carousel-item {
+            min-width: 300px; /* Define um tamanho mínimo */
+            height: 300px;
+            margin-right: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Suaviza a escala dos itens */
+            scroll-snap-align: center;
+    flex-shrink: 0; /* Impede que as imagens redimensionem */
+        }
+
+        .carousel-images a img {
+            flex: 0 0 auto; /* Permite que o item não encolha e não cresça, mantendo seu tamanho */
+            height: 300px;
+            transition: transform 0.3s;
+          
+        }
+
+        /* Zoom quando o mouse está sobre a imagem */
+        .carousel-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .arrow-left {
+            left: 0;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+
+        .arrow:disabled {
+            background-color: rgba(0, 0, 0, 0.2);
+            cursor: not-allowed;
+        }
+
+        /* Estilizando o link */
+        .carousel-item a {
+            display: block;
+            margin-top: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .carousel-item a:hover {
+            text-decoration: underline;
+        }
+
+@media (max-width: 768px) {
+  
+           
+    .horizontal-menu ul {
+        padding: 10px;
+    }
+ 
+    .horizontal-menu ul li {
+        display: flex;
+    }
+
+    .horizontal-menu a:hover span {
+        color: black; /* Cor do texto quando passa o mouse */
+    }
+
+    .horizontal-menu a:hover {
+        background-color: rgb(0, 0, 0); /* Fundo preto quando passa o mouse */
+        color: rgb(255, 251, 251); /* Cor dos links quando passa o mouse */
+        width: 100%; /* Fundo preto se estende até a largura máxima do link */
+        box-sizing: border-box; /* Evita que o padding aumente a largura total */
+        padding: 5px 10px; /* Ajusta o padding para esquerda e direita */
+    }
+    .container2 {
+       width:100%; /* Altera o display para empilhar as colunas */
+    }
+
+    .responsive-menu {
+        flex-direction: column; /* Coloca os itens do menu em uma coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    .language-selector {
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+   
+    .language-selector label, .language-selector select {
+        font-size: 0.9em;
+    }
+
+    .responsive-menu li {
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+    }
+
+    .container {
+        display: block; /* Altera o display para empilhar as colunas */
+    }
+
+    .column {
+        width: 100%; /* Define a largura das colunas para 100% */
+    }
+
+    .main-content {
+        width: 100%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+        height: auto;
+        overflow-x: hidden;
+        box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    }
+
+    .main-content img {
+        max-width: 90%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7), 0px 0px 3px rgba(255, 255, 255, 0.7), 0px 0px 2px rgba(255, 253, 253, 0.7);
+    }
+
+    .sidebar {
+        width: 90%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
+    }
+
+    .toggle-menu {
+    display: inline-block; /* Mostra o botão de toggle como um bloco em linha */
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Permite posicionar elementos filhos relativamente a este */
+}
+
+.menu-content {
+    display: flex; /* Utiliza flexbox para posicionamento dos itens internos */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+.menu-text {
+    color: white; /* Cor do texto */
+    margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.hamburger-icon {
+    display: inline-block; /* Exibe o ícone do hamburger */
+}
+
+.hamburger-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: white; /* Cor das barras */
+    margin: 6px 0;
+    transition: 0.4s;
+}
+    .horizontal-menu {
+        display: none; /* Esconde o menu por padrão no modo responsivo */
+    }
+
+    .horizontal-menu.show {
+        display: block; /* Mostra o menu quando a classe 'show' é adicionada */
+    }
+    .carousel-container {
+        width: 90%;
+        max-width: none; /* Remove a largura máxima */
+        margin-left:20px;
+    }
+        .carousel-images {
+          
+            transition: transform 0.5s ease;
+          
+        }
+
+        .carousel-images a img {
+            width: 100px; /* Ajusta a largura das imagens para preencher o container */
+            height:200px;
+            transition: transform 0.3s;
+        }
+    .carousel-item {
+        min-width: 120px; /* Menor largura para itens em telas pequenas */
+        height: auto;
+              
+            }
+
+            .arrow {
+                width: 30px; /* Reduz o tamanho das setas */
+                height: 30px;
+                font-size: 1.5em; /* Reduz o tamanho das setas em telas menores */
+               
+            }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-content img {
+        max-width: 40%; /* Garante que as imagens não ultrapassem o tamanho máximo do contêiner */
+        height:auto; /* Ajusta a altura proporcionalmente */
+        box-shadow:
+        0px 0px 5px rgba(255, 255, 255, 0.7),
+        0px 0px 3px rgba(255, 255, 255, 0.7),
+        0px 0px 2px rgba(255, 253, 253, 0.7);
+    
+    }
+    .curso img {
+        margin:0px;
+        
+     }
+    .sidebar{
+    width: 95%; /* Define a largura da barra lateral e do conteúdo principal para 100% */
 }
