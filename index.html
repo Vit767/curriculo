@@ -339,10 +339,6 @@ button:hover {
 
 @media (max-width: 768px) {
   
-    .content-section {
-        display: flex;
-        flex-direction: column; /* Alinha os vídeos em coluna */
-    justify-content: center;}
    
     .content-section3 {
         flex-direction: column; /* Alinha os vídeos em coluna */
@@ -379,11 +375,23 @@ button:hover {
     width:100%;
 
   }
+  .mini-container {
+    text-align: center;
+    width: 30%; /* Largura fixa para as imagens */
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
   .mini-container img {
-  width:100%;
+  width:50%;
   height:auto;
 }
-
+h1{
+  font-size: 13px;
+}
 
 }
 
@@ -428,7 +436,7 @@ button:hover {
       <div class="mini-container2">
           <img src="Vitão.jpg" alt="Sobre mim">
           <p>Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços.</p>
-        
+          <P>me mande um e-mail por contatos. Número : +5521977080240</P> 
       </div>
   </section>
 
@@ -461,7 +469,7 @@ button:hover {
         </div>
     </section>
     <h3>Programação</h3>
-    <section id="programacao" class="content-section">
+    <section id="marketing-digital" class="content-section">
         <div class="mini-container">
             <img src="python.jpg" alt="Marketing Digital">
             <p>Sou capaz de desenvolver aplicações web e de escritórios úteis usando Python.</p>
@@ -519,7 +527,7 @@ button:hover {
             <p>Agente de viagens - Auxiliando pessoas a conseguir passa porte com planos de cursos</p>
         </div>
         <div class="mini-container">
-            <img src="assistente virtual.jpg" alt="Google Analytics">
+            <img src="google analitycs.jpg" alt="Google Analytics">
             <p>Assistente virtual - Writer translater freelancer pessoal de um amigo americano</p>
         </div>
         <div class="mini-container">
@@ -604,7 +612,7 @@ button:hover {
     </section>
     <section id="Contato">
       <h2>Contato</h2>
-      <p>Entre em contato comigo por Email.</p>
+      <p>Entre em contato comigo por email.</p>
       <form action="https://api.staticforms.xyz/submit" method="post">
           <!-- Adicione os campos do formulário conforme necessário -->
           <label for="nome">Nome:</label>
@@ -623,7 +631,7 @@ button:hover {
           <input type="hidden" name="redirectTo" value="https://obrigado-byvitorsantos.netlify.app/">
       </form>
 <div></div>
-      <h2>Ou converse comigo através do WhatsApp.</h2>
+      <p>Ou converse comigo através do WhatsApp.</p>
       <section id="whatsapp-button">
           <a href="https://wa.me/5521977080240?text=Olá Vitão, gostaria de me consultar !" target="_blank">
               <img src="whatssap.png" alt="WhatsApp Icon">
