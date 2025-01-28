@@ -91,8 +91,8 @@ header {
 .content-section {
   background-color: #fafafa;
   border-radius: 15px;
-
-  margin: 5px;
+  padding: 20px;
+  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color:rgb(0, 0, 0);
 }
@@ -184,6 +184,11 @@ h3 {
 }
 
 
+#programacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
 
 
 .video-container {
@@ -192,9 +197,18 @@ h3 {
     margin: 15px auto;
 }
 
+#programacao .video-container2 {
+    text-align: center;
+    width: 500px; 
+    margin: 15px auto;
+}
 
-
-
+#programacao .video-container2 video {
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
 
 
 
@@ -210,8 +224,7 @@ h3 {
     width: 300px; 
     height: auto;
     margin: 15px auto;
-   
-  margin:10px;
+    padding: 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f4f4f4;
@@ -239,8 +252,7 @@ h3 {
 }
 .mini-container img {
     width: 90%;
-  max-width:200px;
-    height: 200px;
+    height: auto;
     border-radius: 10px; 
 }
 
@@ -329,11 +341,6 @@ button:hover {
         text-align: center;
         align-content: center;
   }
-   .content-section {
-       
-        margin: 0px;
-     
-  }
   #programacao {
         flex-direction: column; 
         justify-content: center;
@@ -364,9 +371,8 @@ button:hover {
     text-align: center;
     width: 30%; 
     height: auto;
-    margin: 10px;
-    padding:10px;
-   
+    margin: 15px auto;
+    padding: 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f4f4f4;
@@ -440,7 +446,10 @@ h1{
             <img src="Excel.jpg" alt="Excel">
             <p>Tenho Excel nível intermediário.</p>
         </div>
-     
+        <div class="mini-container">
+            <img src="Matplotlib.PNG" alt="Matplotlib">
+            <p>Matplotlib Nível Avançado</p>
+        </div>
         <div class="mini-container">
             <img src="Powerpoint.png" alt="Powerpoint">
             <p>PowerPoint Nível Intermediário</p>
@@ -464,20 +473,10 @@ h1{
             <img src="HTML-CSS.jpg" alt="Google Analytics">
             <p>Sou capaz de desenvolver sites úteis para web, sites estáticos e de exibição.</p>
         </div>
-          </div>
       <div class="mini-container">
             <img src="bootstrap.jpg" alt="Google Analytics">
-            <p> Faço sites responsivos e profissionais usando Bootstrap.</p>
+            <p> Faço sites responsivos e profissionais usando bootstrap.</p>
         </div>
-          <div class="mini-container">
-            <img src="github.jpg" alt="Google Analytics">
-            <p> Para fazer deploy de sites ou guardar aplicações úteis.</p>
-        </div>
-       <div class="mini-container">
-            <img src="heroku.jpg" alt="Google Analytics">
-            <p> Uso Heroku para testar aplicações Python-Flask ou até mesmo para trabalho.</p>
-        </div>
-       
     </section>
   
     
@@ -510,14 +509,9 @@ h1{
             <img src="mysql.jpg" alt="Google Analytics">
             <p>Para armazrnar dados de maneira simples e organizada.</p>
         </div>
-         <div class="mini-container">
-            <img src="Matplotlib.PNG" alt="Matplotlib">
-            <p>Matplotlib Nível Avançado</p>
-        </div>
-      
         <div class="mini-container">
- <img src="JAVASCRIPT.jpg" alt="SEO">
-            <p> Chart e Leaflet, para demonstração gráfica de dados , países ou cidades.</p>
+            <img src="JAVASCRIPT.jpg" alt="SEO">
+            <p>biblioteca Chart e Leaflet, para demonstração gráfica de dados.</p>
         </div>
     </section>
 
@@ -537,7 +531,7 @@ h1{
         </div>
         <div class="mini-container">
             <img src="auxiliar de serviços gerais.jpg" alt="Google Analytics">
-            <p>Auxiliar de serviços gerais - Ajudante de descarregando produtos de caminhões</p>
+            <p>Auxiliar de serviços gerais - Ajudante de descarregamento de produtos de caminhão</p>
         </div>
         <div class="mini-container">
             <img src="ajudante de pedreiro.jpg" alt="Google Analytics">
@@ -601,9 +595,7 @@ h1{
         </div>
         <div class="mini-container">
             
-            <h1> PROJETOS: HTML-CSS</h1>
-              <h1>BOOTSTRAP</h1>
-              <h1>JAVASCRIPT</h1>
+            <h1> PROJETOS: HTML-CSS-BOOTSTRAP,JAVASCRIPT</h1>
             <p> Site de curso para 25 idiomas diferentes. </p>
             <p> Lojas de roupa. </p>
             <p> Loja de artigos religiosos.</p>
