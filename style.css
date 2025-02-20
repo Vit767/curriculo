@@ -370,7 +370,11 @@ background-color: rgb(255, 255, 255);
 h1{
   font-size: 13px;
 }
-
+h3 {
+color:rgba(0, 0, 0, 0.703);
+    margin-bottom: 10px; 
+    
+}
 }
 
 
