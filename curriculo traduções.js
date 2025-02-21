@@ -787,13 +787,14 @@ menuLinks.forEach(link => {
 }
       };
   
-      const languageSelect = document.getElementById('language-select');
-  languageSelect.addEventListener('change', (event) => {
-    const selectedLanguage = event.target.value;
-    translatePage(selectedLanguage);
-  });
+    const languageSelect = document.getElementById('language-select');
 
- function translatePage(language) {
+languageSelect.addEventListener('change', (event) => {
+  const selectedLanguage = event.target.value;
+  translatePage(selectedLanguage);
+});
+
+function translatePage(language) {
   const elements = document.querySelectorAll('[data-lang]');
   elements.forEach(element => {
     const key = element.getAttribute('data-lang-key') || element.textContent.trim();
@@ -805,11 +806,4 @@ menuLinks.forEach(link => {
     }
   });
 }
-     document.addEventListener('change', (event) => {
-  if (event.target.id === 'language-select') {
-    const selectedLanguage = event.target.value;
-    translatePage(selectedLanguage);
-  }
-});
-  }
      
