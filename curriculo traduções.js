@@ -19,6 +19,13 @@ menuLinks.forEach(link => {
         pt: {
       // Seção "Sobre Mim"
       "Sobre mim": "Sobre mim",
+    "Programação": "Programação",
+    "Assistente Administrativo": "Assistente Administrativo",
+    "Marketing Digital": "Marketing Digital",
+    "Analista de Dados": "Analista de Dados",
+    "Experiências": "Experiências",
+    "Capacidades": "Capacidades",
+    "Contato": "Contato",
       "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240",
 
       // Seção "Assistente Administrativo"
@@ -129,6 +136,14 @@ menuLinks.forEach(link => {
     },
         en: {
           "Sobre mim": "About Me",
+              "Sobre mim": "About me",
+    "Programação": "Programming",
+    "Assistente Administrativo": "Administrative Assistant",
+    "Marketing Digital": "Digital Marketing",
+    "Analista de Dados": "Data Analyst",
+    "Experiências": "Experiences",
+    "Capacidades": "Skills",
+    "Contato": "Contact",
     "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "Hello, my name is Vitor Santos. I am an Administrative Assistant, Virtual Assistant, Junior Programmer, and Data Analyst, with programming skills in Python, Flask, HTML-CSS, and JavaScript. If you need any of my services, send me an email through contacts. Phone number: +5521977080240",
 
     "Assistente Administrativo": "Administrative Assistant",
@@ -233,6 +248,14 @@ menuLinks.forEach(link => {
        es: {
   // Sección "Sobre Mí"
   "Sobre mim": "Sobre mí",
+              "sobre mim": "Sobre mí",
+    "programação": "Programación",
+    "assistente administrativo": "Asistente Administrativo",
+    "marketing digital": "Marketing Digital",
+    "analista de dados": "Analista de Datos",
+    "experiências": "Experiencias",
+    "capacidades": "Capacidades",
+    "contato": "Contacto",
   "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "Hola, me llamo Vitor Santos. Soy Asistente Administrativo, Asistente Virtual, Programador y Analista de Datos Junior, con habilidades de programación en Python, Flask, HTML-CSS y JavaScript. Si necesita alguno de mis servicios, envíeme un correo electrónico a través de contactos. Número: +5521977080240",
 
   // Sección "Asistente Administrativo"
@@ -344,6 +367,14 @@ menuLinks.forEach(link => {
         fr: {
   // Section "À propos de moi"
   "Sobre mim": "À propos de moi",
+           "sobre mim": "À propos de moi",
+    "programação": "Programmation",
+    "assistente administrativo": "Assistant Administratif",
+    "marketing digital": "Marketing Numérique",
+    "analista de dados": "Analyste de Données",
+    "experiências": "Expériences",
+    "capacidades": "Capacités",
+    "contato": "Contact",
   "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "Bonjour, je m'appelle Vitor Santos. Je suis Assistant Administratif, Assistant Virtuel, Programmeur et Analyste de Données Junior, avec des compétences en programmation en Python, Flask, HTML-CSS et JavaScript. Si vous avez besoin de l'un de mes services, envoyez-moi un e-mail via les contacts. Numéro : +5521977080240",
 
   // Section "Assistant Administratif"
@@ -455,6 +486,14 @@ menuLinks.forEach(link => {
         ru: {
   // Раздел "Обо мне"
   "Sobre mim": "Обо мне",
+             "sobre mim": "Обо мне",
+    "programação": "Программирование",
+    "assistente administrativo": "Административный помощник",
+    "marketing digital": "Цифровой маркетинг",
+    "analista de dados": "Аналитик данных",
+    "experiências": "Опыт",
+    "capacidades": "Навыки",
+    "contato": "Контакт",
   "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "Здравствуйте, меня зовут Витор Сантос. Я административный ассистент, виртуальный ассистент, программист и младший аналитик данных с навыками программирования на Python, Flask, HTML-CSS и JavaScript. Если вам нужны мои услуги, отправьте мне электронное письмо через контакты. Номер: +5521977080240",
 
   // Раздел "Административный ассистент"
@@ -566,6 +605,14 @@ menuLinks.forEach(link => {
         zh: {
   // 部分 "关于我"
   "Sobre mim": "关于我",
+            "sobre mim": "关于我",
+    "programação": "编程",
+    "assistente administrativo": "行政助理",
+    "marketing digital": "数字营销",
+    "analista de dados": "数据分析师",
+    "experiências": "经验",
+    "capacidades": "能力",
+    "contato": "联系",
   "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "你好，我叫Vitor Santos。我是行政助理、虚拟助理、程序员和初级数据分析师，具备Python、Flask、HTML-CSS和JavaScript编程技能。如果您需要我的服务，请通过联系人发送电子邮件给我。号码：+5521977080240",
 
   // 部分 "行政助理"
@@ -677,6 +724,14 @@ menuLinks.forEach(link => {
         ja: {
   // セクション「私について」
   "Sobre mim": "私について",
+             "sobre mim": "私について",
+    "programação": "プログラミング",
+    "assistente administrativo": "管理アシスタント",
+    "marketing digital": "デジタルマーケティング",
+    "analista de dados": "データアナリスト",
+    "experiências": "経験",
+    "capacidades": "能力",
+    "contato": "連絡先",
   "Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240": "こんにちは、私はVitor Santosと申します。行政アシスタント、バーチャルアシスタント、プログラマー、ジュニアデータアナリストとして、Python、Flask、HTML-CSS、JavaScriptのプログラミングスキルを持っています。私のサービスが必要な場合は、連絡先からメールを送ってください。電話番号：+5521977080240",
 
   // セクション「行政アシスタント」
