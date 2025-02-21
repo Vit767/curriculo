@@ -793,14 +793,18 @@ menuLinks.forEach(link => {
     translatePage(selectedLanguage);
   });
 
-  function translatePage(language) {
-    const elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(element => {
-      const key = element.getAttribute('data-lang-key') || element.textContent.trim();
-      if (translations[language] && translations[language][key]) {
-        element.textContent = translations[language][key];
-      }
-    });
+ function translatePage(language) {
+  const elements = document.querySelectorAll('[data-lang]');
+  elements.forEach(element => {
+    const key = element.getAttribute('data-lang-key') || element.textContent.trim();
+    console.log("Procurando tradução para:", key);
+    if (translations[language] && translations[language][key]) {
+      element.textContent = translations[language][key];
+    } else {
+      console.warn("Tradução não encontrada para:", key);
+    }
+  });
+}
      document.addEventListener('change', (event) => {
   if (event.target.id === 'language-select') {
     const selectedLanguage = event.target.value;
