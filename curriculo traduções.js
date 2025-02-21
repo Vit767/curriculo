@@ -801,5 +801,11 @@ menuLinks.forEach(link => {
         element.textContent = translations[language][key];
       }
     });
+     document.addEventListener('change', (event) => {
+  if (event.target.id === 'language-select') {
+    const selectedLanguage = event.target.value;
+    translatePage(selectedLanguage);
+  }
+});
   }
      
