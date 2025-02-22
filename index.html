@@ -1,267 +1,204 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo - Vitor santos</title>
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Vitor Santos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-  
-  <header>
-    <button class="menu-button" id="menu-button">Veja minhas capacidades</button>
-    <nav id="menu" class="menu">
-      <ul>
-        <li><a href="#sobre-mim" data-lang data-lang-key="pt">SOBRE MIM</a></li>
-        <li><a href="#programacao" data-lang data-lang-key="pt">PROGRAMAÇÃO</a></li>
-        <li><a href="#assistente-administrativo" data-lang data-lang-key="pt">ASSISTENTE ADMINISTRATIVO</a></li>
-        <li><a href="#marketing-digital" data-lang data-lang-key="pt">MARKTING DIGITAL</a></li>
-        <li><a href="#analista-de-dados" data-lang data-lang-key="pt">ANALISTA DE DADOS</a></li>
-        <li><a href="#experiencia" data-lang data-lang-key="pt">EXPERIÊNCIAS</a></li>
-        <li><a href="#capacidades" data-lang data-lang-key="pt">CAPACIDADES</a></li>
-        <li><a href="#contato" data-lang data-lang-key="pt">CONTATO</a></li>
-      </ul>
-    
-    </nav>
-    
-  </header>
+    <header>
+        <button class="menu-button" id="menu-button" data-i18n="see-skills">Veja minhas capacidades</button>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#sobre-mim" data-i18n="about-me">Sobre mim</a></li>
+                <li><a href="#programacao" data-i18n="programming">Programação</a></li>
+                <li><a href="#assistente-administrativo" data-i18n="admin-assistant">Assistente Administrativo</a></li>
+                <li><a href="#marketing-digital" data-i18n="digital-marketing">Marketing Digital</a></li>
+                <li><a href="#analista-de-dados" data-i18n="data-analyst">Analista de Dados</a></li>
+                <li><a href="#experiencia" data-i18n="experience">Experiências</a></li>
+                <li><a href="#capacidades" data-i18n="skills">Capacidades</a></li>
+                <li><a href="#contato" data-i18n="contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-</div>
+  Choose your language
+        <select id="language-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="ru">Русский</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+        </select>
+    </div>
 
+    <main>
+        <h3 id="sobre-mim" data-i18n="about-me">Sobre Mim</h3>
+        <section class="content-section2">
+            <div class="mini-container2">
+                <img src="Vitão.jpg" alt="Sobre mim">
+                <p data-i18n="about-me-text">Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240</p>
+            </div>
+        </section>
 
-  </div>
+        <h3 id="assistente-administrativo" data-i18n="admin-assistant">Assistente Administrativo</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <img src="assistente administrativo.jpg" alt="Assistente Administrativo">
+                <p data-i18n="admin-tasks">Gerenciamento de tarefas administrativas...</p>
+            </div>
+            <div class="mini-container">
+                <img src="Excel.jpg" alt="Excel">
+                <p data-i18n="excel-level">Tenho Excel nível intermediário.</p>
+            </div>
+            <div class="mini-container">
+                <img src="Matplotlib.PNG" alt="Matplotlib">
+                <p data-i18n="matplotlib-level">Matplotlib Nível Avançado</p>
+            </div>
+            <div class="mini-container">
+                <img src="Powerpoint.png" alt="Powerpoint">
+                <p data-i18n="powerpoint-level">PowerPoint Nível Intermediário</p>
+            </div>
+            <div class="mini-container">
+                <img src="Word.jpg" alt="Word">
+                <p data-i18n="word-level">Word Nível Intermediário</p>
+            </div>
+        </section>
 
+        <h3 id="programacao" data-i18n="programming">Programação</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <img src="python.jpg" alt="Python">
+                <p data-i18n="python-skills">Sou capaz de desenvolver aplicações web e de escritórios úteis usando Python.</p>
+            </div>
+            <div class="mini-container">
+                <img src="JAVASCRIPT.jpg" alt="JavaScript">
+                <p data-i18n="javascript-skills">Sou capaz de desenvolver scripts úteis para website voltados para front-end e Node para usar como servidor local.</p>
+            </div>
+            <div class="mini-container">
+                <img src="HTML-CSS.jpg" alt="HTML-CSS">
+                <p data-i18n="html-css-skills">Sou capaz de desenvolver sites úteis para web, sites estáticos e de exibição.</p>
+            </div>
+            <div class="mini-container">
+                <img src="bootstrap.jpg" alt="Bootstrap">
+                <p data-i18n="bootstrap-skills">Faço sites responsivos e profissionais usando Bootstrap.</p>
+            </div>
+            <div class="mini-container">
+                <img src="netlify.jpg" alt="Netlify">
+                <p data-i18n="netlify-skills">Uso Netlify para testar sites HTML-CSS, Bootstrap, sites com ou sem scripts do JavaScript, ou até mesmo para trabalho.</p>
+            </div>
+            <div class="mini-container">
+                <img src="heroku.jpg" alt="Heroku">
+                <p data-i18n="heroku-skills">Uso Heroku para testar aplicações Python-Flask, ou até mesmo para trabalho usando aplicações úteis.</p>
+            </div>
+        </section>
 
-</div>
-<main>
-Obrigado por visitar meu currículo online !
-    <section id="sobre-mim" class="content-section2">
-<h3 data-lang data-lang-key="pt">Sobre mim</h3>
-      <div class="mini-container2">
-        <img src="Vitão.jpg" alt="Sobre mim">
-        <p data-lang data-lang-key="pt">Olá, me chamo Vitor Santos. Sou Assistente Administrativo, Assistente Virtual, Programador e Analista de Dados Júnior, com habilidades de programação em Python, Flask, HTML-CSS e JavaScript. Caso precise de um dos meus serviços, me mande um e-mail por contatos. Número: +5521977080240</p>
-      </div>
-    </section>
+        <h3 id="marketing-digital" data-i18n="digital-marketing">Marketing Digital</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <img src="MARKETING DIGITAL.jpg" alt="Marketing Digital">
+                <p data-i18n="digital-campaigns">Campanhas digitais e otimização SEO... Google Search Console, Site maps, Instagram, Facebook</p>
+            </div>
+            <div class="mini-container">
+                <img src="seo.jpg" alt="SEO">
+                <p data-i18n="seo-skills">Search Engine Optimization (SEO) - Em PT: Otimização para motores de busca</p>
+            </div>
+            <div class="mini-container">
+                <img src="google analitycs.jpg" alt="Google Analytics">
+                <p data-i18n="analytics-skills">Google Analytics - Análise de tráfego de sites...</p>
+            </div>
+        </section>
 
-  </main>
-<main>
-    
-    
-    
-   
-    <h3 data-lang data-lang-key="pt">Assistente Administrativo</h3>
-    <section id="assistente-administrativo" class="content-section">
-        <div class="mini-container">
-            <img src="assistente administrativo.jpg" alt="Assistente Administrativo">
-            <p data-lang="pt">Gerenciamento de tarefas administrativas...</p>
-        </div>
-        <div class="mini-container">
-            <img src="Excel.jpg" alt="Excel">
-            <p data-lang data-lang-key="pt">Tenho Excel nível intermediário.</p>
-        </div>
-        <div class="mini-container">
-            <img src="Matplotlib.PNG" alt="Matplotlib">
-            <p data-lang data-lang-key="pt">Matplotlib Nível Avançado</p>
-        </div>
-        <div class="mini-container">
-            <img src="Powerpoint.png" alt="Powerpoint">
-            <p data-lang data-lang-key="pt">PowerPoint Nível Intermediário</p>
-        </div>
-        <div class="mini-container">
-            <img src="Word.jpg" alt="Word">
-            <p data-lang data-lang-key="pt">Word Nível Intermediário</p>
-        </div>
-    </section>
-    
-    <h3 data-lang data-lang-key="pt">Programação</h3>
-    <section id="programacao" class="content-section">
-        <div class="mini-container">
-            <img src="python.jpg" alt="Marketing Digital">
-            <p data-lang data-lang-key="pt">Sou capaz de desenvolver aplicações web e de escritórios úteis usando Python.</p>
-        </div>
-        <div class="mini-container">
-            <img src="JAVASCRIPT.jpg" alt="SEO">
-            <p data-lang data-lang-key="pt">Sou capaz de desenvolver scripts úteis para website voltados para frond-end e node para usar como servidor local.</p>
-        </div>
-        <div class="mini-container">
-            <img src="HTML-CSS.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Sou capaz de desenvolver sites úteis para web, sites estáticos e de exibição.</p>
-        </div>
-        <div class="mini-container">
-            <img src="bootstrap.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Faço sites responsivos e profissionais usando bootstrap.</p>
-        </div>
-        <div class="mini-container">
-            <img src="netlify.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Uso Netlify para testar sites html-ccs, bootstrap, sites com ou sem scripts do javascript, ou até mesmo para trabalho.</p>
-        </div>
-        <div class="mini-container">
-            <img src="heroku.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Uso Heroku para testar aplicações Python-Flask, ou até mesmo para trabalho usando aplicações úteis.</p>
-        </div>
-    </section>
-    
-    <h3 data-lang data-lang-key="pt">Marketing Digital</h3>
-    <section id="marketing-digital" class="content-section">
-        <div class="mini-container">
-            <img src="MARKETING DIGITAL.jpg" alt="Marketing Digital">
-            <p data-lang data-lang-key="pt">Campanhas digitais e otimização SEO... Google Search console, Site maps, Instagran, Facebook</p>
-        </div>
-        <div class="mini-container">
-            <img src="seo.jpg" alt="SEO">
-            <p data-lang="pt">- Search Engine Optimization (SEO) - Em PT: Otimização para motores de busca</p>
-        </div>
-        <div class="mini-container">
-            <img src="google analitycs.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Google Analytics - Análise de tráfego de sites...</p>
-        </div>
-    </section>
-    
-    <h3 data-lang data-lang-key="pt">Analista de dados junior</h3>
-    <section id="analista-de-dados" class="content-section">
-        <div class="mini-container">
-            <img src="Python.jpg" alt="Marketing Digital">
-            <p data-lang data-lang-key="pt">PYTHON e FLASK para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão. usando bibliotecas que facilitam o processo em 100%</p>
-        </div>
-        <div class="mini-container">
-            <img src="mysql workbench.jpg" alt="SEO">
-            <p data-lang data-lang-key="pt">Para manipular dados e usá-los em consultas complexas de dados.</p>
-        </div>
-        <div class="mini-container">
-            <img src="mysql.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Para armazenar dados de maneira simples e organizada.</p>
-        </div>
-        <div class="mini-container">
-            <img src="JAVASCRIPT.jpg" alt="SEO">
-            <p data-lang data-lang-key="pt">Biblioteca Chart e Leaflet, para demonstração gráfica de dados.</p>
-        </div>
-    </section>
-    
-    <h3 data-lang data-lang-key="pt">Experiências</h3>
-    <section id="experiencia" class="content-section">
-        <div class="mini-container">
-            <img src="outlier.jpg" alt="Outlier">
-            <p data-lang data-lang-key="pt">Outlier - geração de áudio para I.A Português para Inglês</p>
-        </div>
-        <div class="mini-container">
-            <img src="Agente de viagens.jpg" alt="Agente de viagem">
-            <p data-lang data-lang-key="pt">Agente de viagens - Auxiliando pessoas a conseguir passaporte com planos de cursos</p>
-        </div>
-        <div class="mini-container">
-            <img src="google analitycs.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Assistente virtual - Writer translator freelancer pessoal de um amigo americano</p>
-        </div>
-        <div class="mini-container">
-            <img src="auxiliar de serviços gerais.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Auxiliar de serviços gerais - descarregando produtos de caminhão</p>
-        </div>
-        <div class="mini-container">
-            <img src="ajudante de pedreiro.jpg" alt="Google Analytics">
-            <p data-lang data-lang-key="pt">Ajudante de pedreiro - Ajudando a encher carrinho de areia, pegar cimentos, baldes de cimentos</p>
-        </div>
-    </section>
-    
-    <h3 data-lang data-lang-key="pt">Capacidades PYTHON, FLASK, HTML-CSS, "ANÁLISE DE DADOS REGRESSÃO LINEAR E TESTES"</h3>
-    <section id="capacidades" class="content-section">
-        <div class="mini-container">
-            <h1 data-lang data-lang-key="pt">PROJETOS: PYTHON</h1>
-            <p data-lang data-lang-key="pt">Agendas comuns com banco de dados.</p>
-            <p data-lang data-lang-key="pt">Formulários com banco de dados, com hora e despertador.</p>
-            <p data-lang data-lang-key="pt">Leitor PDF com áudio.</p>
-            <p data-lang data-lang-key="pt">Script para enviar mensagens de Email com body responsivo para mais de 20.000 pessoas "dependendo da quantia de Emails é possível até mais".</p>
-            <p data-lang data-lang-key="pt">Tradutor de áudio para txt, rtf ou srt.</p>
-            <p data-lang data-lang-key="pt">Transformador de textos em áudios speach voz humana ou robótica, ou semelhante a humana.</p>
-            <p data-lang data-lang-key="pt">Árvore de decisão e regressão linear.</p>
-            <p data-lang data-lang-key="pt">Machine Learning.</p>
-            <p data-lang data-lang-key="pt">Machine Learning com estatística e probabilidade.</p>
-            <p data-lang data-lang-key="pt">Regressão linear.</p>
-            <p data-lang data-lang-key="pt">SRT para áudio em qualquer idioma.</p>
-            <p data-lang data-lang-key="pt">Cortar bordas de vídeos.</p>
-            <p data-lang data-lang-key="pt">Transformar texto em PDF.</p>
-            <p data-lang data-lang-key="pt">Transformar texto UTF-8 em texto cp1235.</p>
-            <p data-lang data-lang-key="pt">Formulários com banco de dados, com hora e despertador.</p>
-            <p data-lang data-lang-key="pt">Planilhas de Despesas.</p>
-            <p data-lang data-lang-key="pt">Dashboard gráficos.</p>
-            <p data-lang data-lang-key="pt">Dashboard semidinâmico.</p>
-            <p data-lang data-lang-key="pt">Relógios.</p>
-            <p data-lang data-lang-key="pt">Calculadora.</p>
-            <p data-lang data-lang-key="pt">App semelhante ao Wordpad.</p>
-            <p data-lang data-lang-key="pt">App de edição de vídeos.</p>
-        </div>
-        <div class="mini-container">
-            <h1 data-lang data-lang-key="pt">PROJETOS: FLASK</h1>
-            <p data-lang data-lang-key="pt">Formulários com banco de dados.</p>
-            <p data-lang data-lang-key="pt">Formulários com banco de dados.</p>
-            <p data-lang data-lang-key="pt">Aplicação de Chat com banco de dados, possível enviar fotos e vídeos.</p>
-            <p data-lang data-lang-key="pt">Aplicação escreva a sua história, foto história, salvasse com banco de dados.</p>
-            <p data-lang data-lang-key="pt">Dashboard leitor de planilhas Excel.</p>
-            <p data-lang data-lang-key="pt">Dashboard informador de dados de planilhas excel e csv.</p>
-            <p data-lang data-lang-key="pt">Login com banco de dados.</p>
-            <p data-lang data-lang-key="pt">Formulário Dashboard online com Dash.</p>
-            <p data-lang data-lang-key="pt">Informação de Dados.</p>
-        </div>
-        <div class="mini-container">
-            <h1 data-lang data-lang-key="pt">PROJETOS: HTML-CSS</h1>
-            <h1 data-lang data-lang-key="pt">BOOTSTRAP</h1>
-            <h1 data-lang data-lang-key="pt">JAVASCRIPT</h1>
-            <p data-lang data-lang-key="pt">Site de curso para 25 idiomas diferentes.</p>
-            <p data-lang data-lang-key="pt">Lojas de roupa.</p>
-            <p data-lang data-lang-key="pt">Loja de artigos religiosos.</p>
-            <p data-lang data-lang-key="pt">Formulário Pessoal.</p>
-            <p data-lang data-lang-key="pt">Site de conteúdo adulto.</p>
-            <p data-lang data-lang-key="pt">Site de jogos.</p>
-            <p data-lang data-lang-key="pt">Portifólio pessoal com login e senha.</p>
-            <p data-lang data-lang-key="pt">Site para Clínica.</p>
-            <p data-lang data-lang-key="pt">Site para Oficina.</p>
-            <p data-lang data-lang-key="pt">Planilha de cálculo de despesas.</p>
-            <p data-lang data-lang-key="pt">Relatório de dados exemplo.</p>
-        </div>
-        <div class="mini-container">
-            <h1 data-lang data-lang-key="pt">ANÁLISE DE DADOS "REGRESSÃO LINEAR E TESTES"</h1>
-            <h1 data-lang data-lang-key="pt">ANÁLISES FEITAS COM PYTHON, MYSQL E EXCEL</h1>
-            <h1 data-lang data-lang-key="pt">EXIBIÇÃO DE RELATÓRIOS GRÁFICOS FLASK</h1>
-            <h1 data-lang data-lang-key="pt">, BOOTSTRAP, JAVASCRIPT</h1>
-            <h1 data-lang data-lang-key="pt">CONHECIMENTOS E CAPACIDADES ABAIXO</h1>
-            <p data-lang data-lang-key="pt">Experiência com Modelagem Estatística.</p>
-            <p data-lang data-lang-key="pt">statsmodels e scikit-learn.</p>
-            <p data-lang data-lang-key="pt">Gestão e Manipulação de Bancos de Dados MYSQL.</p>
-            <p data-lang data-lang-key="pt">Realização de análise estatística básica Excel.</p>
-            <p data-lang data-lang-key="pt">Criação de dashboards interativos e relatórios dinâmicos Matplotlib, Chart e Leafle
-    </section>
-   
-    <section id="contato">
-      <h2 data-lang data-lang-key="pt">Contato</h2>
-      <p data-lang data-lang-key="pt">Entre em contato comigo por email.</p>
-      <form action="https://api.staticforms.xyz/submit" method="post">
-        <label for="nome" data-lang data-lang-key="pt">Nome:</label>
-        <input type="text" name="name" placeholder="Digite seu nome">
-        <label for="email" data-lang data-lang-key="pt">Email:</label>
-        <input type="text" name="email" placeholder="Digite seu email" />
-        <label for="mensagem" data-lang data-lang-key="pt">Mensagem:</label>
-        <textarea name="message" placeholder="Digite sua mensagem"></textarea>
-        <button type="submit" data-lang data-lang-key="pt">Enviar mensagem</button>
-        <input type="hidden" name="accessKey" value="a7efdbdd-0a4f-451e-85c0-3b2f8c439615">
-        <input type="hidden" name="redirectTo" value="https://obrigado-byvitorsantos.netlify.app/">
-      </form>
-      <p data-lang data-lang-key="pt">Ou converse comigo através do WhatsApp.</p>
-      <section id="whatsapp-button">
-        <a href="https://wa.me/5521977080240?text=Olá Vitão, gostaria de me consultar !" target="_blank">
-          <img src="whatssap.png" alt="WhatsApp Icon">
-        </a>
-      </section>
-      <script src="curriculo traduções.js"></script>
+        <h3 id="analista-de-dados" data-i18n="data-analyst">Analista de Dados Júnior</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <img src="Python.jpg" alt="Python">
+                <p data-i18n="python-data">PYTHON e FLASK para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão, usando bibliotecas que facilitam o processo em 100%</p>
+            </div>
+            <div class="mini-container">
+                <img src="mysql workbench.jpg" alt="MySQL Workbench">
+                <p data-i18n="mysql-workbench">Para manipular dados e usá-los em consultas complexas de dados.</p>
+            </div>
+            <div class="mini-container">
+                <img src="mysql.jpg" alt="MySQL">
+                <p data-i18n="mysql-skills">Para armazenar dados de maneira simples e organizada.</p>
+            </div>
+            <div class="mini-container">
+                <img src="JAVASCRIPT.jpg" alt="JavaScript">
+                <p data-i18n="js-data">Biblioteca Chart e Leaflet, para demonstração gráfica de dados.</p>
+            </div>
+        </section>
 
+        <h3 id="experiencia" data-i18n="experience">Experiências</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <img src="outlier.jpg" alt="Outlier">
+                <p data-i18n="outlier-exp">Outlier - geração de áudio para I.A Português para Inglês</p>
+            </div>
+            <div class="mini-container">
+                <img src="Agente de viagens.jpg" alt="Agente de viagem">
+                <p data-i18n="travel-agent">Agente de viagens - Auxiliando pessoas a conseguir passaporte com planos de cursos</p>
+            </div>
+            <div class="mini-container">
+                <img src="google analitycs.jpg" alt="Google Analytics">
+                <p data-i18n="virtual-assistant">Assistente virtual - Writer translator freelancer pessoal de um amigo americano</p>
+            </div>
+            <div class="mini-container">
+                <img src="auxiliar de serviços gerais.jpg" alt="Auxiliar">
+                <p data-i18n="general-services">Auxiliar de serviços gerais - descarregando produtos de caminhão</p>
+            </div>
+            <div class="mini-container">
+                <img src="ajudante de pedreiro.jpg" alt="Ajudante">
+                <p data-i18n="mason-helper">Ajudante de pedreiro - Ajudando a encher carrinho de areia, pegar cimentos, baldes de cimentos</p>
+            </div>
+        </section>
 
-  </main>
-</body>
-</html>
-    
+        <h3 id="capacidades" data-i18n="skills">Capacidades</h3>
+        <section class="content-section">
+            <div class="mini-container">
+                <h1 data-i18n="python-projects">PROJETOS: PYTHON</h1>
+                <p data-i18n="python-projects-list">Agendas comuns com banco de dados. Formulários com banco de dados, com hora e despertador. Leitor PDF com áudio. Script para enviar mensagens de Email com body responsivo para mais de 20.000 pessoas. Tradutor de áudio para txt, rtf ou srt. Transformador de textos em áudios com voz humana ou robótica. Árvore de decisão e regressão linear. Machine Learning. Machine Learning com estatística e probabilidade. Regressão linear. SRT para áudio em qualquer idioma. Cortar bordas de vídeos. Transformar texto em PDF. Transformar texto UTF-8 em texto cp1235. Planilhas de Despesas. Dashboard gráficos. Dashboard semidinâmico. Relógios. Calculadora. App semelhante ao Wordpad. App de edição de vídeos.</p>
+            </div>
+            <div class="mini-container">
+                <h1 data-i18n="flask-projects">PROJETOS: FLASK</h1>
+                <p data-i18n="flask-projects-list">Formulários com banco de dados. Aplicação de Chat com banco de dados, possível enviar fotos e vídeos. Aplicação escreva a sua história, foto história, salva com banco de dados. Dashboard leitor de planilhas Excel. Dashboard informador de dados de planilhas Excel e CSV. Login com banco de dados. Formulário Dashboard online com Dash. Informação de Dados.</p>
+            </div>
+            <div class="mini-container">
+                <h1 data-i18n="html-css-projects">PROJETOS: HTML-CSS, BOOTSTRAP, JAVASCRIPT</h1>
+                <p data-i18n="html-css-projects-list">Site de curso para 25 idiomas diferentes. Lojas de roupa. Loja de artigos religiosos. Formulário Pessoal. Site de conteúdo adulto. Site de jogos. Portfólio pessoal com login e senha. Site para Clínica. Site para Oficina. Planilha de cálculo de despesas. Relatório de dados exemplo.</p>
+            </div>
+            <div class="mini-container">
+                <h1 data-i18n="data-analysis">ANÁLISE DE DADOS "REGRESSÃO LINEAR E TESTES"</h1>
+                <p data-i18n="data-analysis-list">Experiência com Modelagem Estatística. statsmodels e scikit-learn. Gestão e Manipulação de Bancos de Dados MySQL. Realização de análise estatística básica Excel. Criação de dashboards interativos e relatórios dinâmicos Matplotlib, Chart e Leaflet</p>
+            </div>
+        </section>
 
-
-
-
+        <section id="contato">
+            <h2 data-i18n="contact">Contato</h2>
+            <p data-i18n="contact-text">Entre em contato comigo por email.</p>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label for="nome" data-i18n="name">Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome">
+                <label for="email" data-i18n="email">Email:</label>
+                <input type="text" name="email" placeholder="Digite seu email">
+                <label for="mensagem" data-i18n="message">Mensagem:</label>
+                <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit" data-i18n="send-message">Enviar mensagem</button>
+                <input type="hidden" name="accessKey" value="a7efdbdd-0a4f-451e-85c0-3b2f8c439615">
+                <input type="hidden" name="redirectTo" value="https://obrigado-byvitorsantos.netlify.app/">
+            </form>
+            <p data-i18n="whatsapp-text">Ou converse comigo através do WhatsApp.</p>
+            <section id="whatsapp-button">
+                <a href="https://wa.me/5521977080240?text=Olá Vitão, gostaria de me consultar !" target="_blank">
+                    <img src="whatssap.png" alt="WhatsApp Icon">
+                </a>
+            </section>
+        </section>
+    </main>
+    <script src="translations.js"></script>
 </body>
 </html>
