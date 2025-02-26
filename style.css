@@ -329,7 +329,11 @@
             align-content: center;
       }
     
-    
+    .mini-container, .mini-container2 {
+        flex: 1 1 45%; /* Em telas médias, duas colunas */
+    }
+
+
       .skill-frame {
         flex: 1 1 30%;
         max-width: 300px;
