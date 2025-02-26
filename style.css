@@ -332,7 +332,9 @@
     .mini-container, .mini-container2 {
         flex: 1 1 45%; /* Em telas médias, duas colunas */
     }
-
+   .mini-container2 {
+        flex: 1 1 45%; /* Mantém duas colunas na seção "Sobre Mim" */
+    }
 
       .skill-frame {
         flex: 1 1 30%;
