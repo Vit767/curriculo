@@ -318,11 +318,7 @@
     
     @media (max-width: 768px) {
       
-        .content-section {
-            display: flex;
-            flex-direction: column; /* Alinha os vídeos em coluna */
-        justify-content: center;}
-       
+   
         .content-section3 {
             flex-direction: column; /* Alinha os vídeos em coluna */
             justify-content: center;
