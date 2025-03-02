@@ -236,7 +236,7 @@
         border-radius:50%;
     }
     .mini-container img {
-        width: 90%;
+        width: 150px;
         heigth:150px;
         border-radius: 10px; /* Bordas arredondadas para as imagens */
     }
