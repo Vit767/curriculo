@@ -237,7 +237,7 @@
     }
     .mini-container img {
         width: 90%;
-        height: auto;
+        heigth:150px;
         border-radius: 10px; /* Bordas arredondadas para as imagens */
     }
     
