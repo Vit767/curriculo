@@ -391,8 +391,14 @@ const translations = {
 
 function updateLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(element => {
-      const key = element.getAttribute('data-i18n');
-      element.textContent = translations[lang][key] || translations['pt'][key]; // Fallback para PT
+    const key = element.getAttribute('data-i18n');
+    
+    // Verifica se o elemento tem um placeholder (input ou textarea)
+    if (element.hasAttribute('placeholder')) {
+      element.placeholder = translations[lang][key] || translations['pt'][key]; // Atualiza o placeholder
+    } else {
+      element.textContent = translations[lang][key] || translations['pt'][key]; // Atualiza o textContent
+    }
   });
 }
 
@@ -401,5 +407,5 @@ document.getElementById('language-select').addEventListener('change', (event) =>
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  updateLanguage('pt');
+  updateLanguage('pt'); // Carrega o português como padrão
 });
