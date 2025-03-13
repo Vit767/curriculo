@@ -22,6 +22,7 @@
             padding: 12px 40px 12px 15px; /* Espaço para o ícone */
             font-size: 16px;
             border: 1px solid #ccc;
+            margin-top:20px;
             border-radius: 5px;
             background-color: #fff;
             appearance: none; /* Remove o estilo padrão do sistema */
