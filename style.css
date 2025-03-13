@@ -22,8 +22,6 @@
             padding: 12px 40px 12px 15px; /* Espaço para o ícone */
             font-size: 16px;
             border: 1px solid #ccc;
-            margin-top:20px;
-              margin-bottom:20px;
             border-radius: 5px;
             background-color: #fff;
             appearance: none; /* Remove o estilo padrão do sistema */
@@ -50,8 +48,13 @@
         }
 
         /* Opções do select */
-        .language-select option {
+        #language-select option {
             padding: 10px;
+        }
+
+        /* Estilo da opção placeholder */
+        #language-select option[disabled] {
+            color: #888; /* Cor mais clara para indicar que é um placeholder */
         }
     #agradecimento{
       margin-top: 300px;
