@@ -28,7 +28,7 @@
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: #fff;
+            background-color: yellow;
             appearance: none; /* Remove o estilo padrão do sistema */
             cursor: pointer;
             transition: border-color 0.3s ease;
