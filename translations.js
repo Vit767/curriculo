@@ -63,7 +63,10 @@ const translations = {
       'email': 'Email:',
       'message': 'Mensagem:',
       'send-message': 'Enviar mensagem',
-      'whatsapp-text': 'Ou converse comigo através do WhatsApp.'
+      'whatsapp-text': 'Ou converse comigo através do WhatsApp.',
+         "name-placeholder": "Digite seu nome",
+                        "email-placeholder": "Digite seu email",
+                        "message-placeholder": "Digite sua mensagem"
   },
   'en': {
       'see-skills': 'See my skills',
@@ -113,7 +116,10 @@ const translations = {
       'email': 'Email:',
       'message': 'Message:',
       'send-message': 'Send message',
-      'whatsapp-text': 'Or chat with me via WhatsApp.'
+      'whatsapp-text': 'Or chat with me via WhatsApp.',
+      "name-placeholder": "Enter your name",
+                        "email-placeholder": "Enter your email",
+                        "message-placeholder": "Enter your message"
   },
   'es': {
       'see-skills': 'Ver mis capacidades',
@@ -163,7 +169,11 @@ const translations = {
       'email': 'Email:',
       'message': 'Mensaje:',
       'send-message': 'Enviar mensaje',
-      'whatsapp-text': 'O chatea conmigo por WhatsApp.'
+      'whatsapp-text': 'O chatea conmigo por WhatsApp.',
+                            "name-placeholder": "Ingresa tu nombre",
+                        "email-placeholder": "Ingresa tu correo electrónico",
+                        "message-placeholder": "Ingresa tu mensaje"
+
   },
   'fr': {
       'see-skills': 'Voir mes compétences',
@@ -213,7 +223,10 @@ const translations = {
       'email': 'Email :',
       'message': 'Message :',
       'send-message': 'Envoyer le message',
-      'whatsapp-text': 'Ou discutez avec moi via WhatsApp.'
+      'whatsapp-text': 'Ou discutez avec moi via WhatsApp.',
+     "name-placeholder": "Entrez votre nom",
+                        "email-placeholder": "Entrez votre email",
+                        "message-placeholder": "Entrez votre message"
   },
   'ru': {
       'see-skills': 'Посмотреть мои навыки',
@@ -263,7 +276,10 @@ const translations = {
       'email': 'Email:',
       'message': 'Сообщение:',
       'send-message': 'Отправить сообщение',
-      'whatsapp-text': 'Или свяжитесь со мной через WhatsApp.'
+      'whatsapp-text': 'Или свяжитесь со мной через WhatsApp.',
+           "name-placeholder": "Введите ваше имя",
+                        "email-placeholder": "Введите ваш email",
+                        "message-placeholder": "Введите ваше сообщение"
   },
   'ja': {
       'see-skills': '私のスキルを見る',
@@ -313,7 +329,10 @@ const translations = {
       'email': 'メール:',
       'message': 'メッセージ:',
       'send-message': 'メッセージを送信',
-      'whatsapp-text': 'またはWhatsAppで私とチャットしてください。'
+      'whatsapp-text': 'またはWhatsAppで私とチャットしてください。',
+     "name-placeholder": "名前を入力してください",
+                        "email-placeholder": "メールを入力してください",
+                        "message-placeholder": "メッセージを入力してください"
   },
   'zh': {
       'see-skills': '查看我的技能',
@@ -363,7 +382,10 @@ const translations = {
       'email': '电子邮件:',
       'message': '消息:',
       'send-message': '发送消息',
-      'whatsapp-text': '或通过WhatsApp与我聊天。'
+      'whatsapp-text': '或通过WhatsApp与我聊天。',
+       "name-placeholder": "输入您的姓名",
+                        "email-placeholder": "输入您的电子邮件",
+                        "message-placeholder": "输入您的消息"
   }
 };
 
