@@ -18,6 +18,7 @@
             position: relative;
             width: 100%;
             max-width: 300px; /* Largura máxima para desktop */
+         margin-left:50%;
         }
 
         /* Estilo do select */
