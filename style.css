@@ -18,7 +18,7 @@
             position: relative;
             width: 100%;
             max-width: 300px; /* Largura máxima para desktop */
-         margin-left:50%;
+
         }
 
         /* Estilo do select */
@@ -28,7 +28,7 @@
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: yellow;
+            background-color: blue;
             appearance: none; /* Remove o estilo padrão do sistema */
             cursor: pointer;
             transition: border-color 0.3s ease;
