@@ -32,7 +32,7 @@
             appearance: none; /* Remove o estilo padrão do sistema */
             cursor: pointer;
             transition: border-color 0.3s ease;
-            
+            color:white;
       font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
         }
 
