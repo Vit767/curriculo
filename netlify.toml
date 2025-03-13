@@ -1,4 +1,4 @@
-[[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
-  status = 200
+[[headers]]
+  for = "/*"  # Aplica a todas as páginas do site
+  [headers.values]
+    X-Robots-Tag = "index, follow"
