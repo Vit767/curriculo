@@ -27,8 +27,11 @@
         </nav>
     </header>
 
-  Choose your language
-        <select id="language-select">
+
+     
+    <div class="language-select-container">
+        <select id="language-select" onchange="alert('Idioma selecionado: ' + this.value)">
+            <option value="" disabled selected>Choose your language</option>
             <option value="pt">Português</option>
             <option value="en">English</option>
             <option value="es">Español</option>
