@@ -14,58 +14,32 @@
             min-height: 100vh;
 
     }
-     .language-select-container {
-            position: relative;
-            width: 100%;
-        
-         margin-top:20px;
-           margin-bottom:20px;
- text-align: center;
-        }
+.language-select-container {
+    position: relative;
+    width: 200px; /* Largura reduzida */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    text-align: center;
+}
 
-        /* Estilo do select */
-        #language-select {
-             text-align: center;
-            width: 100%;
-            padding: 12px 40px 12px 15px; /* Espaço para o ícone */
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: black;
-            appearance: none; /* Remove o estilo padrão do sistema */
-            cursor: pointer;
-            transition: border-color 0.3s ease;
-            color:white;
-      font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
-        }
+/* Estilo do select */
+#language-select {
+    width: 100%;
+    padding: 8px 30px 8px 15px; /* Padding reduzido */
+    font-size: 14px; /* Fonte menor */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
 
-        #language-select:hover,
-        #language-select:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-
-        /* Ícone personalizado (seta) */
-        .language-select-container::after {
-            content: '\25BC'; /* Código Unicode para seta para baixo */
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            transform: translateY(-50%);
-            font-size: 12px;
-            color: #333;
-            pointer-events: none; /* Evita que o ícone interfira no clique */
-        }
-
-        /* Opções do select */
-        #language-select option {
-            padding: 10px;
-        }
-
-        /* Estilo da opção placeholder */
-        #language-select option[disabled] {
-            color: #888; /* Cor mais clara para indicar que é um placeholder */
-        }
+/* Remove o label "Choose your language" se não for necessário */
+.language-label {
+    display: none;
+}
     #agradecimento{
       margin-top: 300px;
     }
