@@ -15,30 +15,27 @@
 
     }
 .language-select-container {
-    position: relative;
-    width: 200px; /* Largura reduzida */
-    margin: 20px auto; /* Centraliza horizontalmente */
-    text-align: center;
+    display: flex;           /* Alinha texto + select na mesma linha */
+    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px;              /* Espaço entre texto e select */
+    margin: 20px auto;      /* Margem superior/inferior e centraliza */
 }
 
-/* Estilo do select */
+.language-label {
+    font-size: 16px;
+    color: #333;
+}
+
 #language-select {
-    width: 100%;
-    padding: 8px 30px 8px 15px; /* Padding reduzido */
-    font-size: 14px; /* Fonte menor */
+    padding: 8px 30px 8px 15px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: black;
-    appearance: none;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
     color: white;
-    font-family: 'Teko', sans-serif;
-}
-
-/* Remove o label "Choose your language" se não for necessário */
-.language-label {
-    display: none;
+    cursor: pointer;
+    width: 150px; /* Largura fixa para o select */
 }
     #agradecimento{
       margin-top: 300px;
