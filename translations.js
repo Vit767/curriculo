@@ -66,7 +66,8 @@ const translations = {
       'whatsapp-text': 'Ou converse comigo através do WhatsApp.',
       "name-placeholder": "Digite seu nome",
       "email-placeholder": "Digite seu email",
-      "message-placeholder": "Digite sua mensagem"
+      "message-placeholder": "Digite sua mensagem",
+    "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib"
   },
   'en': {
       'see-skills': 'See my skills',
@@ -119,7 +120,8 @@ const translations = {
       'whatsapp-text': 'Or chat with me via WhatsApp.',
       "name-placeholder": "Enter your name",
       "email-placeholder": "Enter your email",
-      "message-placeholder": "Enter your message"
+      "message-placeholder": "Enter your message",
+    "streamlity-data": "	Data display and data counting using Streamlit, Dash, Plotly or Matplotlib"
   },
   'es': {
       'see-skills': 'Ver mis capacidades',
@@ -172,7 +174,8 @@ const translations = {
       'whatsapp-text': 'O chatea conmigo por WhatsApp.',
       "name-placeholder": "Ingresa tu nombre",
       "email-placeholder": "Ingresa tu correo electrónico",
-      "message-placeholder": "Ingresa tu mensaje"
+      "message-placeholder": "Ingresa tu mensaje",
+       "streamlity-data": "	Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib"
 
   },
   'fr': {
@@ -226,7 +229,8 @@ const translations = {
       'whatsapp-text': 'Ou discutez avec moi via WhatsApp.',
      "name-placeholder": "Entrez votre nom",
       "email-placeholder": "Entrez votre email",
-      "message-placeholder": "Entrez votre message"
+      "message-placeholder": "Entrez votre message",
+      "streamlity-data": "Affichage des données et comptage des données utilisant Streamlit, Dash, Plotly ou Matplotlib"
   },
   'ru': {
       'see-skills': 'Посмотреть мои навыки',
@@ -279,7 +283,9 @@ const translations = {
       'whatsapp-text': 'Или свяжитесь со мной через WhatsApp.',
       "name-placeholder": "Введите ваше имя",
        "email-placeholder": "Введите ваш email",
-       "message-placeholder": "Введите ваше сообщение"
+       "message-placeholder": "Введите ваше сообщение",
+         "streamlity-data": "	Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib"
+    
   },
   'ja': {
       'see-skills': '私のスキルを見る',
@@ -332,7 +338,8 @@ const translations = {
       'whatsapp-text': 'またはWhatsAppで私とチャットしてください。',
      "name-placeholder": "名前を入力してください",
       "email-placeholder": "メールを入力してください",
-      "message-placeholder": "メッセージを入力してください"
+      "message-placeholder": "メッセージを入力してください",
+        "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント"
   },
   'zh': {
       'see-skills': '查看我的技能',
@@ -385,7 +392,8 @@ const translations = {
       'whatsapp-text': '或通过WhatsApp与我聊天。',
        "name-placeholder": "输入您的姓名",
        "email-placeholder": "输入您的电子邮件",
-        "message-placeholder": "输入您的消息"
+        "message-placeholder": "输入您的消息",
+          "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数"
   }
 };
 
