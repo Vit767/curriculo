@@ -43,7 +43,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search console - Google ADS - Google Adsense. Para monitorar, melhorar mecânismo de pesquisa de sites no google, fazer anuncios e campanhas nacionais ou internacionais, e fazer sites terem uma melhor monetização.',
 
       'mysql-workbench': 'Para manipular dados e usá-los em consultas complexas de dados.',
-      'mysql-skills': 'Para armazenar dados de maneira simples e organizada.',
+      "mysql-skills": "Para armazenar dados de maneira simples e organizada.Também sou apto a criar banco de dados para sites, JAVASCRIPT e Python  e para  Aplicativos desktop PYTHON .",
       'js-data': 'Biblioteca Chart e Leaflet, para demonstração gráfica de dados.',
       'outlier-exp': 'Outlier - geração de áudio para I.A Português para Inglês',
       'travel-agent': 'Agente de viagens - Auxiliando pessoas a conseguir passaporte com planos de cursos',
@@ -103,7 +103,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. To monitor, improve website search engine performance on Google, create ads and national or international campaigns, and enhance website monetization.',
       
       'mysql-workbench': 'To manipulate data and use it in complex data queries.',
-      'mysql-skills': 'To store data simply and organized.',
+      "mysql-skills": "To store data in a simple and organized way.I am also capable of creating databases for websites, JAVASCRIPT and Python  and for  Desktop applications PYTHON .",
       'js-data': 'Chart and Leaflet libraries for graphical data demonstration.',
       'outlier-exp': 'Outlier - audio generation for AI from Portuguese to English',
       'travel-agent': 'Travel agent - Helping people obtain passports with course plans',
@@ -163,7 +163,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Para monitorear, mejorar el rendimiento de los motores de búsqueda de sitios web en Google, crear anuncios y campañas nacionales o internacionales, y mejorar la monetización de sitios web.',
      
       'mysql-workbench': 'Para manipular datos y usarlos en consultas complejas de datos.',
-      'mysql-skills': 'Para almacenar datos de manera simple y organizada.',
+      "mysql-skills": "Para almacenar datos de manera simple y organizada.También soy apto para crear bases de datos para sitios web, JAVASCRIPT y Python y para Aplicaciones de escritorio PYTHON .",
       'js-data': 'Bibliotecas Chart y Leaflet, para demostración gráfica de datos.',
       'outlier-exp': 'Outlier - generación de audio para I.A. de portugués a inglés',
       'travel-agent': 'Agente de viajes - Ayudando a personas a obtener pasaportes con planes de cursos',
@@ -225,7 +225,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Pour surveiller, améliorer les performances des moteurs de recherche des sites web sur Google, créer des annonces et des campagnes nationales ou internationales, et optimiser la monétisation des sites web.',
      
       'mysql-workbench': 'Pour manipuler les données et les utiliser dans des requêtes complexes.',
-      'mysql-skills': 'Pour stocker les données de manière simple et organisée.',
+      "mysql-skills": "Pour stocker des données de manière simple et organisée.Je suis également capable de créer des bases de données pour des sites web, JAVASCRIPT et Python et pour Applications de bureau PYTHON .",
       'js-data': 'Bibliothèques Chart et Leaflet, pour la démonstration graphique des données.',
       'outlier-exp': 'Outlier - génération audio pour l’IA du portugais vers l’anglais',
       'travel-agent': 'Agent de voyage - Aider les gens à obtenir des passeports avec des plans de cours',
@@ -285,7 +285,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Для мониторинга, улучшения работы поисковых систем сайтов в Google, создания рекламы и национальных или международных кампаний, а также для улучшения монетизации сайтов.',
    
       'mysql-workbench': 'Для манипуляции данными и их использования в сложных запросах.',
-      'mysql-skills': 'Для простого и организованного хранения данных.',
+      "mysql-skills": "Для хранения данных простым и организованным способом.Я также способен создавать базы данных для веб-сайтов, JAVASCRIPT и Python и для Настольных приложений PYTHON .",
       'js-data': 'Библиотеки Chart и Leaflet для графической демонстрации данных.',
       'outlier-exp': 'Outlier - генерация аудио для ИИ с португальского на английский',
       'travel-agent': 'Туристический агент - Помощь людям в получении паспортов с планами курсов',
@@ -347,7 +347,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。Googleでのウェブサイトの検索エンジンのパフォーマンスを監視し、改善し、広告や国内・国際キャンペーンを作成し、ウェブサイトの収益化を向上させるために。',
      
       'mysql-workbench': 'データを操作し、複雑なデータクエリに使用します。',
-      'mysql-skills': 'データをシンプルかつ整理して保存します。',
+      "mysql-skills": "データをシンプルかつ整理された方法で保存するため。私はまた、ウェブサイト用のデータベースを作成することができ、 JAVASCRIPT と Python そして デスクトップアプリケーション PYTHON のために .",
       'js-data': 'ChartとLeafletライブラリを使用してデータのグラフィック表示を行います。',
       'outlier-exp': 'Outlier - ポルトガル語から英語へのAI向けオーディオ生成',
       'travel-agent': '旅行代理店 - コースプラン付きでパスポート取得を支援',
@@ -407,7 +407,7 @@ const translations = {
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。为了监控、改善网站在Google搜索引擎上的表现，创建广告及国内或国际活动，并提升网站的货币化。',
     
       'mysql-workbench': '用于操作数据并在复杂数据查询中使用。',
-      'mysql-skills': '以简单且有组织的方式存储数据。',
+      "mysql-skills": "以简单且有组织的方式存储数据。我还能为网站创建数据库， JAVASCRIPT 和 Python 以及 桌面应用程序 PYTHON .",
       'js-data': '使用Chart和Leaflet库进行数据的图形展示。',
       'outlier-exp': 'Outlier - 为AI生成从葡萄牙语到英语的音频',
       'travel-agent': '旅行社 - 帮助人们通过课程计划获得护照',
