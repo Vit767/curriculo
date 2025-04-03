@@ -41,7 +41,7 @@ const translations = {
       'digital-campaigns': 'Campanhas digitais e otimização SEO... Google Search Console, Site maps, Instagram, Facebook',
       'seo-skills': 'Search Engine Optimization (SEO) - Em PT: Otimização para motores de busca',
       'analytics-skills': 'Google Analytics - Google Search console - Google ADS - Google Adsense. Para monitorar, melhorar mecânismo de pesquisa de sites no google, fazer anuncios e campanhas nacionais ou internacionais, e fazer sites terem uma melhor monetização.',
-      'python-data': 'PYTHON e FLASK para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão, usando bibliotecas que facilitam o processo em 100%',
+
       'mysql-workbench': 'Para manipular dados e usá-los em consultas complexas de dados.',
       'mysql-skills': 'Para armazenar dados de maneira simples e organizada.',
       'js-data': 'Biblioteca Chart e Leaflet, para demonstração gráfica de dados.',
@@ -101,7 +101,7 @@ const translations = {
       'digital-campaigns': 'Digital campaigns and SEO optimization... Google Search Console, Sitemaps, Instagram, Facebook',
       'seo-skills': 'Search Engine Optimization (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. To monitor, improve website search engine performance on Google, create ads and national or international campaigns, and enhance website monetization.',
-      'python-data': 'PYTHON and FLASK to analyze data efficiently and perfectly, also to collect and clean data accurately, using libraries that streamline the process 100%',
+      
       'mysql-workbench': 'To manipulate data and use it in complex data queries.',
       'mysql-skills': 'To store data simply and organized.',
       'js-data': 'Chart and Leaflet libraries for graphical data demonstration.',
@@ -161,7 +161,7 @@ const translations = {
       'digital-campaigns': 'Campañas digitales y optimización SEO... Google Search Console, Mapas del sitio, Instagram, Facebook',
       'seo-skills': 'Optimización para Motores de Búsqueda (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Para monitorear, mejorar el rendimiento de los motores de búsqueda de sitios web en Google, crear anuncios y campañas nacionales o internacionales, y mejorar la monetización de sitios web.',
-      'python-data': 'PYTHON y FLASK para analizar datos de manera eficiente y perfecta, también para recolectar y limpiar datos con precisión, usando bibliotecas que facilitan el proceso al 100%',
+     
       'mysql-workbench': 'Para manipular datos y usarlos en consultas complejas de datos.',
       'mysql-skills': 'Para almacenar datos de manera simple y organizada.',
       'js-data': 'Bibliotecas Chart y Leaflet, para demostración gráfica de datos.',
@@ -223,7 +223,7 @@ const translations = {
       'digital-campaigns': 'Campagnes digitales et optimisation SEO... Google Search Console, Sitemaps, Instagram, Facebook',
       'seo-skills': 'Optimisation pour les moteurs de recherche (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Pour surveiller, améliorer les performances des moteurs de recherche des sites web sur Google, créer des annonces et des campagnes nationales ou internationales, et optimiser la monétisation des sites web.',
-      'python-data': 'PYTHON et FLASK pour analyser les données efficacement et parfaitement, collecter et nettoyer les données avec précision, en utilisant des bibliothèques qui facilitent le processus à 100 %',
+     
       'mysql-workbench': 'Pour manipuler les données et les utiliser dans des requêtes complexes.',
       'mysql-skills': 'Pour stocker les données de manière simple et organisée.',
       'js-data': 'Bibliothèques Chart et Leaflet, pour la démonstration graphique des données.',
@@ -283,7 +283,7 @@ const translations = {
       'digital-campaigns': 'Цифровые кампании и оптимизация SEO... Google Search Console, карты сайта, Instagram, Facebook',
       'seo-skills': 'Оптимизация для поисковых систем (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Для мониторинга, улучшения работы поисковых систем сайтов в Google, создания рекламы и национальных или международных кампаний, а также для улучшения монетизации сайтов.',
-      'python-data': 'PYTHON и FLASK для эффективного и точного анализа данных, а также для сбора и очистки данных с использованием библиотек, упрощающих процесс на 100%',
+   
       'mysql-workbench': 'Для манипуляции данными и их использования в сложных запросах.',
       'mysql-skills': 'Для простого и организованного хранения данных.',
       'js-data': 'Библиотеки Chart и Leaflet для графической демонстрации данных.',
@@ -345,7 +345,7 @@ const translations = {
       'digital-campaigns': 'デジタルキャンペーンとSEO最適化... Google Search Console、サイトマップ、Instagram、Facebook',
       'seo-skills': '検索エンジン最適化 (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。Googleでのウェブサイトの検索エンジンのパフォーマンスを監視し、改善し、広告や国内・国際キャンペーンを作成し、ウェブサイトの収益化を向上させるために。',
-      'python-data': 'PYTHONとFLASKを使ってデータを効率的かつ完璧に分析し、データを正確に収集・クリーニングします。プロセスを100%効率化するライブラリを使用します。',
+     
       'mysql-workbench': 'データを操作し、複雑なデータクエリに使用します。',
       'mysql-skills': 'データをシンプルかつ整理して保存します。',
       'js-data': 'ChartとLeafletライブラリを使用してデータのグラフィック表示を行います。',
@@ -405,7 +405,7 @@ const translations = {
       'digital-campaigns': '数字营销活动和SEO优化... Google Search Console、网站地图、Instagram、Facebook',
       'seo-skills': '搜索引擎优化 (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。为了监控、改善网站在Google搜索引擎上的表现，创建广告及国内或国际活动，并提升网站的货币化。',
-      'python-data': '使用PYTHON和FLASK高效且完美地分析数据，同时准确地收集和清理数据，使用能100%简化流程的库',
+    
       'mysql-workbench': '用于操作数据并在复杂数据查询中使用。',
       'mysql-skills': '以简单且有组织的方式存储数据。',
       'js-data': '使用Chart和Leaflet库进行数据的图形展示。',
