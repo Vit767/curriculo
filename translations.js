@@ -67,7 +67,10 @@ const translations = {
       "name-placeholder": "Digite seu nome",
       "email-placeholder": "Digite seu email",
       "message-placeholder": "Digite sua mensagem",
-    "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib"
+    "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib",
+    "sqlite-skills": "Criação de bancos de dados , Criação de aplicações simples com banco de dados, Aplicações Python e Flask. "
+
+
   },
   'en': {
       'see-skills': 'See my skills',
@@ -121,7 +124,10 @@ const translations = {
       "name-placeholder": "Enter your name",
       "email-placeholder": "Enter your email",
       "message-placeholder": "Enter your message",
-    "streamlity-data": "	Data display and data counting using Streamlit, Dash, Plotly or Matplotlib"
+    "streamlity-data": "	Data display and data counting using Streamlit, Dash, Plotly or Matplotlib",
+    "sqlite-skills": "Creation of databases , Creation of simple applications with databases, Python and Flask applications. "
+
+
   },
   'es': {
       'see-skills': 'Ver mis capacidades',
@@ -175,7 +181,10 @@ const translations = {
       "name-placeholder": "Ingresa tu nombre",
       "email-placeholder": "Ingresa tu correo electrónico",
       "message-placeholder": "Ingresa tu mensaje",
-       "streamlity-data": "	Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib"
+       "streamlity-data": "	Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib",
+    "sqlite-skills": "Creación de bases de datos , Creación de aplicaciones simples con bases de datos, Aplicaciones en Python y Flask. "
+
+
 
   },
   'fr': {
@@ -230,7 +239,10 @@ const translations = {
      "name-placeholder": "Entrez votre nom",
       "email-placeholder": "Entrez votre email",
       "message-placeholder": "Entrez votre message",
-      "streamlity-data": "Affichage des données et comptage des données utilisant Streamlit, Dash, Plotly ou Matplotlib"
+      "streamlity-data": "Affichage des données et comptage des données utilisant Streamlit, Dash, Plotly ou Matplotlib",
+    "sqlite-skills": "Création de bases de données , Création d'applications simples avec bases de données, Applications Python et Flask. "
+
+
   },
   'ru': {
       'see-skills': 'Посмотреть мои навыки',
@@ -284,7 +296,10 @@ const translations = {
       "name-placeholder": "Введите ваше имя",
        "email-placeholder": "Введите ваш email",
        "message-placeholder": "Введите ваше сообщение",
-         "streamlity-data": "	Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib"
+         "streamlity-data": "	Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib",
+    "sqlite-skills": "Создание баз данных , Создание простых приложений с базами данных, Приложения на Python и Flask. "
+
+
     
   },
   'ja': {
@@ -339,7 +354,10 @@ const translations = {
      "name-placeholder": "名前を入力してください",
       "email-placeholder": "メールを入力してください",
       "message-placeholder": "メッセージを入力してください",
-        "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント"
+        "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント",
+    "sqlite-skills": "データベースの作成 , データベースを使用したシンプルなアプリケーションの作成, PythonとFlaskのアプリケーション. "
+
+
   },
   'zh': {
       'see-skills': '查看我的技能',
@@ -393,7 +411,10 @@ const translations = {
        "name-placeholder": "输入您的姓名",
        "email-placeholder": "输入您的电子邮件",
         "message-placeholder": "输入您的消息",
-          "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数"
+          "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数",
+    "sqlite-skills": "数据库创建 , 创建带有数据库的简单应用程序, Python和Flask应用程序. "
+
+
   }
 };
 
