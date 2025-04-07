@@ -4,7 +4,12 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+    .link-container a {
+    color: #6c757d; /* Cinza do bg-secondary */
+}
+.link-container a:hover {
+    color: #5a6268;
+}
     body {
     
       overflow-x: hidden;
