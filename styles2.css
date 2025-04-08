@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+@font-face {
+font-family: 'Teko';
+src: url('fonts/Teko-VariableFont_wght.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.bg-custom-gray {
+background-color: #114482; /* Cinza médio */
+}
+.typewriter {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center; /* Já centraliza horizontalmente */
+    margin-top: 20px;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+}
+.bg-custom-blue {
+background-color: rgb(14, 93, 43); /* Cinza médio */
+}
+
+.bg-custom-red {
+background-color: rgb(215, 161, 15); /* Cinza médio */
+}
+
+body {
+font-family: 'Teko', sans-serif;
+}

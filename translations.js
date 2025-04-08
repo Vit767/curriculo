@@ -1,19 +1,22 @@
-const menuButton = document.getElementById('menu-button');
-const menu = document.getElementById('menu');
-const menuLinks = menu.querySelectorAll('a');
+// translations.js
+ const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
 
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
 
-menuButton.addEventListener('click', () => {
-  menu.classList.toggle('menu-open'); 
-});
+        // Fechar a sidebar ao clicar em um link (opcional)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+            });
+        });
+// Objeto de traduções
+// translations.js
 
-
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('menu-open');
-  });
-});
-
+// Objeto de traduções (sem as chaves "roles", já que são gerenciadas pelo roleTextTranslations.js)
 const translations = {
   'pt': {
       'see-skills': 'Veja minhas capacidades',
@@ -41,7 +44,6 @@ const translations = {
       'digital-campaigns': 'Campanhas digitais e otimização SEO... Google Search Console, Site maps, Instagram, Facebook',
       'seo-skills': 'Search Engine Optimization (SEO) - Em PT: Otimização para motores de busca',
       'analytics-skills': 'Google Analytics - Google Search console - Google ADS - Google Adsense. Para monitorar, melhorar mecânismo de pesquisa de sites no google, fazer anuncios e campanhas nacionais ou internacionais, e fazer sites terem uma melhor monetização.',
-
       'mysql-workbench': 'Para manipular dados e usá-los em consultas complexas de dados.',
       "mysql-skills": "Para armazenar dados de maneira simples e organizada.Também sou apto a criar banco de dados para sites, JAVASCRIPT e Python  e para  Aplicativos desktop PYTHON .",
       'js-data': 'Biblioteca Chart e Leaflet, para demonstração gráfica de dados.',
@@ -67,13 +69,10 @@ const translations = {
       "name-placeholder": "Digite seu nome",
       "email-placeholder": "Digite seu email",
       "message-placeholder": "Digite sua mensagem",
-    "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib",
-    "sqlite-skills": "Criação de bancos de dados , Criação de aplicações simples com banco de dados, Aplicações Python e Flask. ",
-    "python-data": "PYTHON, FLASK e bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy e matplotlib,plotly , streamlit para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão, usando bibliotecas que facilitam o processo em 100% . "
-
-
-
-
+      "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib",
+      "sqlite-skills": "Criação de bancos de dados , Criação de aplicações simples com banco de dados, Aplicações Python e Flask. ",
+      "python-data": "PYTHON, FLASK e bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy e matplotlib,plotly , streamlit para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão, usando bibliotecas que facilitam o processo em 100% . ",
+      "hero-role": "Eu sou"
   },
   'en': {
       'see-skills': 'See my skills',
@@ -101,7 +100,6 @@ const translations = {
       'digital-campaigns': 'Digital campaigns and SEO optimization... Google Search Console, Sitemaps, Instagram, Facebook',
       'seo-skills': 'Search Engine Optimization (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. To monitor, improve website search engine performance on Google, create ads and national or international campaigns, and enhance website monetization.',
-      
       'mysql-workbench': 'To manipulate data and use it in complex data queries.',
       "mysql-skills": "To store data in a simple and organized way.I am also capable of creating databases for websites, JAVASCRIPT and Python  and for  Desktop applications PYTHON .",
       'js-data': 'Chart and Leaflet libraries for graphical data demonstration.',
@@ -127,13 +125,10 @@ const translations = {
       "name-placeholder": "Enter your name",
       "email-placeholder": "Enter your email",
       "message-placeholder": "Enter your message",
-    "streamlity-data": "	Data display and data counting using Streamlit, Dash, Plotly or Matplotlib",
-    "sqlite-skills": "Creation of databases , Creation of simple applications with databases, Python and Flask applications. ",
-    "python-data": "PYTHON, FLASK and powerful libraries like pandas,numpy,sklearn, plotly ,statsmodels , scipy and matplotlib,plotly , streamlit to analyze data efficiently and perfectly, also collect and clean data with precision, using libraries that facilitate the process by 100% . "
-
-
-
-
+      "streamlity-data": "Data display and data counting using Streamlit, Dash, Plotly or Matplotlib",
+      "sqlite-skills": "Creation of databases , Creation of simple applications with databases, Python and Flask applications. ",
+      "python-data": "PYTHON, FLASK and powerful libraries like pandas,numpy,sklearn, plotly ,statsmodels , scipy and matplotlib,plotly , streamlit to analyze data efficiently and perfectly, also collect and clean data with precision, using libraries that facilitate the process by 100% . ",
+      "hero-role": "I am"
   },
   'es': {
       'see-skills': 'Ver mis capacidades',
@@ -150,7 +145,7 @@ const translations = {
       'admin-tasks': 'Gestión de tareas administrativas...',
       'excel-level': 'Tengo nivel intermedio en Excel.',
       'matplotlib-level': 'Matplotlib Nivel Avanzado',
-      'powerpoint-level': 'PowerPoint Nivel Intermedio',
+      'powerpoint-level': 'PowerPoint Nivel Intermediario',
       'word-level': 'Word Nivel Intermediario',
       'python-skills': 'Puedo desarrollar aplicaciones web y de oficina útiles usando Python.',
       'javascript-skills': 'Puedo desarrollar scripts útiles para sitios web enfocados en front-end y Node para usar como servidor local.',
@@ -161,9 +156,8 @@ const translations = {
       'digital-campaigns': 'Campañas digitales y optimización SEO... Google Search Console, Mapas del sitio, Instagram, Facebook',
       'seo-skills': 'Optimización para Motores de Búsqueda (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Para monitorear, mejorar el rendimiento de los motores de búsqueda de sitios web en Google, crear anuncios y campañas nacionales o internacionales, y mejorar la monetización de sitios web.',
-     
       'mysql-workbench': 'Para manipular datos y usarlos en consultas complejas de datos.',
-      "mysql-skills": "Para almacenar datos de manera simple y organizada.También soy apto para crear bases de datos para sitios web, JAVASCRIPT y Python y para Aplicaciones de escritorio PYTHON .",
+      "mysql-skills": "Para almacenar datos de manera simple y organizada.Também sou apto a criar banco de dados para sites, JAVASCRIPT e Python  e para  Aplicativos desktop PYTHON .",
       'js-data': 'Bibliotecas Chart y Leaflet, para demostración gráfica de datos.',
       'outlier-exp': 'Outlier - generación de audio para I.A. de portugués a inglés',
       'travel-agent': 'Agente de viajes - Ayudando a personas a obtener pasaportes con planes de cursos',
@@ -187,15 +181,10 @@ const translations = {
       "name-placeholder": "Ingresa tu nombre",
       "email-placeholder": "Ingresa tu correo electrónico",
       "message-placeholder": "Ingresa tu mensaje",
-       "streamlity-data": "	Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib",
-    "sqlite-skills": "Creación de bases de datos , Creación de aplicaciones simples con bases de datos, Aplicaciones en Python y Flask. ",
-    "python-data": "PYTHON, FLASK y bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy y matplotlib,plotly , streamlit para analizar datos de manera eficiente y con perfección, también recolectar y limpiar datos con precisión, usando bibliotecas que facilitan el proceso en un 100% . "
-
-
-    
-
-
-
+      "streamlity-data": "Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib",
+      "sqlite-skills": "Creación de bases de datos , Creación de aplicaciones simples con bases de datos, Aplicaciones en Python y Flask. ",
+      "python-data": "PYTHON, FLASK y bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy y matplotlib,plotly , streamlit para analizar datos de manera eficiente y con perfección, también recolectar y limpiar datos con precisión, usando bibliotecas que facilitan el proceso en un 100% . ",
+      "hero-role": "Soy"
   },
   'fr': {
       'see-skills': 'Voir mes compétences',
@@ -223,7 +212,6 @@ const translations = {
       'digital-campaigns': 'Campagnes digitales et optimisation SEO... Google Search Console, Sitemaps, Instagram, Facebook',
       'seo-skills': 'Optimisation pour les moteurs de recherche (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Pour surveiller, améliorer les performances des moteurs de recherche des sites web sur Google, créer des annonces et des campagnes nationales ou internationales, et optimiser la monétisation des sites web.',
-     
       'mysql-workbench': 'Pour manipuler les données et les utiliser dans des requêtes complexes.',
       "mysql-skills": "Pour stocker des données de manière simple et organisée.Je suis également capable de créer des bases de données pour des sites web, JAVASCRIPT et Python et pour Applications de bureau PYTHON .",
       'js-data': 'Bibliothèques Chart et Leaflet, pour la démonstration graphique des données.',
@@ -246,16 +234,13 @@ const translations = {
       'message': 'Message :',
       'send-message': 'Envoyer le message',
       'whatsapp-text': 'Ou discutez avec moi via WhatsApp.',
-     "name-placeholder": "Entrez votre nom",
+      "name-placeholder": "Entrez votre nom",
       "email-placeholder": "Entrez votre email",
       "message-placeholder": "Entrez votre message",
       "streamlity-data": "Affichage des données et comptage des données utilisant Streamlit, Dash, Plotly ou Matplotlib",
-    "sqlite-skills": "Création de bases de données , Création d'applications simples avec bases de données, Applications Python et Flask. ",
-    "python-data": "PYTHON, FLASK et bibliothèques puissantes comme pandas,numpy,sklearn, plotly ,statsmodels , scipy et matplotlib,plotly , streamlit pour analyser les données de manière efficace et parfaite, aussi collecter et nettoyer les données avec précision, en utilisant des bibliothèques qui facilitent le processus à 100% . "
-
-
-
-
+      "sqlite-skills": "Création de bases de données , Création d'applications simples avec bases de données, Applications Python et Flask. ",
+      "python-data": "PYTHON, FLASK et bibliothèques puissantes comme pandas,numpy,sklearn, plotly ,statsmodels , scipy et matplotlib,plotly , streamlit pour analyser les données de manière efficace et parfaite, aussi collecter et nettoyer les données avec précision, en utilisant des bibliothèques qui facilitent le processus à 100% . ",
+      "hero-role": "Je suis"
   },
   'ru': {
       'see-skills': 'Посмотреть мои навыки',
@@ -283,7 +268,6 @@ const translations = {
       'digital-campaigns': 'Цифровые кампании и оптимизация SEO... Google Search Console, карты сайта, Instagram, Facebook',
       'seo-skills': 'Оптимизация для поисковых систем (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense. Для мониторинга, улучшения работы поисковых систем сайтов в Google, создания рекламы и национальных или международных кампаний, а также для улучшения монетизации сайтов.',
-   
       'mysql-workbench': 'Для манипуляции данными и их использования в сложных запросах.',
       "mysql-skills": "Для хранения данных простым и организованным способом.Я также способен создавать базы данных для веб-сайтов, JAVASCRIPT и Python и для Настольных приложений PYTHON .",
       'js-data': 'Библиотеки Chart и Leaflet для графической демонстрации данных.',
@@ -307,17 +291,12 @@ const translations = {
       'send-message': 'Отправить сообщение',
       'whatsapp-text': 'Или свяжитесь со мной через WhatsApp.',
       "name-placeholder": "Введите ваше имя",
-       "email-placeholder": "Введите ваш email",
-       "message-placeholder": "Введите ваше сообщение",
-         "streamlity-data": "	Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib",
-    "sqlite-skills": "Создание баз данных , Создание простых приложений с базами данных, Приложения на Python и Flask. ",
-    "python-data": "PYTHON, FLASK и мощные библиотеки, такие как pandas,numpy,sklearn, plotly ,statsmodels , scipy и matplotlib,plotly , streamlit для эффективного и совершенного анализа данных, а также сбора и очистки данных с точностью, используя библиотеки, которые облегчают процесс на 100% . "
-
-
-    
-
-
-    
+      "email-placeholder": "Введите ваш email",
+      "message-placeholder": "Введите ваше сообщение",
+      "streamlity-data": "Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib",
+      "sqlite-skills": "Создание баз данных , Создание простых приложений с базами данных, Приложения на Python и Flask. ",
+      "python-data": "PYTHON, FLASK и мощные библиотеки, такие как pandas,numpy,sklearn, plotly ,statsmodels , scipy и matplotlib,plotly , streamlit для эффективного и совершенного анализа данных, а также сбора и очистки данных с точностью, используя библиотеки, которые облегчают процесс на 100% . ",
+      "hero-role": "Я"
   },
   'ja': {
       'see-skills': '私のスキルを見る',
@@ -345,7 +324,6 @@ const translations = {
       'digital-campaigns': 'デジタルキャンペーンとSEO最適化... Google Search Console、サイトマップ、Instagram、Facebook',
       'seo-skills': '検索エンジン最適化 (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。Googleでのウェブサイトの検索エンジンのパフォーマンスを監視し、改善し、広告や国内・国際キャンペーンを作成し、ウェブサイトの収益化を向上させるために。',
-     
       'mysql-workbench': 'データを操作し、複雑なデータクエリに使用します。',
       "mysql-skills": "データをシンプルかつ整理された方法で保存するため。私はまた、ウェブサイト用のデータベースを作成することができ、 JAVASCRIPT と Python そして デスクトップアプリケーション PYTHON のために .",
       'js-data': 'ChartとLeafletライブラリを使用してデータのグラフィック表示を行います。',
@@ -355,9 +333,9 @@ const translations = {
       'general-services': '一般サービスアシスタント - トラックからの荷降ろし',
       'mason-helper': '石工助手 - 砂カートの補充、セメント運び、セメントバケツのサポート',
       'python-projects': 'プロジェクト: PYTHON',
-      'python-projects-list': 'データベース付きの一般的なスケジュール。データベース、時間、アラーム付きのフォーム。オーディオ付きPDFリーダー。20,000人以上にレスポンシブなメールを送信するスクリプト。オーディオからtxt、rtf、srtへの翻訳。人間またはロボットの声を使ったテキストからオーディオへの変換。決定木と線形回帰。機械学習。統計と確率を使った機械学習。線形回帰。あらゆる言語でのSRTからオーディオへの変換。ビデオの縁切り。テキストからPDFへの変換。UTF-8からcp1235へのテキスト変換。経費スプレッドシート。グラフィックダッシュボード。半動的ダッシュボード。時計。電卓。Wordpadに似たアプリ。ビデオ編集アプリ。',
+      'python-projects-list': 'データベース付きの普通日程表。データベース、時間、アラーム付きのフォーム。オーディオ付きPDFリーダー。20,000人以上にレスポンシブなメールを送信するスクリプト。オーディオからtxt、rtf、srtへの翻訳。人間またはロボットの声を使ったテキストからオーディオへの変換。決定木と線形回帰。機械学習。統計と確率を使った機械学習。線形回帰。あらゆる言語でのSRTからオーディオへの変換。ビデオの縁切り。テキストからPDFへの変換。UTF-8からcp1235へのテキスト変換。経費スプレッドシート。グラフィックダッシュボード。半動的ダッシュボード。時計。電卓。Wordpadに似たアプリ。ビデオ編集アプリ。',
       'flask-projects': 'プロジェクト: FLASK',
-      'flask-projects-list': 'データベース付きフォーム。データベース付きチャットアプリで、写真やビデオの送信が可能。「あなたのストーリーを書く」アプリ、フォトストーリー、データベースに保存。Excelスプレッドシートリーダーダッシュボード。ExcelおよびCSVスプレッドシートのデータ情報ダッシュボード。データベース付きログイン。Dashを使用したオンラインダッシュボードフォーム。データ情報。',
+      'flask-projects-list': 'データベース付きフォーム。データベース付きチャットアプリで、写真やビデオの送信が可能。「あなたのストーリーを書く」アプリ、フォトストーリー、データベースに保存。Excelスプレッドシートリーダーダッシュボード。ExcelおよびCSVスプレッドシートのデータ情報ダッシュボード。データベース付きログイン。オンラインのダッシュボードフォーム（Dash使用）。データ情報。',
       'html-css-projects': 'プロジェクト: HTML-CSS, BOOTSTRAP, JAVASCRIPT',
       'html-css-projects-list': '25言語対応のコースサイト。衣料品店。宗教用品店。個人フォーム。アダルトコンテンツサイト。ゲームサイト。ログインとパスワード付き個人ポートフォリオ。クリニック用サイト。ワークショップ用サイト。経費計算スプレッドシート。データレポート例。',
       'data-analysis': 'データ分析 "線形回帰とテスト"',
@@ -368,16 +346,13 @@ const translations = {
       'message': 'メッセージ:',
       'send-message': 'メッセージを送信',
       'whatsapp-text': 'またはWhatsAppで私とチャットしてください。',
-     "name-placeholder": "名前を入力してください",
+      "name-placeholder": "名前を入力してください",
       "email-placeholder": "メールを入力してください",
       "message-placeholder": "メッセージを入力してください",
-        "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント",
-    "sqlite-skills": "データベースの作成 , データベースを使用したシンプルなアプリケーションの作成, PythonとFlaskのアプリケーション. ",
-    "python-data": "PYTHON, FLASK と pandas,numpy,sklearn, plotly ,statsmodels , scipy や matplotlib,plotly , streamlit のような強力なライブラリを使用して、データを効率的かつ完璧に分析し、またデータを正確に収集およびクリーニングし、プロセスを100％容易にするライブラリを使用する . "
-
-
-
-
+      "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント",
+      "sqlite-skills": "データベースの作成 , データベースを使用したシンプルなアプリケーションの作成, PythonとFlaskのアプリケーション. ",
+      "python-data": "PYTHON, FLASK と pandas,numpy,sklearn, plotly ,statsmodels , scipy や matplotlib,plotly , streamlit のような強力なライブラリを使用して、データを効率的かつ完璧に分析し、またデータを正確に収集およびクリーニングし、プロセスを100％容易にするライブラリを使用する . ",
+      "hero-role": "私は"
   },
   'zh': {
       'see-skills': '查看我的技能',
@@ -405,7 +380,6 @@ const translations = {
       'digital-campaigns': '数字营销活动和SEO优化... Google Search Console、网站地图、Instagram、Facebook',
       'seo-skills': '搜索引擎优化 (SEO)',
       'analytics-skills': 'Google Analytics - Google Search Console - Google ADS - Google Adsense。为了监控、改善网站在Google搜索引擎上的表现，创建广告及国内或国际活动，并提升网站的货币化。',
-    
       'mysql-workbench': '用于操作数据并在复杂数据查询中使用。',
       "mysql-skills": "以简单且有组织的方式存储数据。我还能为网站创建数据库， JAVASCRIPT 和 Python 以及 桌面应用程序 PYTHON .",
       'js-data': '使用Chart和Leaflet库进行数据的图形展示。',
@@ -415,49 +389,86 @@ const translations = {
       'general-services': '通用服务助理 - 从卡车上卸货',
       'mason-helper': '泥瓦匠助手 - 帮助装满沙车、取水泥、水泥桶',
       'python-projects': '项目: PYTHON',
-      'python-projects-list': '带数据库的普通日程表。带数据库、时间和闹钟的表单。带音频的PDF阅读器。向超过20,000人发送响应式电子邮件的脚本。从音频翻译到txt、rtf或srt。将文本转换为带人类或机器人声音的音频。决策树和线性回归。机器学习。带统计和概率的机器学习。线性回归。任何语言的SRT转音频。裁剪视频边框。将文本转换为PDF。将UTF-8文本转换为cp1235。费用电子表格。图形仪表板。半动态仪表板。时钟。计算器。类似Wordpad的应用程序。视频编辑应用程序。',
+      'python-projects-list': '带数据库的普通日程表。带数据库、时间和闹钟的表单。带音频的PDF阅读器。向超过20,000人发送响应式电子邮件的脚本。音频翻译为txt、rtf或srt。文本转音频，使用人类或机器人声音。决策树和线性回归。机器学习。使用统计和概率的机器学习。线性回归。SRT转任何语言的音频。视频边缘裁剪。文本转PDF。UTF-8转cp1235文本。费用电子表格。图形仪表板。半动态仪表板。时钟。计算器。类似Wordpad的应用程序。视频编辑应用程序。',
       'flask-projects': '项目: FLASK',
-      'flask-projects-list': '带数据库的表单。带数据库的聊天应用程序，可发送照片和视频。“写下你的故事”应用程序，照片故事，带数据库保存。Excel电子表格阅读器仪表板。Excel和CSV电子表格的数据信息仪表板。带数据库的登录。在线仪表板表单与Dash。数据信息。',
+      'flask-projects-list': '带数据库的表单。带数据库的聊天应用程序，可发送照片和视频。写你的故事应用程序，照片故事，保存到数据库。Excel电子表格阅读器仪表板。Excel和CSV电子表格的数据信息仪表板。带数据库的登录。在线仪表板表单（使用Dash）。数据信息。',
       'html-css-projects': '项目: HTML-CSS, BOOTSTRAP, JAVASCRIPT',
       'html-css-projects-list': '支持25种不同语言的课程网站。服装店。宗教用品店。个人表单。成人内容网站。游戏网站。带登录和密码的个人作品集。诊所网站。车间网站。费用计算电子表格。数据报告示例。',
       'data-analysis': '数据分析 "线性回归和测试"',
-      'data-analysis-list': '有统计建模经验。statsmodels和scikit-learn。MySQL数据库管理和操作。在Excel中进行基本统计分析。使用Matplotlib、Chart和Leaflet创建交互式仪表板和动态报告',
+      'data-analysis-list': '具有统计建模经验。statsmodels和scikit-learn。MySQL数据库管理和操作。Excel中的基本统计分析。使用Matplotlib、Chart和Leaflet创建交互式仪表板和动态报告',
       'contact-text': '通过电子邮件与我联系。',
       'name': '姓名:',
       'email': '电子邮件:',
       'message': '消息:',
       'send-message': '发送消息',
       'whatsapp-text': '或通过WhatsApp与我聊天。',
-       "name-placeholder": "输入您的姓名",
-       "email-placeholder": "输入您的电子邮件",
-        "message-placeholder": "输入您的消息",
-          "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数",
-    "sqlite-skills": "数据库创建 , 创建带有数据库的简单应用程序, Python和Flask应用程序. ",
-    "python-data": "PYTHON, FLASK 和强大的库，如 pandas,numpy,sklearn, plotly ,statsmodels , scipy 和 matplotlib,plotly , streamlit，以高效且完美地分析数据，还能精确地收集和清理数据，使用能100%简化流程的库 . "
-
-
-
-
+      "name-placeholder": "输入你的姓名",
+      "email-placeholder": "输入你的电子邮件",
+      "message-placeholder": "输入你的消息",
+      "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数",
+      "sqlite-skills": "创建数据库，创建带数据库的简单应用程序，Python和Flask应用程序。",
+      "python-data": "PYTHON, FLASK 和强大的库如 pandas,numpy,sklearn, plotly ,statsmodels , scipy 和 matplotlib,plotly , streamlit 以高效且完美地分析数据，同时以精确的方式收集和清理数据，使用简化100%过程的库。",
+      "hero-role": "我是"
   }
 };
 
-function updateLanguage(lang) {
+// Função para aplicar traduções, preservando elementos filhos
+function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
-    
-    // Verifica se o elemento tem um placeholder (input ou textarea)
-    if (element.hasAttribute('placeholder')) {
-      element.placeholder = translations[lang][key] || translations['pt'][key]; // Atualiza o placeholder
-    } else {
-      element.textContent = translations[lang][key] || translations['pt'][key]; // Atualiza o textContent
-    }
+      const key = element.getAttribute('data-i18n');
+
+      // Verifica se o elemento tem um placeholder (input ou textarea)
+      if (element.hasAttribute('placeholder')) {
+          element.placeholder = translations[lang][key] || translations['pt'][key]; // Atualiza o placeholder
+      } else {
+          // Preserva os elementos filhos (como o <span class="role-text">)
+          const children = Array.from(element.childNodes); // Obtém todos os nós filhos
+          const textNodes = children.filter(node => node.nodeType === Node.TEXT_NODE); // Filtra apenas os nós de texto
+          const childElements = children.filter(node => node.nodeType === Node.ELEMENT_NODE); // Filtra os elementos filhos (como <span>)
+
+          // Obtém o texto fixo do elemento (ignorando os filhos)
+          const textContent = textNodes.map(node => node.textContent).join('').trim();
+          const translatedText = translations[lang][key] || translations['pt'][key];
+
+          // Remove todos os nós filhos (texto e elementos) temporariamente
+          while (element.firstChild) {
+              element.removeChild(element.firstChild);
+          }
+
+          // Adiciona o texto traduzido como um novo nó de texto
+          element.appendChild(document.createTextNode(translatedText));
+
+          // Reinsere os elementos filhos (como o <span class="role-text">) na mesma ordem
+          childElements.forEach(child => element.appendChild(child));
+      }
   });
+
+  // Chama a função updateRoleTranslations para atualizar os papéis do role-text
+  if (typeof window.updateRoleTranslations === 'function') {
+      window.updateRoleTranslations(lang);
+  } else {
+      console.error('Função updateRoleTranslations não encontrada. Certifique-se de que roleTextTranslations.js foi carregado.');
+  }
 }
 
-document.getElementById('language-select').addEventListener('change', (event) => {
-  updateLanguage(event.target.value);
-});
+// Função para carregar o idioma salvo ou o idioma padrão
+function loadLanguage() {
+  const savedLang = localStorage.getItem('language') || 'pt'; // Carrega o idioma salvo ou usa 'pt' como padrão
+  document.getElementById('language-select').value = savedLang; // Define o valor do select
+  applyTranslations(savedLang); // Aplica as traduções
+}
 
+// Evento para quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
-  updateLanguage('pt'); // Carrega o português como padrão
+  console.log('DOM completamente carregado - translations.js');
+
+  // Carrega o idioma inicial
+  loadLanguage();
+
+  // Adiciona o evento de mudança de idioma
+  document.getElementById('language-select').addEventListener('change', (event) => {
+      const selectedLang = event.target.value;
+      localStorage.setItem('language', selectedLang); // Salva o idioma selecionado
+      applyTranslations(selectedLang); // Aplica as traduções
+  });
 });
