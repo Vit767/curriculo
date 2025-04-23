@@ -4,7 +4,8 @@ body, html {
     scroll-behavior: smooth;
 }
 .sidebar {
-     background: linear-gradient(to bottom, #4b0082, #000000);
+ 
+      background: linear-gradient(to bottom, #000000,#4b0082);
     color: white;
     height: 100vh;
     padding-top: 30px;
