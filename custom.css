@@ -52,6 +52,7 @@ body, html {
     background-color: #f8f9fa;
     transition: margin-left 0.3s ease-in-out;
 }
+
 .hero-section {
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
@@ -126,6 +127,11 @@ font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
 
     color: #1a252f;
     
+}
+.mini-container #capacidades{
+   margin-right: 20px; /* Espaço à direita */
+    margin-left: 20px; /* Espaço à esquerda */
+    color: #333;
 }
 #contato form {
     max-width: 500px;
