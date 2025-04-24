@@ -120,6 +120,11 @@ font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
     margin-bottom: 20px;
     color: #1a252f;
 }
+#capacidades h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a252f;
+}
 #contato form {
     max-width: 500px;
     margin: 0 auto;
