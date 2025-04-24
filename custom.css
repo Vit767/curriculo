@@ -320,7 +320,50 @@ margin-top: 0px;
 }
 /* Estilizar o texto do "role" */
 /* Estilizar o texto do "role" */
+/* iPad em modo retrato (portrait) */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Estilos para iPad em modo retrato */
+    .mini-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
 
+/* iPad em modo paisagem (landscape) */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Estilos para iPad em modo paisagem */
+     .mini-container3 {
+  display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza horizontalmente */
+text-align: center; /* Centraliza o texto */
+     width:90%; /* Limita a largura máxima do contêiner principal */
+}
+}
+
+/* iPad Pro (12.9" e 11") - Retrato e Paisagem */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Estilos para iPad Pro */
+   .mini-container3 {
+  display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza horizontalmente */
+text-align: center; /* Centraliza o texto */
+     width:90%; /* Limita a largura máxima do contêiner principal */
+}
+}
 /* Media Query para telas menores */
 @media (max-width: 768px) {
     .mini-container3 {
