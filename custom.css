@@ -5,7 +5,8 @@ body, html {
 }
 .sidebar {
  
-      background: linear-gradient(to bottom, #000000,#2b014a);
+      background: linear-gradient(to bottom, #000000 0%, #276871);
+    
     color: white;
     height: 100vh;
     padding-top: 30px;
