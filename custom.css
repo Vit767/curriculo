@@ -323,6 +323,14 @@ margin-top: 0px;
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
+    .mini-container3 {
+  display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza horizontalmente */
+text-align: center; /* Centraliza o texto */
+     width:90%; /* Limita a largura máxima do contêiner principal */
+}
+
     .sidebar {
         transform: translateX(-250px); /* Esconde a sidebar por padrão */
     }
