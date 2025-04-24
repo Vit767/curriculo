@@ -123,7 +123,9 @@ font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
 #capacidades h3 {
     font-size: 1rem;
     margin-bottom: 20px;
+    margin-let:0PX;
     color: #1a252f;
+    
 }
 #contato form {
     max-width: 500px;
