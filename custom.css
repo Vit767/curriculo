@@ -135,6 +135,12 @@ align-items: center; /* Centraliza horizontalmente */
 text-align: center; /* Centraliza o texto */
      max-width: 600px; /* Limita a largura máxima do contêiner principal */
 }
+
+.mini-container3 h3{
+   font-size: 1.5rem;
+
+}
+
 #capacidades{
 display: flex;
 flex-direction: column;
