@@ -128,9 +128,8 @@ font-family: 'Teko', sans-serif; /* Utilize o nome definido em @font-face */
     color: #1a252f;
     
 }
-.mini-container #capacidades{
-   margin-right: 20px; /* Espaço à direita */
-    margin-left: 20px; /* Espaço à esquerda */
+.mini-container #capacidades p{
+  width:400px;
     color: #333;
 }
 #contato form {
