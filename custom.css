@@ -327,8 +327,8 @@ margin-top: 0px;
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     /* Estilos para iPad em modo retrato */
-    .mini-container {
-        max-width: 600px;
+    .mini-container3 {
+         width:90%; /* Limita a largura máxima do contêiner principal */
         margin: 0 auto;
         padding: 15px;
     }
