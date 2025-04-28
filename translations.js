@@ -72,7 +72,8 @@ const translations = {
       "streamlity-data": "Exibição de dados e contagem de dados usando Streamlity, Dash,Plotly ou Matplotlib",
       "sqlite-skills": "Criação de bancos de dados , Criação de aplicações simples com banco de dados, Aplicações Python e Flask. ",
       "python-data": "PYTHON, FLASK e bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy e matplotlib,plotly , streamlit para analisar dados de maneira eficiente e com perfeição, também coletar e limpar dados com precisão, usando bibliotecas que facilitam o processo em 100% . ",
-      "hero-role": "Eu sou"
+      "hero-role": "Eu sou",
+   "R-data":"Para análise estatística, manipulação de dados , machine learning e visualização de dados através de gráficos."
   },
   'en': {
       'see-skills': 'See my skills',
@@ -128,7 +129,8 @@ const translations = {
       "streamlity-data": "Data display and data counting using Streamlit, Dash, Plotly or Matplotlib",
       "sqlite-skills": "Creation of databases , Creation of simple applications with databases, Python and Flask applications. ",
       "python-data": "PYTHON, FLASK and powerful libraries like pandas,numpy,sklearn, plotly ,statsmodels , scipy and matplotlib,plotly , streamlit to analyze data efficiently and perfectly, also collect and clean data with precision, using libraries that facilitate the process by 100% . ",
-      "hero-role": "I am"
+      "hero-role": "I am",
+   "R-data":"For statistical analysis, data manipulation, machine learning, and data visualization through graphs."
   },
   'es': {
       'see-skills': 'Ver mis capacidades',
@@ -184,7 +186,8 @@ const translations = {
       "streamlity-data": "Visualización de datos y conteo de datos usando Streamlit, Dash, Plotly o Matplotlib",
       "sqlite-skills": "Creación de bases de datos , Creación de aplicaciones simples con bases de datos, Aplicaciones en Python y Flask. ",
       "python-data": "PYTHON, FLASK y bibliotecas poderosas como pandas,numpy,sklearn, plotly ,statsmodels , scipy y matplotlib,plotly , streamlit para analizar datos de manera eficiente y con perfección, también recolectar y limpiar datos con precisión, usando bibliotecas que facilitan el proceso en un 100% . ",
-      "hero-role": "Soy"
+      "hero-role": "Soy",
+   "R-data":"Para análisis estadístico, manipulación de datos, machine learning y visualización de datos a través de gráficos."
   },
   'fr': {
       'see-skills': 'Voir mes compétences',
@@ -240,7 +243,8 @@ const translations = {
       "streamlity-data": "Affichage des données et comptage des données utilisant Streamlit, Dash, Plotly ou Matplotlib",
       "sqlite-skills": "Création de bases de données , Création d'applications simples avec bases de données, Applications Python et Flask. ",
       "python-data": "PYTHON, FLASK et bibliothèques puissantes comme pandas,numpy,sklearn, plotly ,statsmodels , scipy et matplotlib,plotly , streamlit pour analyser les données de manière efficace et parfaite, aussi collecter et nettoyer les données avec précision, en utilisant des bibliothèques qui facilitent le processus à 100% . ",
-      "hero-role": "Je suis"
+      "hero-role": "Je suis",
+    "R-data":"Pour l'analyse statistique, la manipulation des données, le machine learning et la visualisation des données à travers des graphiques."
   },
   'ru': {
       'see-skills': 'Посмотреть мои навыки',
@@ -296,7 +300,8 @@ const translations = {
       "streamlity-data": "Отображение данных и подсчёт данных с использованием Streamlit, Dash, Plotly или Matplotlib",
       "sqlite-skills": "Создание баз данных , Создание простых приложений с базами данных, Приложения на Python и Flask. ",
       "python-data": "PYTHON, FLASK и мощные библиотеки, такие как pandas,numpy,sklearn, plotly ,statsmodels , scipy и matplotlib,plotly , streamlit для эффективного и совершенного анализа данных, а также сбора и очистки данных с точностью, используя библиотеки, которые облегчают процесс на 100% . ",
-      "hero-role": "Я"
+      "hero-role": "Я",
+   "R-data":"Для статистического анализа, обработки данных, машинного обучения и визуализации данных с помощью графиков."
   },
   'ja': {
       'see-skills': '私のスキルを見る',
@@ -352,7 +357,8 @@ const translations = {
       "streamlity-data": "Streamlit、Dash、Plotly、またはMatplotlibを使用したデータ表示とデータカウント",
       "sqlite-skills": "データベースの作成 , データベースを使用したシンプルなアプリケーションの作成, PythonとFlaskのアプリケーション. ",
       "python-data": "PYTHON, FLASK と pandas,numpy,sklearn, plotly ,statsmodels , scipy や matplotlib,plotly , streamlit のような強力なライブラリを使用して、データを効率的かつ完璧に分析し、またデータを正確に収集およびクリーニングし、プロセスを100％容易にするライブラリを使用する . ",
-      "hero-role": "私は"
+      "hero-role": "私は",
+   "R-data":"統計分析、データ操作、機械学習、およびグラフによるデータ可視化のために。"
   },
   'zh': {
       'see-skills': '查看我的技能',
@@ -408,7 +414,8 @@ const translations = {
       "streamlity-data": "使用Streamlit、Dash、Plotly或Matplotlib进行数据展示和数据计数",
       "sqlite-skills": "创建数据库，创建带数据库的简单应用程序，Python和Flask应用程序。",
       "python-data": "PYTHON, FLASK 和强大的库如 pandas,numpy,sklearn, plotly ,statsmodels , scipy 和 matplotlib,plotly , streamlit 以高效且完美地分析数据，同时以精确的方式收集和清理数据，使用简化100%过程的库。",
-      "hero-role": "我是"
+      "hero-role": "我是",
+   "R-data":"用于统计分析、数据处理、机器学习以及通过图表进行数据可视化。"
   }
 };
 
