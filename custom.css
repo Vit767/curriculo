@@ -269,7 +269,7 @@ font-weight: bold;
     margin-left: 5px; /* Adiciona um pequeno espaço à esquerda do role-text */
 }
 .hero-section {
-    background-image: url('images/preta.jpg');
+    background-image: url('images/stars.gif');
     background-size: cover;
     background-position: center;
     position: relative;
