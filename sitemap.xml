@@ -6,13 +6,13 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
   <url>
     <loc>https://meucurriculovitorsantos.netlify.app/</loc>
     <lastmod>2025-05-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
-
 
 
 </urlset>
