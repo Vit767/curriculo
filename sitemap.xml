@@ -7,10 +7,11 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://meucurriculovitorsantos.netlify.app/</loc>
-  <lastmod>2025-05-07T16:02:58+00:00</lastmod>
-</url>
-
+ <url>
+    <loc>https://meucurriculovitorsantos.netlify.app/</loc>
+    <lastmod>2025-05-07T16:02:58+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
 
 </urlset>
